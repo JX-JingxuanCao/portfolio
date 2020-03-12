@@ -1,6 +1,6 @@
 import React from "react";
 
-export function SkillList(props) {
+export function Skill(props) {
   return (
     <p className="Skill-text">
       {props.text}

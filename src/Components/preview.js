@@ -1,7 +1,6 @@
 import React from "react";
-import SkillList from "./skillList";
 
-export function Preview(props) {
+export default function ContentPreview(props) {
   return (
     <div>
       <div>
@@ -10,7 +9,7 @@ export function Preview(props) {
 
       <div>
         <h2 className="project-title">{props.projectTitle}</h2>
-        <div>{props.SkillList}</div>
+        <div>{props.skillList}</div>
         <a href={props.link}>View Project</a>
       </div>
     </div>
