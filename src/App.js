@@ -1,6 +1,7 @@
 import React from "react";
 import Preview from "./Components/preview.js";
 import SkillList from "./Components/skillList.js";
+import {ProjectPage, ProejectContent} from "./Components.projectPage.js";
 import "./App.css";
 
 function App() {

@@ -16,3 +16,12 @@ export function ProjectPage(props) {
     </div>
   );
 }
+
+export function ProjectContent(props) {
+  return (
+    <div>
+      <h1 className="ContentTitle">{props.text}</h1>
+      <p className="MainContent">{props.text}</p>
+    </div>
+  );
+}
