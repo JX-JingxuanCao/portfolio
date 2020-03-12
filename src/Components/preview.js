@@ -4,7 +4,9 @@ export default function ContentPreview(props) {
   return (
     <div className="previewBox">
       <div>
-        <video src={props.videosrc} />
+        <video width="500" autoPlay>
+          <source src="lumosvfx.mp4" type="video/mp4" />
+        </video>
       </div>
 
       <div className="infoBox">
