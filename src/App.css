@@ -9,8 +9,11 @@ body {
 }
 
 .project-title {
-  font-family: Nunito;
-  font-style: semi-bold;
+  font-family: "Noto Sans", sans-serif;
+  font-style: bold;
+  font-size: 56px;
+  padding-left: 30px;
+  margin-top: 25px;
 }
 
 .previewBox {
@@ -21,12 +24,17 @@ body {
 }
 
 .infoBox {
+  margin-left: -510px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
+  z-index: 99;
 }
 
 .Skill-text {
-  font-family: fantasy;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 23px;
+  padding-left: 30px;
+  padding-top: 10px;
 }

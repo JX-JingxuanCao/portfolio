@@ -8,12 +8,13 @@ function App() {
   return (
     <div className="App">
       <Preview
-        videosrc="/Project/resource/lumos/lumosvfx.mp4"
+        videoName="lumosvfx.mp4"
+        videoWidth="65%"
         projectTitle="Lumos"
         skillList={[
-          <Skill text="Interactive Product" />,
-          <Skill text="what's good" />,
-          <Skill text="what's the haps" />
+          <Skill text="Interaction Product Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />,
+          <Skill text="Electrical Engineering" />,
+          <Skill text="Physical Computing" />
         ]}
       />
     </div>
