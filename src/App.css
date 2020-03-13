@@ -8,7 +8,8 @@ body {
   }
 }
 
-.project-title {
+/* For project with a video intro */
+.project-Videotitle {
   font-family: "Noto Sans", sans-serif;
   font-style: bold;
   font-size: 56px;
@@ -16,14 +17,14 @@ body {
   margin-top: 25px;
 }
 
-.previewBox {
+.previewVideoBox {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.infoBox {
+.infoVideoBox {
   margin-left: -510px;
   display: flex;
   flex-direction: column;
@@ -31,6 +32,33 @@ body {
   background-color: white;
   z-index: 99;
 }
+/* For project with a video intro */
+
+/* For project with a img intro */
+.project-Pictitle {
+  font-family: "Noto Sans", sans-serif;
+  font-style: bold;
+  font-size: 56px;
+  padding-left: 30px;
+  margin-top: 25px;
+}
+
+.previewPicBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoPicBox {
+  margin-left: -1190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: white;
+  z-index: 99;
+}
+/* For project with a img intro */
 
 .Skill-text {
   font-family: "Noto Sans", sans-serif;

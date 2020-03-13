@@ -1,17 +1,17 @@
 import React from "react";
 
-export default function ContentPreview(props) {
+export default function PreviewVideo(props) {
   return (
-    <div className="previewBox">
+    <div className="previewVideoBox">
       <div>
         <video width={props.videoWidth} autoPlay loop>
           <source src={props.videoName} type="video/mp4" />
         </video>
       </div>
 
-      <div className="infoBox">
-        <h3 className="project-title">{props.projectTitle}</h3>
-        <div>{props.skillList}</div>
+      <div className="infoVideoBox">
+        <h3 className="project-Videotitle">{props.projectVideoTitle}</h3>
+        <div>{props.skillListV}</div>
         {/* <a href={props.link}>View Project</a> */}
       </div>
     </div>
