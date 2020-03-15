@@ -2,19 +2,16 @@ body {
   background-color: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 /* For project with a video intro */
+
+/* You just needed to adjust the margin on the bottom of this element */
 .project-Videotitle {
   font-family: "Noto Sans", sans-serif;
   font-style: bold;
   font-size: 56px;
   padding-left: 30px;
   margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 .previewVideoBox {
@@ -22,25 +19,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 5vh;
 }
 
 .infoVideoBox {
-  margin-left: -510px;
+  margin-left: -50px;
+  width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
   z-index: 99;
-}
-/* For project with a video intro */
-
-/* For project with a img intro */
-.project-Pictitle {
-  font-family: "Noto Sans", sans-serif;
-  font-style: bold;
-  font-size: 56px;
-  padding-left: 30px;
-  margin-top: 25px;
 }
 
 .previewPicBox {

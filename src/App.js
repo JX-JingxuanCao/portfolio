@@ -1,42 +1,40 @@
 import React from "react";
-import PreviewVideo from "./Components/previewVideo.js";
-import PreviewPic from "./Components/previewPic.js";
+import Preview from "./Components/Preview.js";
 import { Skill } from "./Components/skill.js";
+import Image from './Components/image.js';
+import Video from './Components/video';
 import {
   ProjectPage,
   ProjectContent,
   BlankSpace
 } from "./Components/projectPage.js";
-import { ButtonMain } from "./Components/ButtonMain.js";
 import "./App.css";
 
 function App() {
+
+  let lumosMedia = <Video videoWidth="670" videoName="lumosvfx.mp4" />
+  let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="670" alt="D19 Image" /> 
+
   return (
     <div className="App">
-      <PreviewVideo
-        videoName="lumosvfx.mp4"
-        videoWidth="65%"
-        projectVideoTitle="Lumos"
-        skillListV={[
-          <Skill text="Interaction Product Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />,
+      <Preview
+        previewMedia={lumosMedia}
+        projectTitle="Lumos"
+        skillList={[
+          <Skill text="Interaction Product Design" />,
           <Skill text="Electrical Engineering" />,
           <Skill text="Physical Computing" />
         ]}
-        buttonV={<ButtonMain buttonText="View Project" />}
       />
 
-      <BlankSpace />
-      <BlankSpace />
-      <PreviewPic
-        projectImg="D19cover.jpg"
-        imgSize="43%"
-        projectPicTitle="D19"
-        skillListP={[
-          <Skill text="UX Design &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" />,
+      <Preview
+        previewMedia={D19Media}
+        projectTitle="D19"
+        skillList={[
+          <Skill text="UX Design" />,
           <Skill text="Electrical Engineering" />,
           <Skill text="Physical Computing" />
         ]}
-        buttonP={<ButtonMain buttonText="View Project" />}
       />
     </div>
   );
