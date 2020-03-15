@@ -25,3 +25,16 @@ export function ProjectContent(props) {
     </div>
   );
 }
+
+export function BlankSpace(props) {
+  return (
+    <div>
+      <p>
+        <br></br>
+      </p>
+      <p>
+        <br></br>
+      </p>
+    </div>
+  );
+}

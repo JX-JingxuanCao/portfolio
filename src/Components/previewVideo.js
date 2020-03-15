@@ -12,6 +12,7 @@ export default function PreviewVideo(props) {
       <div className="infoVideoBox">
         <h3 className="project-Videotitle">{props.projectVideoTitle}</h3>
         <div>{props.skillListV}</div>
+        <div>{props.buttonV}</div>
         {/* <a href={props.link}>View Project</a> */}
       </div>
     </div>
