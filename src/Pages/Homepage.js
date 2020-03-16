@@ -21,7 +21,7 @@ export default function Homepage() {
           <Skill text="Electrical Engineering" />,
           <Skill text="Physical Computing" />
         ]}
-        button={<ButtonMain buttonText="View Project" />}
+        button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
       />
 
       <Preview

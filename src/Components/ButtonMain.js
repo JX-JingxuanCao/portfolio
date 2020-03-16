@@ -1,12 +1,12 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export function ButtonMain(props) {
   return (
-    <BrowserRouter>
+    <NavLink to={props.linkName}>
       <button className="ButtonMain" onClick>
         {props.buttonText}
       </button>
-    </BrowserRouter>
+    </NavLink>
   );
 }
