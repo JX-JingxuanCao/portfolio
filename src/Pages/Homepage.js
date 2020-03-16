@@ -4,7 +4,7 @@ import { Skill } from "../Components/skill.js";
 import { ButtonMain } from "../Components/ButtonMain.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
-import NavBar from "../Components/NavBar.js";
+// import NavBar from "../Components/NavBar.js";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfx.mp4" />;
@@ -12,7 +12,7 @@ export default function Homepage() {
 
   return (
     <div className="App">
-      <NavBar />
+      {/* <NavBar /> */}
       <Preview
         previewMedia={lumosMedia}
         projectTitle="Lumos"
@@ -21,7 +21,7 @@ export default function Homepage() {
           <Skill text="Electrical Engineering" />,
           <Skill text="Physical Computing" />
         ]}
-        button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
+        button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
       />
 
       <Preview
@@ -31,7 +31,7 @@ export default function Homepage() {
           <Skill text="User Experience Design" />,
           <Skill text="Project Curation" />
         ]}
-        button={<ButtonMain buttonText="View Project" />}
+        button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
       />
     </div>
   );

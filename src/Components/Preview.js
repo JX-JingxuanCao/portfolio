@@ -1,5 +1,4 @@
 import React from "react";
-import { ButtonMain } from "./ButtonMain";
 
 export default function Preview(props) {
   return (
@@ -11,7 +10,6 @@ export default function Preview(props) {
         <div>{props.skillList}</div>
         {props.button}
       </div>
-      {/* <a href={props.link}>View Project</a> */}
     </div>
   );
 }
