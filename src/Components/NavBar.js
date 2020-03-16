@@ -5,7 +5,7 @@ function NavBar() {
   return (
     <ul>
       <li>
-        <link to="/lumos">lumos</link>
+        <Link to="/lumos">lumos</Link>
       </li>
     </ul>
   );
