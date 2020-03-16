@@ -1,9 +1,12 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
 
 export function ButtonMain(props) {
   return (
-    <button className="ButtonMain" onClick>
-      View Project
-    </button>
+    <BrowserRouter>
+      <button className="ButtonMain" onClick>
+        {props.buttonText}
+      </button>
+    </BrowserRouter>
   );
 }

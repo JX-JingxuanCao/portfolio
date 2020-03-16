@@ -1,94 +1,92 @@
 body {
-  background-color: black;
+  background-color: white;
 }
 
-/* For project with a video intro */
+/* For project with a  intro */
 
 /* You just needed to adjust the margin on the bottom of this element */
-.project-Videotitle {
+.project-title {
   font-family: "Noto Sans", sans-serif;
   font-style: bold;
-  font-size: 56px;
+  font-size: 35px;
   padding-left: 30px;
   margin-top: 25px;
   margin-bottom: 10px;
 }
 
-.previewVideoBox {
+.previewBox {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5vh;
+  margin-bottom: 15vh;
 }
 
-.infoVideoBox {
+.infoBox {
   margin-left: -50px;
-  width: 350px;
+  width: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
   z-index: 99;
+  padding-right: 30px;
 }
-
-.previewPicBox {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.infoPicBox {
-  margin-left: -1190px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-color: white;
-  z-index: 99;
-}
-/* For project with a img intro */
 
 .Skill-text {
   font-family: "Noto Sans", sans-serif;
-  font-size: 23px;
+  font-size: 20px;
   padding-left: 30px;
-  padding-top: 10px;
-}
-.ButtonMain {
-  position: absolute;
-  width: 200px;
-  height: 60px;
-  font-size: 18px;
-  background: none;
-  border: 4px solid;
-  color: #3498db;
-  font-size: 18px;
-  font-style: bold;
-  z-index: 999;
-}
-.ButtonMain::before,
-.ButtonMain::after {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 4px;
-  background: #000000;
-  transform: skewX(50deg);
-  transition: 0.4s linear;
-}
-.ButtonMain::before {
-  top: -4px;
-  left: 10%;
+  padding-top: 5px;
 }
 
-.ButtonMain::after {
-  bottom: -4px;
-  right: 10%;
+/* third button testing */
+.ButtonMain {
+  border: none;
+  width: 200px;
+  height: 60px;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  margin: 15px 30px;
+  letter-spacing: 1px;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 3px solid #89d6fb;
+  color: #02a9f7;
 }
-.ButtonMain:hover::before {
-  left: 80%;
+
+.ButtonMain:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.ButtonMain:hover::after {
-  right: 80%;
+
+.ButtonMain:after {
+  width: 0%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #02577a;
+}
+
+.ButtonMain:hover,
+.ButtonMain:active {
+  color: #79ceb8;
+}
+
+.ButtonMain:hover:after,
+.ButtonMain:active:after {
+  width: 100%;
 }
