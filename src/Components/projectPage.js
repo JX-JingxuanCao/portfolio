@@ -1,17 +1,15 @@
 import React from "react";
 
-export default function ProjectPage(props) {
+export function ProjectPage(props) {
   return (
     <div>
       <div>
-        <h3 className="ProjectName">{props.projectName}</h3>
+        <h3 className="projectName">{props.projectName}</h3>
       </div>
 
-      <div>
+      <div className="titleBox">
         <h4 className="miniTitle">{props.miniTitle}</h4>
-        <div>
-          <h5 className="roleName">{props.roleName}</h5>
-        </div>
+        <h5 className="roleName">{props.roleName}</h5>
       </div>
     </div>
   );

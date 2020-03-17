@@ -1,10 +1,11 @@
 import React from "react";
 
-export default function ProjectContent(props) {
+export function ProjectContent(props) {
   return (
-    <div>
-      <h1 className="ContentTitle">{props.contentTitle}</h1>
-      <p className="MainContent">{props.mainContent}</p>
+    <div className="contentBox">
+      <h1 className="contentTitle">{props.contentTitle}</h1>
+      <p className="mainContent">{props.mainContent}</p>
+      <div>{props.contentMedia}</div>
     </div>
   );
 }
