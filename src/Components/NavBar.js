@@ -33,7 +33,7 @@ function NavBar() {
               <button>
                 <Link
                   activeClass={true}
-                  to="SkillSet"
+                  to="Profile"
                   spy={true}
                   offset={-70}
                   smooth={true}
