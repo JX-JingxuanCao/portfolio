@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
+    // working navbar
     <header className="mainNav">
       <nav className="navBar">
         <div></div>

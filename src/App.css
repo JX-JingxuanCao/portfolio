@@ -97,6 +97,12 @@ body {
   font-weight: lighter;
   color: white;
 }
+.skillSet {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+}
 
 /* For nav bar */
 .mainNav {
