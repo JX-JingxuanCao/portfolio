@@ -47,35 +47,45 @@ body {
   justify-content: center;
   color: white;
 }
+
+.projectPage {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectPage-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.projectPage-content-container {
+  max-width: 50vw;
+}
+
 .titleBox {
-  margin-left: 50px;
-  width: 450px;
+  max-width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding-left: 25%;
 }
+
 .miniTitle {
   font-family: "Nota Sans", sans-serif;
   font-size: 16px;
   color: white;
   padding-top: 10px;
 }
+
 .roleName {
   font-family: "Nota Sans", sans-serif;
   font-size: 16px;
   font-weight: lighter;
   color: white;
+  margin-top: 10px;
 }
-.contentBox {
-  margin-left: 50px;
-  width: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-self: center;
-  padding-left: 25%;
-}
+
 .contentTitle {
   font-family: "Nota Sans", sans-serif;
   font-size: 16px;
