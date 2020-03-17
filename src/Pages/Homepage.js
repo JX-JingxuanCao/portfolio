@@ -6,6 +6,15 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfx.mp4" />;
@@ -34,8 +43,9 @@ export default function Homepage() {
         ]}
         button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
       />
-
-      <SkillSet />
+      <Element name="Profile">
+        <SkillSet />
+      </Element>
     </div>
   );
 }

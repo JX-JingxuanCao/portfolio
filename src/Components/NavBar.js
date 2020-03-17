@@ -1,5 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
+import {
+  Link,
+  DirectLink,
+  Element,
+  Events,
+  animateScroll,
+  scrollSpy,
+  scroller
+} from "react-scroll";
 
 function NavBar() {
   return (
@@ -15,23 +24,34 @@ function NavBar() {
           <ul>
             <li>
               <button>
-                <Link to="/lumos">
-                  <p>Work</p>
-                </Link>
+                {/* <Link to="/lumos"> */}
+                <p>Work</p>
+                {/* </Link> */}
               </button>
             </li>
             <li>
               <button>
-                <Link to="/lumos">
+                <Link
+                  activeClass={true}
+                  to="SkillSet"
+                  spy={true}
+                  offset={-70}
+                  smooth={true}
+                  delay={0}
+                  duration={1000}
+                >
                   <p>Profile</p>
                 </Link>
+                {/* <Link to="/lumos">
+                  <p>Profile</p>
+                </Link> */}
               </button>
             </li>
             <li>
               <button>
-                <Link to="/lumos">
-                  <p>Contact</p>
-                </Link>
+                {/* <Link to="/lumos"> */}
+                <p>Contact</p>
+                {/* </Link> */}
               </button>
             </li>
           </ul>
