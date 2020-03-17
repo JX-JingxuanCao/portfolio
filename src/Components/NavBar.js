@@ -1,21 +1,42 @@
 import React from "react";
-// import { Link } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-router-dom";
 
-function NavBar(props) {
+function NavBar() {
   return (
-    <div>
-      <Link
-        className={props.linkStyle}
-        activeClass={true}
-        to={props.scrollTarget}
-        spy={true}
-        smooth={true}
-        offset={-70}
-        delay={0}
-        duration={1000}
-      ></Link>
-    </div>
+    <header className="mainNav">
+      <nav className="navBar">
+        <div></div>
+        <div className="navLogo">
+          <a href="/">Jingxuan Cao</a>
+        </div>
+        <div className="spacer"></div>
+        <div className="navName">
+          <ul>
+            <li>
+              <button>
+                <Link to="/lumos">
+                  <p>Work</p>
+                </Link>
+              </button>
+            </li>
+            <li>
+              <button>
+                <Link to="/lumos">
+                  <p>Profile</p>
+                </Link>
+              </button>
+            </li>
+            <li>
+              <button>
+                <Link to="/lumos">
+                  <p>Contact</p>
+                </Link>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
   );
 }
 

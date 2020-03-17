@@ -8,7 +8,7 @@ export default function SkillSet() {
         <h2 className="skillSet">Skills</h2>
       </div>
       <div>
-        <Image imgSrc="Ai.png" imgWidth="100" imgAlt="Ai" />
+        <Image imgSrc="Ai.png" imgWidth="520" imgAlt="Ai" />
       </div>
     </div>
   );

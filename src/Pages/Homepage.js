@@ -6,15 +6,6 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
-import {
-  Link,
-  DirectLink,
-  Element,
-  Events,
-  animateScroll,
-  scrollSpy,
-  scroller
-} from "react-scroll";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfx.mp4" />;
@@ -22,45 +13,7 @@ export default function Homepage() {
 
   return (
     <div className="App">
-      {/* <NavBar /> */}
-      <header className="mainNav">
-        <nav className="navBar">
-          <div className="NavLink">
-            <div className="navLogo">
-              <a href="/">Jingxuan Cao</a>
-            </div>
-            <div className="spacer"></div>
-            <div className="navName">
-              <ul>
-                <li>
-                  <button>
-                    <Link to="/lumos">
-                      <p>Work</p>
-                    </Link>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <Link to="/lumos">
-                      <p>Profile</p>
-                    </Link>
-                  </button>
-                </li>
-                <li>
-                  <button>
-                    <Link to="/lumos">
-                      <p>Contact</p>
-                    </Link>
-                  </button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </header>
-
-      <NavBar linkStyle={"navLink"} scrollTarget={"SkillSet"} />
-
+      <NavBar />
       <Preview
         previewMedia={lumosMedia}
         projectTitle="Lumos"
@@ -82,11 +35,7 @@ export default function Homepage() {
         button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
       />
 
-      <div>
-        <Element name="SkillSet" className="element">
-          <SkillSet />
-        </Element>
-      </div>
+      <SkillSet />
     </div>
   );
 }
