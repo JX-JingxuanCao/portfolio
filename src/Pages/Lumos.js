@@ -8,7 +8,7 @@ export default function Lumos() {
   return (
     <div className="projectPage">
       <div className="projectPage-content-container">
-        <h1 className="contentTitle">Lumos</h1>
+        <h1 className="projectName">Lumos</h1>
         <div className="projectPage-intro">
           <ProjectPage
             miniTitle="Role"
