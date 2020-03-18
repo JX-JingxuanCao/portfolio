@@ -6,6 +6,17 @@ body {
   display: flex;
   justify-content: center;
 }
+#RightB-2 {
+  animation: appear 2s infinite;
+}
+@keyframes appear {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(180deg);
+  }
+}
 /* For project with a  intro */
 /* You just needed to adjust the margin on the bottom of this element */
 .project-title {

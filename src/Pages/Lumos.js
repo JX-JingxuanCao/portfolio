@@ -1,12 +1,16 @@
 import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
+import LumosModel from "..//Components/lumosModel.js";
+import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 
 export default function Lumos() {
   return (
     <div className="projectPage">
+      <NavBar />
+      <LumosModel />
       <div className="projectPage-content-container">
         <h1 className="contentTitle">Lumos</h1>
         <div className="projectPage-intro">
