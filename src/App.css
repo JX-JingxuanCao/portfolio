@@ -2,6 +2,10 @@ body {
   background-color: black;
 }
 
+.coverVideo {
+  display: flex;
+  justify-content: center;
+}
 /* For project with a  intro */
 /* You just needed to adjust the margin on the bottom of this element */
 .project-title {
@@ -99,11 +103,25 @@ body {
 }
 .skillSet {
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: lighter;
   color: white;
 }
-
+.skillBox {
+  display: flex;
+  justify-content: center;
+}
+.iconBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.contactTitle {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+  color: white;
+}
 /* For nav bar */
 .mainNav {
   background-color: transparent;

@@ -24,9 +24,17 @@ function NavBar() {
           <ul>
             <li>
               <button>
-                {/* <Link to="/lumos"> */}
-                <p>Work</p>
-                {/* </Link> */}
+                <Link
+                  activeClass={true}
+                  to="Work"
+                  spy={true}
+                  offset={-70}
+                  smooth={true}
+                  delay={0}
+                  duration={1000}
+                >
+                  <p>Work</p>
+                </Link>
               </button>
             </li>
             <li>
@@ -42,16 +50,21 @@ function NavBar() {
                 >
                   <p>Profile</p>
                 </Link>
-                {/* <Link to="/lumos">
-                  <p>Profile</p>
-                </Link> */}
               </button>
             </li>
             <li>
               <button>
-                {/* <Link to="/lumos"> */}
-                <p>Contact</p>
-                {/* </Link> */}
+                <Link
+                  activeClass={true}
+                  to="Contact"
+                  spy={true}
+                  offset={-70}
+                  smooth={true}
+                  delay={0}
+                  duration={1000}
+                >
+                  <p>Contact</p>
+                </Link>
               </button>
             </li>
           </ul>
