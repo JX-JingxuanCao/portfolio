@@ -6,7 +6,8 @@ body {
   display: flex;
   justify-content: center;
 }
-#RightB-2 {
+
+/* #RightB-2 {
   animation: appear 2s infinite;
 }
 @keyframes appear {
@@ -16,7 +17,8 @@ body {
   to {
     transform: rotateZ(180deg);
   }
-}
+} */
+
 /* For project with a  intro */
 /* You just needed to adjust the margin on the bottom of this element */
 .project-title {
@@ -122,17 +124,135 @@ body {
   display: flex;
   justify-content: center;
 }
-.iconBox {
+
+/* For skillSet section */
+.pg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+}
+.soso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+}
+.learn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+}
+.thisSite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+  text-align: center;
+}
+
+/* For footer section */
+.footer {
+  width: 100vw;
+  height: 30vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+.contactTitle {
+  max-width: 100vh;
+  height: 3em;
+  font-family: "Nota Sans", sans-serif;
+  font-size: 20px;
+  color: black;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
-.contactTitle {
-  font-family: "Nota Sans", sans-serif;
-  font-size: 20px;
-  font-weight: lighter;
-  color: white;
+.contactIcon {
+  max-width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
 }
+.social-button {
+  display: inline-block;
+  background-color: #f1f1f1;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.99;
+  border-radius: 28%;
+  box-shadow: 0 5px 30px -8px #00000090;
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: "";
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 38px;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+/* Facbook */
+.social-button.facebook:before {
+  background-color: #3b5998;
+}
+.social-button.facebook .fa {
+  color: #3b5998;
+}
+/* Linkedin */
+.social-button.linkedin:before {
+  background-color: #007bb5;
+}
+.social-button.linkedin .fa {
+  color: #007bb5;
+}
+/* Instagram */
+.social-button.instagram:before {
+  background-color: #e95950;
+}
+.social-button.instagram .fa {
+  color: #e95950;
+}
+.social-button:focus:before,
+.social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa,
+.social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
 /* For nav bar */
 .mainNav {
   background-color: transparent;

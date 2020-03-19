@@ -8,6 +8,8 @@ import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
 import Contact from "../Components/contact.js";
 import { Element } from "react-scroll";
+import { Spring } from "react-spring/renderprops";
+import { useTransition, animated } from "react-spring";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
