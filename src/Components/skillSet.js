@@ -6,7 +6,7 @@ import { useTransition, animated } from "react-spring";
 const Button = props => {
   return (
     <button className="btn pink darken-4" onClick={props.toggle}>
-      {props.name}
+      {props.icons}
     </button>
   );
 };
@@ -31,24 +31,23 @@ export default class Mesaage extends React.Component {
           <h2 className="skillSet">Skills</h2>
         </div>
         <Button
-          name={this.state.isOpen ? "Hide" : "Show"}
+          icons={this.state.isOpen ? "Hide" : "Show"}
           toggle={this.toggle}
         />
         {this.state.isOpen && (
-          <div className="pg">
-            <Spring
-              from={{ opacity: 0 }}
-              to={{ opacity: 1 }}
-              config={{ delay: 100, duration: 500 }}
-            >
-              {/* <Spring
-              from={{ transform: "translate3d(0,-4000px,0)" }}
-              to={{ transform: "translate3d(0,0px,0)" }}
-              reverse={{ transform: "translate3d(0,-4000px,0)" }}
-            > */}
-              {props => (
-                <div style={props}>
-                  {" "}
+          <Transition
+            // from={{ opacity: 0 }}
+            // to={{ opacity: 1 }}
+            // config={{ delay: 100, duration: 500 }}
+            item={Button.toggle}
+            keys={items => Button.key}
+            from={{ transform: "translate3d(-20vw,0,0)" }}
+            enter={{ transform: "translate3d(0,0px,0)" }}
+            leave={{ transform: "translate3d(-20vw,0,0)" }}
+          >
+            {items => props => (
+              <div style={props}>
+                <div className="pg">
                   <div>
                     <Image imgSrc="Ai.png" imgWidth="100" imgAlt="Ai" />
                     <p>Illustrator</p>
@@ -81,10 +80,11 @@ export default class Mesaage extends React.Component {
                     <p>Figma</p>
                   </div>
                 </div>
-              )}
-            </Spring>
-          </div>
+              </div>
+            )}
+          </Transition>
         )}
+
         <div className="soso">
           <div>
             {" "}
