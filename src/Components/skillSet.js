@@ -5,7 +5,7 @@ import { useTransition, animated } from "react-spring";
 
 const Button = props => {
   return (
-    <button className="btn pink darken-4" onClick={props.toggle}>
+    <button className="raise" onClick={props.toggle}>
       {props.icons}
     </button>
   );
