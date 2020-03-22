@@ -3,7 +3,7 @@ import React from "react";
 export default function Contact() {
   return (
     <div className="footer">
-      <div className="contactTitle">Get in Touch with me</div>
+      <div className="contactTitle">Anyway...I'm always around</div>
 
       <div className="contactIcon">
         <link
@@ -37,8 +37,17 @@ export default function Contact() {
           >
             <i class="fa fa-instagram"></i>
           </a>
+
+          <a
+            class="social-button email"
+            href="mailto:cjingxuan@outlook.com"
+            title="cjingxuan@outlook.com"
+          >
+            <i class="fa fa-envelope"></i>
+          </a>
         </div>
       </div>
+
       <div classNames="credit-line">
         <svg
           width="820"
