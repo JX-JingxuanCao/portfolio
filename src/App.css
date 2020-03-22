@@ -7,18 +7,6 @@ body {
   justify-content: center;
 }
 
-/* #RightB-2 {
-  animation: appear 2s infinite;
-}
-@keyframes appear {
-  from {
-    transform: rotateZ(0deg);
-  }
-  to {
-    transform: rotateZ(180deg);
-  }
-} */
-
 /* For project with a  intro */
 /* You just needed to adjust the margin on the bottom of this element */
 .project-title {
@@ -187,14 +175,14 @@ body {
 /* For footer section */
 .footer {
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 .contactTitle {
-  max-width: 100vw;
+  width: 100vw;
   height: 3em;
   font-family: "Nota Sans", sans-serif;
   font-size: 20px;
@@ -203,10 +191,23 @@ body {
   justify-content: center;
 }
 .contactIcon {
-  max-width: 100vw;
+  width: 100vw;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+}
+.credit-line {
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}
+.credit-box {
+  width: 50vw;
   height: 10vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 .social-button {
   display: inline-block;
@@ -265,6 +266,18 @@ body {
 }
 .social-button.instagram .fa {
   color: #e95950;
+}
+/* Mitch's portflio */
+.social-button.website {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+.social-button.website:before {
+  background-color: #4e4e4e;
+}
+.social-button.website .fa {
+  color: #4e4e4e;
 }
 .social-button:focus:before,
 .social-button:hover:before {
@@ -415,6 +428,12 @@ body {
 }
 .navName button:focus {
   outline: 0;
+}
+
+/* lumosmodel css  */
+.lumosmodel {
+  display: flex;
+  justify-content: center;
 }
 
 /* third button testing */

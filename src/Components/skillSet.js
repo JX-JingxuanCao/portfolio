@@ -41,9 +41,9 @@ export default class Mesaage extends React.Component {
             // config={{ delay: 100, duration: 500 }}
             item={Button.toggle}
             keys={items => Button.key}
-            from={{ transform: "translate3d(-20vw,0,0)" }}
-            enter={{ transform: "translate3d(0,0px,0)" }}
-            leave={{ transform: "translate3d(-20vw,0,0)" }}
+            from={{ transform: "translate3d(-5rem,0,0)" }}
+            enter={{ transform: "translate3d(0,0,0)" }}
+            leave={{ transform: "translate3d(-5rem,0,0)" }}
           >
             {items => props => (
               <div style={props}>

@@ -17,30 +17,25 @@ export default function LumosModel() {
   //   render() {
   return (
     <svg
+      className="lumosmodel"
       width="257"
       height="644"
       viewBox="0 0 257 644"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g id="Lumos model" filter="url(#filter0_d)">
+      <g id="Lumos-model" filter="url(#filter0_d)">
         <rect x="4" width="249" height="636" fill="black" />
         <g id="RightB-2">
           <g id="RB2-23" filter="url(#filter1_d)">
-            <Spring from={{ opacity: 0 }} to={{ opacity: 1 }}>
-              {props => (
-                <div style={props}>
-                  <line
-                    y1="-1.5"
-                    x2="18"
-                    y2="-1.5"
-                    transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 144 563)"
-                    stroke="#12FF04"
-                    stroke-width="3"
-                  />{" "}
-                </div>
-              )}
-            </Spring>
+            <line
+              y1="-1.5"
+              x2="18"
+              y2="-1.5"
+              transform="matrix(4.37114e-08 -1 -1 -4.37114e-08 144 563)"
+              stroke="#12FF04"
+              stroke-width="3"
+            />
           </g>
 
           <line

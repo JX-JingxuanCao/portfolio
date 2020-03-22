@@ -10,7 +10,7 @@ export default function Lumos() {
   return (
     <div className="projectPage">
       <NavBar />
-      <LumosModel />
+      {/* <LumosModel /> */}
       <div className="projectPage-content-container">
         <h1 className="contentTitle">Lumos</h1>
         <div className="projectPage-intro">
