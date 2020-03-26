@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "./image.js";
-import ToggleButton from "./toggleButton.js";
+import ToggleButton from "./toggleSkills/index";
 
 // const Button = props => {
 //   return (
