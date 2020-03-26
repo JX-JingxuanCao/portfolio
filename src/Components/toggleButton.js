@@ -5,109 +5,78 @@ export default class ToogleButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      displayPG: false
-    };
-    this.state = {
-      displaySoso: false
-    };
-    this.state = {
-      displayLearn: false
-    };
-    this.state = {
-      displayThissite: false
+      displayPG: false,
+      displaySoso: false,
+      displayLearn: false,
+      displayThisSite: false
     };
   }
 
   displayPG = () => {
-    this.setState({
-      displayPG: true,
-      displaySoso: false,
-      displayLearn: false,
-      displayThissite: false
-    });
+    this.setState({ ...this.state, displayThisSite: false });
   };
 
   displaySoso = () => {
-    this.setState({
-      displayPG: false,
-      displaySoso: true,
-      displayLearn: false,
-      displayThissite: false
-    });
+    this.setState({ ...this.state, displayThisSite: false });
   };
 
   displayLearn = () => {
-    this.setState({
-      displayPG: false,
-      displaySoso: false,
-      displayLearn: true,
-      displayThissite: false
-    });
+    this.setState({ ...this.state, displayThisSite: false });
   };
 
-  displayThissite = () => {
-    this.setState({
-      displayPG: false,
-      displaySoso: false,
-      displayLearn: false,
-      displayThissite: true
-    });
+  displayThisSite = () => {
+    this.setState({ ...this.state, displayThisSite: true });
   };
 
   render() {
     if (this.state.displayPG) {
-      console.log("button clicked!");
       return (
         <div>
           <button onClick={this.displayPG}>HO yeah baby</button>
           <button onClick={this.displaySoso}>Click Me PLZ!</button>
           <button onClick={this.displayLearn}>DO it!</button>
-          <button onClick={this.displayThissite}>JUST DO IT!</button>
+          <button onClick={this.displayThisSite}>JUST DO IT!</button>
         </div>
       );
     }
     if (this.state.displaySoso) {
-      console.log("button clicked!");
       return (
         <div>
           <button onClick={this.displayPG}>Click Me!</button>
           <button onClick={this.displaySoso}>This is so cool</button>
           <button onClick={this.displayLearn}>DO it!</button>
-          <button onClick={this.displayThissite}>JUST DO IT!</button>
+          <button onClick={this.displayThisSite}>JUST DO IT!</button>
         </div>
       );
     }
     if (this.state.displayLearn) {
-      console.log("button clicked!");
       return (
         <div>
           <button onClick={this.displayPG}>Click Me!</button>
           <button onClick={this.displaySoso}>Click Me PLZ!</button>
           <button onClick={this.displayLearn}>God damn it works</button>
-          <button onClick={this.displayThissite}>JUST DO IT!</button>
+          <button onClick={this.displayThisSite}>JUST DO IT!</button>
         </div>
       );
     }
-    if (this.state.displayThissite) {
-      console.log("button clicked!");
+    if (this.state.displayThisSite) {
       return (
         <div>
           <button onClick={this.displayPG}>Click Me!</button>
           <button onClick={this.displaySoso}>Click Me PLZ!</button>
           <button onClick={this.displayLearn}>DO it!</button>
-          <button onClick={this.displayThissite}>
+          <button onClick={this.displayThisSite}>
             LOL!!MITCH U ARE A GENIUS
           </button>
         </div>
       );
     }
-    console.log("button not clicked!");
     return (
       <div>
         <button onClick={this.displayPG}>Click Me!</button>
         <button onClick={this.displaySoso}>Click Me PLZ!</button>
         <button onClick={this.displayLearn}>DO it!</button>
-        <button onClick={this.displayThissite}>JUST DO IT!</button>
+        <button onClick={this.displayThisSite}>JUST DO IT!</button>
       </div>
     );
   }
