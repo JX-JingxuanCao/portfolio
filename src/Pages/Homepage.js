@@ -7,6 +7,7 @@ import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
 import Contact from "../Components/contact.js";
+import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 
 export default function Homepage() {
@@ -70,6 +71,8 @@ export default function Homepage() {
           button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
         />
       </Element>
+
+      <ToggleSkills />
 
       <Element name="Profile">
         <SkillSet />

@@ -9,55 +9,78 @@ export default class ToogleButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      displayPG: false,
-      displaySoso: false,
-      displayLearn: false,
-      displayThisSite: false
+      displayDesignSkills: true,
+      displayGameDev: false,
+      displayThreeDModelling: false,
+      displayWeb: false
     };
   }
 
-  displayPG = () => {
-    this.setState({ ...this.state, displayThisSite: false });
+  displayDesignSkills = () => {
+    this.setState({
+      displayDesignSkills: true,
+      displayGameDev: false,
+      displayThreeDModelling: false,
+      displayWeb: false
+    });
   };
 
-  displaySoso = () => {
-    this.setState({ ...this.state, displayThisSite: false });
+  displayGameDev = () => {
+    this.setState({
+      displayDesignSkills: false,
+      displayGameDev: true,
+      displayThreeDModelling: false,
+      displayWeb: false
+    });
   };
 
-  displayLearn = () => {
-    this.setState({ ...this.state, displayThisSite: false });
+  displayThreeDModelling = () => {
+    this.setState({
+      displayDesignSkills: false,
+      displayGameDev: false,
+      displayThreeDModelling: true,
+      displayWeb: false
+    });
   };
 
-  displayThisSite = () => {
-    this.setState({ ...this.state, displayThisSite: true });
+  displayWeb = () => {
+    this.setState({ ...this.state, displayWeb: true });
   };
 
   render() {
-    if (this.state.displayPG) {
+    if (this.state.displayDesignSkills) {
       return (
         <div>
+          <button onClick={this.displayGameDev}>Game Dev</button>
+          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
+          <button onClick={this.displayGameDev}>DesignSkills</button>
           <DesignSkills />
         </div>
       );
     }
-    if (this.state.displaySoso) {
+    if (this.state.displayGameDev) {
       return (
         <div>
+          <button onClick={this.displayGameDev}>Game Dev</button>
+          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
+          <button onClick={this.displayGameDev}>DesignSkills</button>
           <GameDev />
         </div>
       );
     }
-    if (this.state.displayLearn) {
+    if (this.state.displayThreeDModelling) {
       return (
         <div>
+          <button onClick={this.displayGameDev}>Game Dev</button>
+          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
+          <button onClick={this.displayGameDev}>DesignSkills</button>
           <ThreeDModelling />
         </div>
       );
     }
-    if (this.state.displayThisSite) {
+    if (this.state.displayWeb) {
       return <div>{/*  Web  */}</div>;
     }
-    return <div></div>;
   }
 }
 // ReactDOM.render(<TodoApp />, document.querySelector("#app"))

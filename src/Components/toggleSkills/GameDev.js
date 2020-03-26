@@ -4,7 +4,7 @@ export default function GameDev(props) {
   return (
     <div>
       <div
-        style={{ width: "200px", height: "200px", backgroundColor: "blue" }}
+        style={{ width: "200px", height: "200px", backgroundColor: "green" }}
       ></div>
     </div>
   );

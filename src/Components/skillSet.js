@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "./image.js";
-import ToggleButton from "./toggleSkills/index";
 
 // const Button = props => {
 //   return (
@@ -91,8 +90,6 @@ export default function SkillSet(props) {
         <h2 className="skillSet">Skills</h2>
       </div>
       <div className="pg">
-        <ToggleButton />
-
         <div>
           <Image imgSrc="Ai.png" imgWidth="100" imgAlt="Ai" />
           <p>Illustrator</p>
