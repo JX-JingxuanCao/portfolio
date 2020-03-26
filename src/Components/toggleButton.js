@@ -92,7 +92,6 @@ export default class ToogleButton extends React.Component {
       console.log("button clicked!");
       return (
         <div>
-          {" "}
           <button onClick={this.displayPG}>Click Me!</button>
           <button onClick={this.displaySoso}>Click Me PLZ!</button>
           <button onClick={this.displayLearn}>DO it!</button>

@@ -2,7 +2,9 @@ body {
   background-color: black;
 }
 
-.coverVideo {
+.cover-wrapper {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
 }
@@ -54,11 +56,11 @@ body {
 }
 
 .projectPage {
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: center;
+  /* flex-direction: column; */
 }
-
 .projectPage-intro {
   display: flex;
   flex-direction: row;
@@ -199,7 +201,6 @@ body {
 }
 .credit-text {
   justify-content: flex-start;
-  padding-top: -1rem;
 }
 .credit-box {
   width: 49vw;
@@ -207,6 +208,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-right: 5rem;
 }
 .lastBox {
   width: 100vw;
@@ -445,8 +447,63 @@ body {
 
 /* lumosmodel css  */
 .lumosmodel {
+  width: 100vw;
+  height: 100vh;
   display: flex;
   justify-content: center;
+}
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+#Left {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 15s linear forwards alternate infinite;
+}
+#LeftF-1 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 15.5s linear forwards alternate infinite;
+}
+#Middle {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 16s linear forwards alternate infinite;
+}
+#RightF-1 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 16.5s linear forwards alternate infinite;
+}
+#Right {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 17s linear forwards alternate infinite;
+}
+#RightB-1 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 17.5s linear forwards alternate infinite;
+}
+#RightB-2 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 18s linear forwards alternate infinite;
+}
+#LeftB-1 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 19s linear forwards alternate infinite;
+}
+#LeftB-2 {
+  stroke-dasharray: 10;
+  stroke-dashoffset: 10;
+  animation: dash 19.5s linear forwards alternate infinite;
 }
 
 /* third button testing */

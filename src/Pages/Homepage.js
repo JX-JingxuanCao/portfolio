@@ -8,8 +8,6 @@ import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
 import Contact from "../Components/contact.js";
 import { Element } from "react-scroll";
-import { Spring } from "react-spring/renderprops";
-import { useTransition, animated } from "react-spring";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
@@ -18,7 +16,7 @@ export default function Homepage() {
   return (
     <div className="App">
       <NavBar />
-      <div className="coverVideo">
+      <div className="cover-wrapper">
         <Video videoWidth="770" videoName="intro.mp4" />;
       </div>
 
@@ -38,7 +36,36 @@ export default function Homepage() {
           projectTitle="University of Sydney The Design Graduate Exhibition 2019"
           skillList={[
             <Skill text="User Experience Design" />,
-            <Skill text="Project Curation" />
+            <Skill text="Exhibition Planning" />,
+            <Skill text="Branding" />
+          ]}
+          button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
+        />
+        <Preview
+          previewMedia={D19Media}
+          projectTitle="Day of the Dead VR"
+          skillList={[
+            <Skill text="VR Game Design" />,
+            <Skill text="User Interaction Design" />,
+            <Skill text="User Experience Design" />
+          ]}
+          button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
+        />
+        <Preview
+          previewMedia={D19Media}
+          projectTitle="University of Sydney & Industry experts - Create Space"
+          skillList={[
+            <Skill text="User Experience Design" />,
+            <Skill text="Data Analysis" />
+          ]}
+          button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
+        />
+        <Preview
+          previewMedia={D19Media}
+          projectTitle="Waterbug"
+          skillList={[
+            <Skill text="User Interface Design" />,
+            <Skill text="User Experience Design" />
           ]}
           button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
         />

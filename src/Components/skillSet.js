@@ -1,8 +1,6 @@
 import React from "react";
 import Image from "./image.js";
 import ToggleButton from "./toggleButton.js";
-import { Spring, Transition } from "react-spring/renderprops";
-import { useTransition, animated } from "react-spring";
 
 // const Button = props => {
 //   return (
