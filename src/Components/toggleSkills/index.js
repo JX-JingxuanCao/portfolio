@@ -1,86 +1,158 @@
 import React from "react";
-import SkillSet from "../skillSet";
-
-import GameDev from "./GameDev";
-import ThreeDModelling from "./ThreeDModelling";
-import DesignSkills from "./DesignSkills";
+import TopSkill from "./TopSkill";
+import HadfunSkill from "./HadfunSkill";
+import LearningSkill from "./LearningSkill";
+import WebDevSkill from "./WebDevSkill";
 
 export default class ToogleButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      displayDesignSkills: true,
-      displayGameDev: false,
-      displayThreeDModelling: false,
-      displayWeb: false
+      displayTopSkill: false,
+      displayHadfunSkill: false,
+      displayLearningSkill: false,
+      displayWebDevSkill: false
     };
   }
 
-  displayDesignSkills = () => {
+  displayTopSkill = () => {
     this.setState({
-      displayDesignSkills: true,
-      displayGameDev: false,
-      displayThreeDModelling: false,
-      displayWeb: false
+      displayTopSkill: true,
+      displayHadfunSkill: false,
+      displayLearningSkill: false,
+      displayWebDevSkill: false
     });
   };
 
-  displayGameDev = () => {
+  displayHadfunSkill = () => {
     this.setState({
-      displayDesignSkills: false,
-      displayGameDev: true,
-      displayThreeDModelling: false,
-      displayWeb: false
+      displayTopSkill: false,
+      displayHadfunSkill: true,
+      displayLearningSkill: false,
+      displayWebDevSkill: false
     });
   };
 
-  displayThreeDModelling = () => {
+  displayLearningSkill = () => {
     this.setState({
-      displayDesignSkills: false,
-      displayGameDev: false,
-      displayThreeDModelling: true,
-      displayWeb: false
+      displayTopSkill: false,
+      displayHadfunSkill: false,
+      displayLearningSkill: true,
+      displayWebDevSkill: false
     });
   };
 
-  displayWeb = () => {
-    this.setState({ ...this.state, displayWeb: true });
+  displayWebDevSkill = () => {
+    this.setState({
+      displayTopSkill: false,
+      displayHadfunSkill: false,
+      displayLearningSkill: false,
+      displayWebDevSkill: true
+    });
   };
 
   render() {
-    if (this.state.displayDesignSkills) {
+    if (this.state.displayTopSkill) {
       return (
-        <div>
-          <button onClick={this.displayGameDev}>Game Dev</button>
-          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
-          <button onClick={this.displayGameDev}>DesignSkills</button>
-          <DesignSkills />
+        <div className="profile-wrapper">
+          <div className="skill-wrapper">
+            <button className="offset" onClick={this.displayTopSkill}>
+              Pretty comfortable with them
+            </button>
+            <button className="offset" onClick={this.displayHadfunSkill}>
+              Had some fun with them
+            </button>
+            <button className="offset" onClick={this.displayLearningSkill}>
+              Interested in learning
+            </button>
+            <button className="offset" onClick={this.displayWebDevSkill}>
+              This Site is made...
+            </button>
+            <TopSkill />
+          </div>
         </div>
       );
     }
-    if (this.state.displayGameDev) {
+    if (this.state.displayHadfunSkill) {
       return (
-        <div>
-          <button onClick={this.displayGameDev}>Game Dev</button>
-          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
-          <button onClick={this.displayGameDev}>DesignSkills</button>
-          <GameDev />
+        <div className="profile-wrapper">
+          <div className="skill-wrapper">
+            <button className="offset" onClick={this.displayTopSkill}>
+              Pretty comfortable with them
+            </button>
+            <button className="offset" onClick={this.displayHadfunSkill}>
+              Had some fun with them
+            </button>
+            <button className="offset" onClick={this.displayLearningSkill}>
+              Interested in learning
+            </button>
+            <button className="offset" onClick={this.displayWebDevSkill}>
+              This Site is made...
+            </button>
+            <HadfunSkill />
+          </div>
         </div>
       );
     }
-    if (this.state.displayThreeDModelling) {
+    if (this.state.displayLearningSkill) {
       return (
-        <div>
-          <button onClick={this.displayGameDev}>Game Dev</button>
-          <button onClick={this.displayThreeDModelling}>3D Modelling</button>
-          <button onClick={this.displayGameDev}>DesignSkills</button>
-          <ThreeDModelling />
+        <div className="profile-wrapper">
+          <div className="skill-wrapper">
+            <button className="offset" onClick={this.displayTopSkill}>
+              Pretty comfortable with them
+            </button>
+            <button className="offset" onClick={this.displayHadfunSkill}>
+              Had some fun with them
+            </button>
+            <button className="offset" onClick={this.displayLearningSkill}>
+              Interested in learning
+            </button>
+            <button className="offset" onClick={this.displayWebDevSkill}>
+              This Site is made...
+            </button>
+            <LearningSkill />
+          </div>
         </div>
       );
     }
-    if (this.state.displayWeb) {
-      return <div>{/*  Web  */}</div>;
+    if (this.state.displayWebDevSkill) {
+      return (
+        <div className="profile-wrapper">
+          <div className="skill-wrapper">
+            <button className="offset" onClick={this.displayTopSkill}>
+              Pretty comfortable with them
+            </button>
+            <button className="offset" onClick={this.displayHadfunSkill}>
+              Had some fun with them
+            </button>
+            <button className="offset" onClick={this.displayLearningSkill}>
+              Interested in learning
+            </button>
+            <button className="offset" onClick={this.displayWebDevSkill}>
+              This Site is made...
+            </button>
+            <WebDevSkill />
+          </div>
+        </div>
+      );
     }
+    return (
+      <div className="profile-wrapper">
+        <div className="skill-wrapper">
+          <button className="offset" onClick={this.displayTopSkill}>
+            Pretty comfortable with them
+          </button>
+          <button className="offset" onClick={this.displayHadfunSkill}>
+            Had some fun with them
+          </button>
+          <button className="offset" onClick={this.displayLearningSkill}>
+            Interested in learning
+          </button>
+          <button className="offset" onClick={this.displayWebDevSkill}>
+            This Site is made...
+          </button>
+        </div>
+      </div>
+    );
   }
 }
-// ReactDOM.render(<TodoApp />, document.querySelector("#app"))

@@ -13,6 +13,7 @@ import { Element } from "react-scroll";
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
   let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="770" alt="D19 Image" />;
+  let deadMedia = <Video videoWidth="770" videoName="dead-cover.mp4" />;
 
   return (
     <div className="App">
@@ -43,7 +44,7 @@ export default function Homepage() {
           button={<ButtonMain buttonText="View Project" linkName="/Lumos" />}
         />
         <Preview
-          previewMedia={D19Media}
+          previewMedia={deadMedia}
           projectTitle="Day of the Dead VR"
           skillList={[
             <Skill text="VR Game Design" />,

@@ -30,14 +30,14 @@ body {
 }
 
 .infoBox {
-  margin-left: -50px;
-  width: 450px;
+  margin-left: -3.125rem;
+  width: 28.125rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background-color: white;
   z-index: 99;
-  padding-right: 30px;
+  padding-right: 1.875rem;
 }
 
 .Skill-text {
@@ -48,6 +48,13 @@ body {
 }
 
 /* For individual project page */
+.lumos-page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
 .projectName {
   font-family: "Nota Sans", sans-serif;
   font-size: 20px;
@@ -70,6 +77,9 @@ body {
 
 .projectPage-content-container {
   max-width: 50vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .titleBox {
@@ -135,37 +145,30 @@ body {
 }
 
 /* For skillSet section */
-.pg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+.icon-box {
+  width: 50vw;
+  height: auto;
   color: white;
   text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
-.soso {
+
+/* For 4 skillset buttons div */
+.profile-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: row;
-  color: white;
-  text-align: center;
 }
-.learn {
+.skill-wrapper {
+  width: 100vw;
+  height: auto;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: white;
-  text-align: center;
-}
-.thisSite {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  color: white;
-  text-align: center;
+  flex-direction: column;
+  padding-left: 25%;
 }
 
 /* For footer section */
@@ -314,8 +317,8 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  height: 50px;
-  padding-top: 10px;
+  height: 3.125rem;
+  padding-top: 0.625rem;
 }
 .navBar {
   display: flex;
@@ -556,4 +559,36 @@ body {
 .ButtonMain:hover:after,
 .ButtonMain:active:after {
   width: 100%;
+}
+
+/* For skillset button */
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover,
+.offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset {
+  --color: #19bc8b;
+  --hover: #19bc8b;
+}
+.offset {
+  color: var(--color);
+  transition: 0.25s;
+}
+.offset:hover,
+.offset:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+.offset {
+  width: 18.75rem;
+  height: 3rem;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
 }
