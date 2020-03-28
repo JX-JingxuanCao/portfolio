@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #000000;
   overflow-x: hidden;
 }
 
@@ -148,7 +148,42 @@ body {
   align-items: center;
   flex-direction: row;
 }
-
+.figmaDiv {
+  padding-top: 0.813rem;
+  padding-left: 0.625rem;
+}
+.figmaText {
+  padding-top: 0.625rem;
+}
+.unityDiv {
+  padding-top: 0.313rem;
+  padding-left: 1.875rem;
+}
+.unityText {
+  padding-top: 0.625rem;
+  padding-left: 1.5rem;
+}
+.processDiv {
+  padding-left: 2.5rem;
+}
+.ueDiv {
+  padding-left: 1.875rem;
+}
+.ueText {
+  padding-top: 0.313rem;
+}
+.c4dDiv {
+  padding-left: 2.5rem;
+}
+.rctDiv {
+  padding-left: 1.875rem;
+}
+.netDiv {
+  padding-left: 1.875rem;
+}
+.cssDiv {
+  padding-left: 1.75rem;
+}
 /* For 4 skillset buttons div */
 .emptyDiv {
   width: 20vw;

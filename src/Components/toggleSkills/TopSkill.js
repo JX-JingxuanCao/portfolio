@@ -34,13 +34,9 @@ export default function TopSkill(props) {
         <p>XD</p>
       </div>
 
-      <div>
-        {/* style={{ paddingTop: "0.813rem", paddingLeft: "0.625rem" }} */}
+      <div className="figmaDiv">
         <Image imgSrc="figma.png" imgWidth="50" imgAlt="figma" />
-        <p>
-          {/* style={{ paddingTop: "0.625rem", paddingLeft: "0.5rem" }} */}
-          Figma
-        </p>
+        <p className="figmaText">Figma</p>
       </div>
     </div>
   );

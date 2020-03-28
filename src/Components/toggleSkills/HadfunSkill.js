@@ -9,12 +9,12 @@ export default function HadfunSkill(props) {
         <p>3ds Max</p>
       </div>
 
-      <div>
+      <div className="unityDiv">
         <Image imgSrc="unity.png" imgWidth="85" imgAlt="unity" />
-        <p>Unity</p>
+        <p className="unityText">Unity</p>
       </div>
 
-      <div>
+      <div className="processDiv">
         <Image imgSrc="p3.png" imgWidth="100" imgAlt="html" />
         <p>Processing</p>
       </div>
