@@ -68,8 +68,8 @@ export default class ToogleButton extends React.Component {
             <button className="offset" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
-            <TopSkill />
           </div>
+          <TopSkill />
         </div>
       );
     }
@@ -89,8 +89,8 @@ export default class ToogleButton extends React.Component {
             <button className="offset" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
-            <HadfunSkill />
           </div>
+          <HadfunSkill />
         </div>
       );
     }
@@ -110,8 +110,8 @@ export default class ToogleButton extends React.Component {
             <button className="offset" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
-            <LearningSkill />
           </div>
+          <LearningSkill />
         </div>
       );
     }
@@ -131,8 +131,8 @@ export default class ToogleButton extends React.Component {
             <button className="offset" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
-            <WebDevSkill />
           </div>
+          <WebDevSkill />
         </div>
       );
     }

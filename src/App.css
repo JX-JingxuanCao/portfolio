@@ -163,12 +163,9 @@ body {
   flex-direction: row;
 }
 .skill-wrapper {
-  width: 100vw;
-  height: auto;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-left: 25%;
 }
 
 /* For footer section */
