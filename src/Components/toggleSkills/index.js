@@ -55,6 +55,9 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayTopSkill) {
       return (
         <div className="profile-wrapper">
+          <div className="emptyDiv">
+            <p>&nbsp</p>
+          </div>
           <div className="skill-wrapper">
             <button className="offset" onClick={this.displayTopSkill}>
               Pretty comfortable with them
@@ -76,6 +79,9 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayHadfunSkill) {
       return (
         <div className="profile-wrapper">
+          <div className="emptyDiv">
+            <p>&nbsp</p>
+          </div>
           <div className="skill-wrapper">
             <button className="offset" onClick={this.displayTopSkill}>
               Pretty comfortable with them
@@ -97,6 +103,9 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayLearningSkill) {
       return (
         <div className="profile-wrapper">
+          <div className="emptyDiv">
+            <p>&nbsp</p>
+          </div>
           <div className="skill-wrapper">
             <button className="offset" onClick={this.displayTopSkill}>
               Pretty comfortable with them
@@ -118,6 +127,9 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayWebDevSkill) {
       return (
         <div className="profile-wrapper">
+          <div className="emptyDiv">
+            <p>&nbsp</p>
+          </div>
           <div className="skill-wrapper">
             <button className="offset" onClick={this.displayTopSkill}>
               Pretty comfortable with them
@@ -138,6 +150,9 @@ export default class ToogleButton extends React.Component {
     }
     return (
       <div className="profile-wrapper">
+        <div className="emptyDiv">
+          <p>&nbsp</p>
+        </div>
         <div className="skill-wrapper">
           <button className="offset" onClick={this.displayTopSkill}>
             Pretty comfortable with them

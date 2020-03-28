@@ -139,6 +139,7 @@ body {
 
 /* For skillSet section */
 .icon-box {
+  margin-left: 2.5rem;
   height: auto;
   color: white;
   text-align: center;
@@ -149,14 +150,20 @@ body {
 }
 
 /* For 4 skillset buttons div */
+.emptyDiv {
+  width: 20vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .profile-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: row;
 }
 .skill-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
 }
 
