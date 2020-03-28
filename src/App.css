@@ -48,13 +48,6 @@ body {
 }
 
 /* For individual project page */
-.lumos-page-wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
-}
 .projectName {
   font-family: "Nota Sans", sans-serif;
   font-size: 20px;
@@ -445,6 +438,19 @@ body {
   outline: 0;
 }
 
+/* for lumos project page */
+.lumos-container-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.lumos-page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
 /* lumosmodel css  */
 .lumosmodel {
   width: 100vw;

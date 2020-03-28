@@ -35,10 +35,10 @@ export default function TopSkill(props) {
       </div>
 
       <div>
-        {/* style={{ paddingtop: "0.813rem", paddingleft: "0.625rem" }} */}
+        {/* style={{ paddingTop: "0.813rem", paddingLeft: "0.625rem" }} */}
         <Image imgSrc="figma.png" imgWidth="50" imgAlt="figma" />
         <p>
-          {/* style={{ paddingtop: "0.625rem", paddingleft: "0.5rem" }} */}
+          {/* style={{ paddingTop: "0.625rem", paddingLeft: "0.5rem" }} */}
           Figma
         </p>
       </div>
