@@ -6,7 +6,7 @@ export default function HadfunSkill(props) {
     <div className="icon-box">
       <div>
         <Image imgSrc="3ds-max.png" imgWidth="100" imgAlt="3dsmax" />
-        <p>3ds Max</p>
+        <p className="threeDprocessText">3ds Max</p>
       </div>
 
       <div className="unityDiv">
@@ -16,7 +16,7 @@ export default function HadfunSkill(props) {
 
       <div className="processDiv">
         <Image imgSrc="p3.png" imgWidth="100" imgAlt="html" />
-        <p>Processing</p>
+        <p className="threeDprocessText">Processing</p>
       </div>
     </div>
   );

@@ -6,17 +6,17 @@ export default function WebDevSkill(props) {
     <div className="icon-box">
       <div>
         <Image imgSrc="react.png" imgWidth="100" imgAlt="react" />
-        <p>React</p>
+        <p className="webText">React</p>
       </div>
 
       <div className="netDiv">
         <Image imgSrc="netlify.png" imgWidth="100" imgAlt="react" />
-        <p>Netlify</p>
+        <p className="webText">Netlify</p>
       </div>
 
       <div className="cssDiv">
         <Image imgSrc="csslogo.png" imgWidth="100" imgAlt="csslogo" />
-        <p>CSS</p>
+        <p className="webText">CSS</p>
       </div>
     </div>
   );

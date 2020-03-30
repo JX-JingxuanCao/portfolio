@@ -6,6 +6,7 @@ import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import { useSpring, animated } from "react-spring";
+import { Element } from "react-scroll";
 
 const calc = (x, y) => [
   -(y - window.innerHeight / 2) / 20,

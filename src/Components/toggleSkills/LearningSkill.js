@@ -6,7 +6,7 @@ export default function LearningSkill(props) {
     <div className="icon-box">
       <div>
         <Image imgSrc="zbrush.png" imgWidth="100" imgAlt="zbrush" />
-        <p>ZBrush</p>
+        <p className="learnText">ZBrush</p>
       </div>
 
       <div className="ueDiv">
@@ -16,12 +16,12 @@ export default function LearningSkill(props) {
 
       <div className="c4dDiv">
         <Image imgSrc="c4d.png" imgWidth="100" imgAlt="c4d" />
-        <p> Cinema 4D</p>
+        <p className="learnText"> Cinema 4D</p>
       </div>
 
       <div className="rctDiv">
         <Image imgSrc="react.png" imgWidth="100" imgAlt="react" />
-        <p>React</p>
+        <p className="learnText">React</p>
       </div>
     </div>
   );

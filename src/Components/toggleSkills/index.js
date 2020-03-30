@@ -55,20 +55,20 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayTopSkill) {
       return (
         <div className="profile-wrapper">
-          <div className="emptyDiv">
-            <p>&nbsp</p>
-          </div>
           <div className="skill-wrapper">
-            <button className="offset" onClick={this.displayTopSkill}>
+            <button className="offset-first" onClick={this.displayTopSkill}>
               Pretty comfortable with them
             </button>
-            <button className="offset" onClick={this.displayHadfunSkill}>
+            <button className="offset-second" onClick={this.displayHadfunSkill}>
               Had some fun with them
             </button>
-            <button className="offset" onClick={this.displayLearningSkill}>
+            <button
+              className="offset-third"
+              onClick={this.displayLearningSkill}
+            >
               Interested in learning
             </button>
-            <button className="offset" onClick={this.displayWebDevSkill}>
+            <button className="offset-last" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
           </div>
@@ -79,20 +79,20 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayHadfunSkill) {
       return (
         <div className="profile-wrapper">
-          <div className="emptyDiv">
-            <p>&nbsp</p>
-          </div>
           <div className="skill-wrapper">
-            <button className="offset" onClick={this.displayTopSkill}>
+            <button className="offset-first" onClick={this.displayTopSkill}>
               Pretty comfortable with them
             </button>
-            <button className="offset" onClick={this.displayHadfunSkill}>
+            <button className="offset-second" onClick={this.displayHadfunSkill}>
               Had some fun with them
             </button>
-            <button className="offset" onClick={this.displayLearningSkill}>
+            <button
+              className="offset-third"
+              onClick={this.displayLearningSkill}
+            >
               Interested in learning
             </button>
-            <button className="offset" onClick={this.displayWebDevSkill}>
+            <button className="offset-last" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
           </div>
@@ -103,20 +103,20 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayLearningSkill) {
       return (
         <div className="profile-wrapper">
-          <div className="emptyDiv">
-            <p>&nbsp</p>
-          </div>
           <div className="skill-wrapper">
-            <button className="offset" onClick={this.displayTopSkill}>
+            <button className="offset-first" onClick={this.displayTopSkill}>
               Pretty comfortable with them
             </button>
-            <button className="offset" onClick={this.displayHadfunSkill}>
+            <button className="offset-second" onClick={this.displayHadfunSkill}>
               Had some fun with them
             </button>
-            <button className="offset" onClick={this.displayLearningSkill}>
+            <button
+              className="offset-third"
+              onClick={this.displayLearningSkill}
+            >
               Interested in learning
             </button>
-            <button className="offset" onClick={this.displayWebDevSkill}>
+            <button className="offset-last" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
           </div>
@@ -127,20 +127,20 @@ export default class ToogleButton extends React.Component {
     if (this.state.displayWebDevSkill) {
       return (
         <div className="profile-wrapper">
-          <div className="emptyDiv">
-            <p>&nbsp</p>
-          </div>
           <div className="skill-wrapper">
-            <button className="offset" onClick={this.displayTopSkill}>
+            <button className="offset-first" onClick={this.displayTopSkill}>
               Pretty comfortable with them
             </button>
-            <button className="offset" onClick={this.displayHadfunSkill}>
+            <button className="offset-second" onClick={this.displayHadfunSkill}>
               Had some fun with them
             </button>
-            <button className="offset" onClick={this.displayLearningSkill}>
+            <button
+              className="offset-third"
+              onClick={this.displayLearningSkill}
+            >
               Interested in learning
             </button>
-            <button className="offset" onClick={this.displayWebDevSkill}>
+            <button className="offset-last" onClick={this.displayWebDevSkill}>
               This Site is made...
             </button>
           </div>
@@ -150,20 +150,17 @@ export default class ToogleButton extends React.Component {
     }
     return (
       <div className="profile-wrapper">
-        <div className="emptyDiv">
-          <p>&nbsp</p>
-        </div>
         <div className="skill-wrapper">
-          <button className="offset" onClick={this.displayTopSkill}>
+          <button className="offset-first" onClick={this.displayTopSkill}>
             Pretty comfortable with them
           </button>
-          <button className="offset" onClick={this.displayHadfunSkill}>
+          <button className="offset-second" onClick={this.displayHadfunSkill}>
             Had some fun with them
           </button>
-          <button className="offset" onClick={this.displayLearningSkill}>
+          <button className="offset-third" onClick={this.displayLearningSkill}>
             Interested in learning
           </button>
-          <button className="offset" onClick={this.displayWebDevSkill}>
+          <button className="offset-last" onClick={this.displayWebDevSkill}>
             This Site is made...
           </button>
         </div>

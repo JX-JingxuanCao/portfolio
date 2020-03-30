@@ -138,8 +138,21 @@ body {
 }
 
 /* For skillSet section */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 0, 0);
+    transform: translate(0, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
 .icon-box {
-  margin-left: 2.5rem;
+  margin-left: 6.25rem;
   height: auto;
   color: white;
   text-align: center;
@@ -147,6 +160,12 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: row;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0s forwards;
+}
+
+.AdobeText {
+  color: #ffa45c;
 }
 .figmaDiv {
   padding-top: 0.813rem;
@@ -154,6 +173,11 @@ body {
 }
 .figmaText {
   padding-top: 0.625rem;
+  color: #ffa45c;
+}
+
+.threeDprocessText {
+  color: #19bc8b;
 }
 .unityDiv {
   padding-top: 0.313rem;
@@ -161,22 +185,32 @@ body {
 }
 .unityText {
   padding-top: 0.625rem;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
+  color: #19bc8b;
 }
 .processDiv {
   padding-left: 2.5rem;
+}
+
+.learnText {
+  color: #b593ff;
 }
 .ueDiv {
   padding-left: 1.875rem;
 }
 .ueText {
   padding-top: 0.313rem;
+  color: #b593ff;
 }
 .c4dDiv {
   padding-left: 2.5rem;
 }
 .rctDiv {
   padding-left: 1.875rem;
+}
+
+.webText {
+  color: #17acf1;
 }
 .netDiv {
   padding-left: 1.875rem;
@@ -185,12 +219,6 @@ body {
   padding-left: 1.75rem;
 }
 /* For 4 skillset buttons div */
-.emptyDiv {
-  width: 20vw;
-  display: flex;
-  justify-content: flex-start;
-}
-
 .profile-wrapper {
   display: flex;
   justify-content: flex-start;
@@ -200,6 +228,7 @@ body {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
+  padding-left: 20vw;
 }
 
 /* For footer section */
@@ -375,7 +404,7 @@ body {
   padding: 0 0.5rem;
 }
 .navName a {
-  color: white;
+  color: #838383;
   font-weight: 20px;
 }
 .buttons {
@@ -554,6 +583,27 @@ body {
   animation: dash 19.5s linear forwards alternate infinite;
 }
 
+/* d19 page css */
+.D19logo {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.125rem;
+}
+
+/* waterbug page css */
+.WaterbugPage {
+  background-color: black;
+}
+.WaterbugIntro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.125rem;
+}
+
 /* third button testing */
 .ButtonMain {
   border: none;
@@ -606,27 +656,120 @@ body {
 }
 
 /* For skillset button */
-.offset {
+.offset-first {
   box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
 }
-.offset:hover,
-.offset:focus {
+.offset-first:hover,
+.offset-first:focus {
   box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
 }
-.offset {
-  --color: #19bc8b;
-  --hover: #19bc8b;
+.offset-first {
+  --color: #ffa45c;
+  --hover: #ffa45c;
 }
-.offset {
+.offset-first {
   color: var(--color);
   transition: 0.25s;
 }
-.offset:hover,
-.offset:focus {
+.offset-first:hover,
+.offset-first:focus {
   border-color: var(--hover);
   color: #fff;
 }
-.offset {
+.offset-first {
+  width: 18.75rem;
+  height: 3rem;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.offset-second {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset-second:hover,
+.offset-second:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset-second {
+  --color: #19bc8b;
+  --hover: #19bc8b;
+}
+.offset-second {
+  color: var(--color);
+  transition: 0.25s;
+}
+.offset-second:hover,
+.offset-second:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+.offset-second {
+  width: 18.75rem;
+  height: 3rem;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.offset-third {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset-third:hover,
+.offset-third:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset-third {
+  --color: #b593ff;
+  --hover: #b593ff;
+}
+.offset-third {
+  color: var(--color);
+  transition: 0.25s;
+}
+.offset-third:hover,
+.offset-third:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+.offset-third {
+  width: 18.75rem;
+  height: 3rem;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+.offset-last {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset-last:hover,
+.offset-last:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+.offset-last {
+  --color: #17acf1;
+  --hover: #17acf1;
+}
+.offset-last {
+  color: var(--color);
+  transition: 0.25s;
+}
+.offset-last:hover,
+.offset-last:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+.offset-last {
   width: 18.75rem;
   height: 3rem;
   background: none;
