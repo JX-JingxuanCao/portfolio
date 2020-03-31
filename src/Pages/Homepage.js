@@ -15,8 +15,7 @@ export default function Homepage() {
   let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="770" alt="D19 Image" />;
   let deadMedia = <Video videoWidth="770" videoName="dead-cover.mp4" />;
   let WaterbugMedia = <Video videoWidth="770" videoName="waterbug-cover.mp4" />;
-  let icpuMedia = <Image imgSrc="abs.jpg" imgWidth="770" alt="icpu Image" />;
-  let icpuMedia2 = <Image imgSrc="abs-empty.jpg" imgWidth="770" />;
+  let icpuMedia = <Image imgSrc="abs-empty.jpg" imgWidth="770" />;
 
   return (
     <div className="App">
@@ -27,6 +26,7 @@ export default function Homepage() {
 
       <Element name="Work">
         <Preview
+          id="Work"
           previewMedia={lumosMedia}
           projectTitle="Lumos"
           skillList={[
@@ -58,23 +58,9 @@ export default function Homepage() {
             <ButtonMain buttonText="View Project" linkName="/Day Of The Dead" />
           }
         />
-        <Preview
-          previewMedia={icpuMedia}
-          projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
-          skillList={[
-            <Skill text="User Experience Design" />,
-            <Skill text="Data Analysis" />
-          ]}
-          button={
-            <ButtonMain
-              buttonText="View Project"
-              linkName="/University of Sydney & Industry experts - Create Space"
-            />
-          }
-        />
 
         <Preview
-          previewMedia={icpuMedia2}
+          previewMedia={icpuMedia}
           projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
           skillList={[
             <Skill text="User Experience Design" />,

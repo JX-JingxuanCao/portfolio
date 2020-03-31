@@ -24,6 +24,7 @@ function NavBar() {
           <ul>
             <li>
               <button>
+                <a href="/#Work"></a>
                 <Link
                   activeClass={true}
                   to="Work"
