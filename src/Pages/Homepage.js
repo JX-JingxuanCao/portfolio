@@ -21,69 +21,81 @@ export default function Homepage() {
     <div className="App">
       <NavBar />
       <div className="cover-wrapper">
-        <Video videoWidth="770" videoName="intro.mp4" />;
+        <div className="cover-content">
+          <Video videoWidth="600" videoName="intro.mp4" />;
+          <div className="cover-img">
+            <Image imgSrc="rsz_cover.jpg" />;
+          </div>
+        </div>
       </div>
 
-      <Element name="Work">
-        <Preview
-          id="Work"
-          previewMedia={lumosMedia}
-          projectTitle="Lumos"
-          skillList={[
-            <Skill text="Interaction Product Design" />,
-            <Skill text="Electrical Engineering" />,
-            <Skill text="Physical Computing" />
-          ]}
-          button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
-        />
-        <Preview
-          previewMedia={D19Media}
-          projectTitle="University of Sydney The Design Graduate Exhibition 2019"
-          skillList={[
-            <Skill text="User Experience Design" />,
-            <Skill text="Exhibition Planning" />,
-            <Skill text="Branding" />
-          ]}
-          button={<ButtonMain buttonText="View Project" linkName="/D19" />}
-        />
-        <Preview
-          previewMedia={deadMedia}
-          projectTitle="Day of the Dead VR"
-          skillList={[
-            <Skill text="VR Game Design" />,
-            <Skill text="User Interaction Design" />,
-            <Skill text="User Experience Design" />
-          ]}
-          button={
-            <ButtonMain buttonText="View Project" linkName="/Day Of The Dead" />
-          }
-        />
+      <div className="preview-wrapper">
+        <Element name="Work">
+          <Preview
+            id="Work"
+            previewMedia={lumosMedia}
+            projectTitle="Lumos"
+            skillList={[
+              <Skill text="Interaction Product Design" />,
+              <Skill text="Electrical Engineering" />,
+              <Skill text="Physical Computing" />
+            ]}
+            button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
+          />
+          <Preview
+            previewMedia={D19Media}
+            projectTitle="University of Sydney The Design Graduate Exhibition 2019"
+            skillList={[
+              <Skill text="User Experience Design" />,
+              <Skill text="Exhibition Planning" />,
+              <Skill text="Branding" />
+            ]}
+            button={<ButtonMain buttonText="View Project" linkName="/D19" />}
+          />
+          <Preview
+            previewMedia={deadMedia}
+            projectTitle="Day of the Dead VR"
+            skillList={[
+              <Skill text="VR Game Design" />,
+              <Skill text="User Interaction Design" />,
+              <Skill text="User Experience Design" />
+            ]}
+            button={
+              <ButtonMain
+                buttonText="View Project"
+                linkName="/Day Of The Dead"
+              />
+            }
+          />
 
-        <Preview
-          previewMedia={icpuMedia}
-          projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
-          skillList={[
-            <Skill text="User Experience Design" />,
-            <Skill text="Data Analysis" />
-          ]}
-          button={
-            <ButtonMain
-              buttonText="View Project"
-              linkName="/University of Sydney & Industry experts - Create Space"
-            />
-          }
-        />
+          <Preview
+            previewMedia={icpuMedia}
+            projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
+            skillList={[
+              <Skill text="User Experience Design" />,
+              <Skill text="Data Analysis" />
+            ]}
+            button={
+              <ButtonMain
+                buttonText="View Project"
+                linkName="/University of Sydney & Industry experts - Create Space"
+              />
+            }
+          />
 
-        <Preview
-          previewMedia={WaterbugMedia}
-          projectTitle="Waterbug"
-          skillList={[
-            <Skill text="User Interface Design" />,
-            <Skill text="User Experience Design" />
-          ]}
-          button={<ButtonMain buttonText="View Project" linkName="/Waterbug" />}
-        />
-      </Element>
+          <Preview
+            previewMedia={WaterbugMedia}
+            projectTitle="Waterbug"
+            skillList={[
+              <Skill text="User Interface Design" />,
+              <Skill text="User Experience Design" />
+            ]}
+            button={
+              <ButtonMain buttonText="View Project" linkName="/Waterbug" />
+            }
+          />
+        </Element>
+      </div>
 
       <ToggleSkills />
 

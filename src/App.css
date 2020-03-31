@@ -3,15 +3,30 @@ body {
   overflow-x: hidden;
 }
 
+/* Cover page - first thing user sees */
 .cover-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
+  padding-top: 6.125rem;
 }
+.cover-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* .cover-img {
+  padding-bottom: 3.125rem;
+  margin-bottom: 3.125rem;
+} */
 
 /* For project with a  intro */
 /* You just needed to adjust the margin on the bottom of this element */
+.preview-wrapper {
+  padding-top: 12.125rem;
+}
 .project-title {
   font-family: "Noto Sans", sans-serif;
   font-style: bold;
@@ -379,6 +394,7 @@ body {
   left: 0;
   height: 3.125rem;
   padding-top: 0.625rem;
+  z-index: 99999;
 }
 .navBar {
   display: flex;
