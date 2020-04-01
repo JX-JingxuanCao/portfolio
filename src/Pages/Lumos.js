@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import LumosModel from "..//Components/lumosModel.js";
+// import LumosPageSVG from "..//Components/lumosPageSVG.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
@@ -26,6 +27,7 @@ export default function Lumos() {
       <NavBar />
       <div className="lumos-page-wrapper">
         <LumosModel />
+        {/* <LumosPageSVG /> */}
       </div>
 
       <div className="lumos-container-wrapper">
