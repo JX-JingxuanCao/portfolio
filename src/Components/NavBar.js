@@ -46,9 +46,21 @@ const scrollLinks = [
 ];
 
 const hashLinks = [
-  <a href="/#Work">Work</a>,
-  <a href="/#Contact">Contact</a>,
-  <a href="/#Profile">Work</a>
+  <button>
+    <a href="/#Work">
+      <p>Work</p>
+    </a>
+  </button>,
+  <button>
+    <a href="/#Contact">
+      <p>Contact</p>
+    </a>
+  </button>,
+  <button>
+    <a href="/#Profile">
+      <p>Profile</p>
+    </a>
+  </button>
 ];
 
 function NavBar(props) {
