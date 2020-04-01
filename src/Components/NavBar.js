@@ -2,39 +2,47 @@ import React, { Component } from "react";
 import { Link } from "react-scroll";
 
 const scrollLinks = [
-  <Link
-    activeClass={true}
-    to="Work"
-    spy={true}
-    offset={-70}
-    smooth={true}
-    delay={0}
-    duration={1000}
-  >
-    <p>Work</p>
-  </Link>,
-  <Link
-    activeClass={true}
-    to="Contact"
-    spy={true}
-    offset={-70}
-    smooth={true}
-    delay={0}
-    duration={1000}
-  >
-    <p>Contact</p>
-  </Link>,
-  <Link
-    activeClass={true}
-    to="Profile"
-    spy={true}
-    offset={-70}
-    smooth={true}
-    delay={0}
-    duration={1000}
-  >
-    <p>Profile</p>
-  </Link>
+  <button>
+    <Link
+      activeClass={true}
+      to="Work"
+      spy={true}
+      offset={-70}
+      smooth={true}
+      delay={0}
+      duration={1000}
+    >
+      <p>Work</p>
+    </Link>
+  </button>,
+
+  <button>
+    <Link
+      activeClass={true}
+      to="Contact"
+      spy={true}
+      offset={-70}
+      smooth={true}
+      delay={0}
+      duration={1000}
+    >
+      <p>Contact</p>
+    </Link>
+  </button>,
+
+  <button>
+    <Link
+      activeClass={true}
+      to="Profile"
+      spy={true}
+      offset={-70}
+      smooth={true}
+      delay={0}
+      duration={1000}
+    >
+      <p>Profile</p>
+    </Link>
+  </button>
 ];
 
 const hashLinks = [
@@ -48,7 +56,6 @@ function NavBar(props) {
     // working navbar
     <header className="mainNav">
       <nav className="navBar">
-        <div></div>
         <div className="navLogo">
           <a href="/#Work">Jingxuan Cao</a>
         </div>
