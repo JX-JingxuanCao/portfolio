@@ -99,13 +99,17 @@ export default function Homepage() {
 
       <ToggleSkills />
 
-      <Element name="Profile">
-        <SkillSet />
-      </Element>
+      <div id="Profile">
+        <Element name="Profile">
+          <SkillSet />
+        </Element>
+      </div>
 
-      <Element name="Contact">
-        <Contact />
-      </Element>
+      <div id="Contact">
+        <Element name="Contact">
+          <Contact />
+        </Element>
+      </div>
     </div>
   );
 }

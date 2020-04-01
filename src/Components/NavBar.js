@@ -19,20 +19,6 @@ const scrollLinks = [
   <button>
     <Link
       activeClass={true}
-      to="Contact"
-      spy={true}
-      offset={-70}
-      smooth={true}
-      delay={0}
-      duration={1000}
-    >
-      <p>Contact</p>
-    </Link>
-  </button>,
-
-  <button>
-    <Link
-      activeClass={true}
       to="Profile"
       spy={true}
       offset={-70}
@@ -41,6 +27,20 @@ const scrollLinks = [
       duration={1000}
     >
       <p>Profile</p>
+    </Link>
+  </button>,
+
+  <button>
+    <Link
+      activeClass={true}
+      to="Contact"
+      spy={true}
+      offset={-70}
+      smooth={true}
+      delay={0}
+      duration={1000}
+    >
+      <p>Contact</p>
     </Link>
   </button>
 ];
@@ -51,14 +51,16 @@ const hashLinks = [
       <p>Work</p>
     </a>
   </button>,
-  <button>
-    <a href="/#Contact">
-      <p>Contact</p>
-    </a>
-  </button>,
+
   <button>
     <a href="/#Profile">
       <p>Profile</p>
+    </a>
+  </button>,
+
+  <button>
+    <a href="/#Contact">
+      <p>Contact</p>
     </a>
   </button>
 ];
@@ -69,7 +71,7 @@ function NavBar(props) {
     <header className="mainNav">
       <nav className="navBar">
         <div className="navLogo">
-          <a href="/#Work">Jingxuan Cao</a>
+          <a href="/">Jingxuan Cao</a>
         </div>
         <div className="spacer"></div>
         <div className="navName">
