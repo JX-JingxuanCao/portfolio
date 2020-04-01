@@ -19,7 +19,7 @@ export default function Homepage() {
 
   return (
     <div className="App">
-      <NavBar />
+      <NavBar type="homepage" />
       <div className="cover-wrapper">
         <div className="cover-content">
           <Video videoWidth="600" videoName="intro.mp4" />;
@@ -30,7 +30,7 @@ export default function Homepage() {
       </div>
 
       <div className="preview-wrapper">
-        <Element name="Work">
+        <Element id="Work" name="Work">
           <Preview
             id="Work"
             previewMedia={lumosMedia}

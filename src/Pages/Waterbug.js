@@ -8,7 +8,7 @@ import NavBar from "../Components/NavBar.js";
 export default function Waterbug() {
   return (
     <div className="WaterbugPage">
-      <NavBar />
+      <NavBar type="projectPage" />
 
       <div className="WaterbugIntro">
         {/* <Video videoWidth="100%" videoName="waterbug-whitebg.mp4" />; */}

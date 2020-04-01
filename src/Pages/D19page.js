@@ -8,7 +8,7 @@ import Video from "../Components/video.js";
 export default function D19() {
   return (
     <div>
-      <NavBar />
+      <NavBar type="projectPage" />
       <div className="D19logo">
         <Video videoWidth="100%" videoName="d19.mp4" />;
       </div>

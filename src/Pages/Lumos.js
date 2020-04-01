@@ -24,7 +24,7 @@ export default function Lumos() {
   }));
   return (
     <div className="projectPage">
-      <NavBar />
+      <NavBar type="projectPage" />
       <div className="lumos-page-wrapper">
         <LumosModel />
         {/* <LumosPageSVG /> */}

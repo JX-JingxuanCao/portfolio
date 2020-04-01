@@ -14,7 +14,6 @@ import "./App.css";
 import DayOfTheDead from "./Pages/DayOfTheDead.js";
 import Icpu from "./Pages/Icpu.js";
 import Waterbug from "./Pages/Waterbug.js";
-import NavBar from "./Components/NavBar.js";
 
 function App() {
   return (
