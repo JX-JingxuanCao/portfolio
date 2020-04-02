@@ -541,6 +541,7 @@ body {
   display: flex;
   justify-content: center;
 }
+
 @keyframes dash {
   from {
     stroke-dashoffset: 1000;

@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "./image.js";
 
 export default function SkillSet(props) {
   return (

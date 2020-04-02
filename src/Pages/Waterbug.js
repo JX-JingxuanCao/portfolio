@@ -11,7 +11,6 @@ export default function Waterbug() {
       <NavBar type="projectPage" />
 
       <div className="WaterbugIntro">
-        {/* <Video videoWidth="100%" videoName="waterbug-whitebg.mp4" />; */}
         <Video videoWidth="100%" videoName="waterbug-main.mp4" />;
       </div>
     </div>

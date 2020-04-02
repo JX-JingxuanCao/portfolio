@@ -32,7 +32,6 @@ export default function Homepage() {
       <div className="preview-wrapper">
         <Element id="Work" name="Work">
           <Preview
-            id="Work"
             previewMedia={lumosMedia}
             projectTitle="Lumos"
             skillList={[
