@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const scrollLinks = [
   <button>
     <Link
-      activeClass={true}
+      activeClass={"active"}
       to="Work"
       spy={true}
       offset={-70}
@@ -18,7 +18,7 @@ const scrollLinks = [
 
   <button>
     <Link
-      activeClass={true}
+      activeClass={"active"}
       to="Profile"
       spy={true}
       offset={-70}
@@ -32,7 +32,7 @@ const scrollLinks = [
 
   <button>
     <Link
-      activeClass={true}
+      activeClass={"active"}
       to="Contact"
       spy={true}
       offset={-70}
