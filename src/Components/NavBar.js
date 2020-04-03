@@ -77,12 +77,12 @@ function NavBar(props) {
         <div className="navName">
           <ul>
             {props.type === "homepage" &&
-              scrollLinks.map(linkElement => {
-                return <li>{linkElement}</li>;
+              scrollLinks.map((linkElement, i) => {
+                return <li key={i}>{linkElement}</li>;
               })}
             {props.type === "projectPage" &&
-              hashLinks.map(linkElement => {
-                return <li>{linkElement}</li>;
+              hashLinks.map((linkElement, i) => {
+                return <li key={i}>{linkElement}</li>;
               })}
           </ul>
         </div>
