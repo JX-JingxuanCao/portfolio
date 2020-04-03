@@ -35,9 +35,15 @@ export default function Homepage() {
             previewMedia={lumosMedia}
             projectTitle="Lumos"
             skillList={[
-              <Skill text="Interaction Product Design" />,
-              <Skill text="Electrical Engineering" />,
-              <Skill text="Physical Computing" />
+              <Skill
+                key="Interaction Product Design"
+                text="Interaction Product Design"
+              />,
+              <Skill
+                key="Electrical Engineering"
+                text="Electrical Engineering"
+              />,
+              <Skill key="Physical Computing" text="Physical Computing" />
             ]}
             button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
           />
@@ -45,9 +51,12 @@ export default function Homepage() {
             previewMedia={D19Media}
             projectTitle="University of Sydney The Design Graduate Exhibition 2019"
             skillList={[
-              <Skill text="User Experience Design" />,
-              <Skill text="Exhibition Planning" />,
-              <Skill text="Branding" />
+              <Skill
+                key="User Experience Design"
+                text="User Experience Design"
+              />,
+              <Skill key="Exhibition Planning" text="Exhibition Planning" />,
+              <Skill key="Branding" text="Branding" />
             ]}
             button={<ButtonMain buttonText="View Project" linkName="/D19" />}
           />
@@ -55,9 +64,15 @@ export default function Homepage() {
             previewMedia={deadMedia}
             projectTitle="Day of the Dead VR"
             skillList={[
-              <Skill text="VR Game Design" />,
-              <Skill text="User Interaction Design" />,
-              <Skill text="User Experience Design" />
+              <Skill key="VR Game Design" text="VR Game Design" />,
+              <Skill
+                key="User Interaction Design"
+                text="User Interaction Design"
+              />,
+              <Skill
+                key="User Experience Design"
+                text="User Experience Design"
+              />
             ]}
             button={
               <ButtonMain
@@ -71,8 +86,11 @@ export default function Homepage() {
             previewMedia={icpuMedia}
             projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
             skillList={[
-              <Skill text="User Experience Design" />,
-              <Skill text="Data Analysis" />
+              <Skill
+                key="User Experience Design"
+                text="User Experience Design"
+              />,
+              <Skill key="Data Analysis" text="Data Analysis" />
             ]}
             button={
               <ButtonMain
@@ -86,8 +104,14 @@ export default function Homepage() {
             previewMedia={WaterbugMedia}
             projectTitle="Waterbug"
             skillList={[
-              <Skill text="User Interface Design" />,
-              <Skill text="User Experience Design" />
+              <Skill
+                key="User Interface Design"
+                text="User Interface Design"
+              />,
+              <Skill
+                key="User Experience Design"
+                text="User Experience Design"
+              />
             ]}
             button={
               <ButtonMain buttonText="View Project" linkName="/Waterbug" />

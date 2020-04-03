@@ -10,40 +10,40 @@ export default function Contact() {
           rel="stylesheet"
           href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
         />
-        <div class="social-buttons">
+        <div className="social-buttons">
           <a
-            class="social-button facebook"
+            className="social-button facebook"
             href="https://www.facebook.com"
             target="_blank"
             title="Jingxuan's Facebook"
           >
-            <i class="fa fa-facebook"></i>
+            <i className="fa fa-facebook"></i>
           </a>
 
           <a
-            class="social-button linkedin"
+            className="social-button linkedin"
             href="https://www.linkedin.com"
             target="_blank"
             title="Jingxuan's Linkedin"
           >
-            <i class="fa fa-linkedin"></i>
+            <i className="fa fa-linkedin"></i>
           </a>
 
           <a
-            class="social-button instagram"
+            className="social-button instagram"
             href="https://www.instagram.com/mr.jingxuan/"
             target="_blank"
             title="Jingxuan's Instagram"
           >
-            <i class="fa fa-instagram"></i>
+            <i className="fa fa-instagram"></i>
           </a>
 
           <a
-            class="social-button email"
+            className="social-button email"
             href="mailto:cjingxuan@outlook.com"
             title="cjingxuan@outlook.com"
           >
-            <i class="fa fa-envelope"></i>
+            <i className="fa fa-envelope"></i>
           </a>
         </div>
       </div>
@@ -71,7 +71,7 @@ export default function Contact() {
           <p className="credit-text">
             React consultant: Mitch Hartigan, check out his awesome portfolio
             {/* <a
-              class="social-button website"
+              className="social-button website"
               href="https://mitchhartigan.com/"
               target="_blank"
               title="Mitch's Portfolio"
