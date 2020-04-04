@@ -58,7 +58,7 @@ export default function Homepage() {
               <Skill key="Exhibition Planning" text="Exhibition Planning" />,
               <Skill key="Branding" text="Branding" />
             ]}
-            button={<ButtonMain buttonText="View Project" linkName="/D19" />}
+            button={<ButtonMain buttonText="View Project" linkName="D19" />}
           />
           <Preview
             previewMedia={deadMedia}
@@ -77,7 +77,7 @@ export default function Homepage() {
             button={
               <ButtonMain
                 buttonText="View Project"
-                linkName="/Day Of The Dead"
+                linkName="Day Of The Dead"
               />
             }
           />
@@ -95,7 +95,7 @@ export default function Homepage() {
             button={
               <ButtonMain
                 buttonText="View Project"
-                linkName="/University of Sydney & Industry experts - Create Space"
+                linkName="University of Sydney & Industry experts - Create Space"
               />
             }
           />
@@ -114,7 +114,7 @@ export default function Homepage() {
               />
             ]}
             button={
-              <ButtonMain buttonText="View Project" linkName="/Waterbug" />
+              <ButtonMain buttonText="View Project" linkName="Waterbug" />
             }
           />
         </Element>

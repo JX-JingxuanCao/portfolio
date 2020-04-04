@@ -33,7 +33,6 @@ export default class LumosModel extends React.Component {
     });
   };
 
-
   render() {
     if (this.state.displaySoftware && !this.state.displayHardware) {
       return (
@@ -16482,7 +16481,7 @@ export default class LumosModel extends React.Component {
                     id="Vector_672"
                     d="M223.986 185.778L220.531 189.237L223.986 192.696"
                     stroke="#12D77E"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-miterlimit="10"
                     stroke-linecap="round"
                     stroke-linejoin="round"

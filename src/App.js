@@ -29,7 +29,6 @@ function App() {
           component={Icpu}
         />
         <Route path="/Waterbug" component={Waterbug} />
-        {/* <Route path="/#Work" component={NavBar} /> */}
       </Switch>
     </BrowserRouter>
   );

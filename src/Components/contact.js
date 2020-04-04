@@ -14,7 +14,6 @@ export default function Contact() {
           <a
             className="social-button facebook"
             href="https://www.facebook.com"
-            target="_blank"
             title="Jingxuan's Facebook"
           >
             <i className="fa fa-facebook"></i>
@@ -23,7 +22,6 @@ export default function Contact() {
           <a
             className="social-button linkedin"
             href="https://www.linkedin.com"
-            target="_blank"
             title="Jingxuan's Linkedin"
           >
             <i className="fa fa-linkedin"></i>
@@ -32,7 +30,6 @@ export default function Contact() {
           <a
             className="social-button instagram"
             href="https://www.instagram.com/mr.jingxuan/"
-            target="_blank"
             title="Jingxuan's Instagram"
           >
             <i className="fa fa-instagram"></i>

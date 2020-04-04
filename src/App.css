@@ -618,7 +618,7 @@ body {
 }
 
 /* third button testing */
-.ButtonMain {
+/* .ButtonMain {
   border: none;
   width: 200px;
   height: 60px;
@@ -666,7 +666,7 @@ body {
 .ButtonMain:hover:after,
 .ButtonMain:active:after {
   width: 100%;
-}
+} */
 
 /* For skillset button */
 .offset-first {
