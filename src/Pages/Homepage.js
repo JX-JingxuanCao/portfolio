@@ -26,7 +26,7 @@ export default function Homepage() {
         <div className="cover-content">
           <Video videoWidth="600" videoName="intro.mp4" />;
           <div className="cover-img">
-            <Image imgSrc="rsz_cover.jpg" />;
+            <Image imgSrc="cover-home.png" />;
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ export default function Homepage() {
                 key="Electrical Engineering"
                 text="Electrical Engineering"
               />,
-              <Skill key="Physical Computing" text="Physical Computing" />
+              <Skill key="Physical Computing" text="Physical Computing" />,
             ]}
             button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
           />
@@ -58,7 +58,7 @@ export default function Homepage() {
                 text="User Experience Design"
               />,
               <Skill key="Exhibition Planning" text="Exhibition Planning" />,
-              <Skill key="Branding" text="Branding" />
+              <Skill key="Branding" text="Branding" />,
             ]}
             button={<ButtonMain buttonText="View Project" linkName="D19" />}
           />
@@ -74,7 +74,7 @@ export default function Homepage() {
               <Skill
                 key="User Experience Design"
                 text="User Experience Design"
-              />
+              />,
             ]}
             button={
               <ButtonMain
@@ -92,7 +92,7 @@ export default function Homepage() {
                 key="User Experience Design"
                 text="User Experience Design"
               />,
-              <Skill key="Data Analysis" text="Data Analysis" />
+              <Skill key="Data Analysis" text="Data Analysis" />,
             ]}
             button={
               <ButtonMain
@@ -113,7 +113,7 @@ export default function Homepage() {
               <Skill
                 key="User Experience Design"
                 text="User Experience Design"
-              />
+              />,
             ]}
             button={
               <ButtonMain buttonText="View Project" linkName="Waterbug" />
