@@ -8,7 +8,7 @@ export default function DayOfTheDead() {
   return (
     <div>
       <ScrollToTopOnMount />
-      <NavBar />
+      <NavBar type="projectPage" />
     </div>
   );
 }

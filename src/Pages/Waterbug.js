@@ -4,10 +4,12 @@ import { ProjectContent } from "../Components/ProjectContent.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
+import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 
 export default function Waterbug() {
   return (
     <div className="WaterbugPage">
+      <ScrollToTopOnMount />
       <NavBar type="projectPage" />
 
       <div className="WaterbugIntro">
