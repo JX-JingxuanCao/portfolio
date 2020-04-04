@@ -6,43 +6,43 @@ export default class LumosModel extends React.Component {
     this.state = {
       displayLogo: false,
       displaySoftware: false,
-      displayHardware: false
+      displayHardware: false,
     };
   }
 
   displayLogo = () => {
     this.setState({
-      displayLogo: true
+      displayLogo: true,
     });
   };
 
   displayLogo = () => {
     this.setState({
-      displayLogo: !this.state.Logo
+      displayLogo: !this.state.Logo,
     });
   };
 
   displaySoftware = () => {
     this.setState({
-      displaySoftware: true
+      displaySoftware: true,
     });
   };
 
   displayHardware = () => {
     this.setState({
-      displayHardware: true
+      displayHardware: true,
     });
   };
 
   displaySoftware = () => {
     this.setState({
-      displaySoftware: !this.state.displaySoftware
+      displaySoftware: !this.state.displaySoftware,
     });
   };
 
   displayHardware = () => {
     this.setState({
-      displayHardware: !this.state.displayHardware
+      displayHardware: !this.state.displayHardware,
     });
   };
 
@@ -3678,6 +3678,14 @@ export default class LumosModel extends React.Component {
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
                   <g id="hardware">
+                    <rect
+                      id="Rectangle-hardware"
+                      x="660"
+                      y="148"
+                      width="133"
+                      height="131"
+                      fill="black"
+                    />
                     <g id="Group_324">
                       <path
                         id="Vector_634"
@@ -4557,6 +4565,14 @@ export default class LumosModel extends React.Component {
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
                   <g id="hardware">
+                    <rect
+                      id="Rectangle-hardware"
+                      x="660"
+                      y="148"
+                      width="133"
+                      height="131"
+                      fill="black"
+                    />
                     <g id="Group_324">
                       <path
                         id="Vector_634"
@@ -12265,6 +12281,14 @@ export default class LumosModel extends React.Component {
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
                   <g id="hardware">
+                    <rect
+                      id="Rectangle-hardware"
+                      x="660"
+                      y="148"
+                      width="133"
+                      height="131"
+                      fill="black"
+                    />
                     <g id="Group_324">
                       <path
                         id="Vector_634"
@@ -16986,6 +17010,14 @@ export default class LumosModel extends React.Component {
 
                 <svg className="triggerSoftware" onClick={this.displayHardware}>
                   <g id="hardware" onClick={this.displayHardware}>
+                    <rect
+                      id="Rectangle-hardware"
+                      x="660"
+                      y="148"
+                      width="133"
+                      height="131"
+                      fill="black"
+                    />
                     <g id="Group_324">
                       <path
                         id="Vector_634"
@@ -17862,6 +17894,14 @@ export default class LumosModel extends React.Component {
 
               <svg className="triggerHardware" onClick={this.displayHardware}>
                 <g id="hardware">
+                  <rect
+                    id="Rectangle-hardware"
+                    x="660"
+                    y="148"
+                    width="133"
+                    height="131"
+                    fill="black"
+                  />
                   <g id="Group_324">
                     <path
                       id="Vector_634"
@@ -18110,6 +18150,13 @@ export default class LumosModel extends React.Component {
             <g id="All-SVG">
               <svg className="trigger" onClick={this.displayLogo}>
                 <g id="Lumos">
+                  <rect
+                    id="Rectangle-lumos"
+                    x="404"
+                    width="219"
+                    height="600"
+                    fill="black"
+                  />
                   <line
                     id="RightB-1"
                     x1="581.5"
