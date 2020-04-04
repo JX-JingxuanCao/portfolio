@@ -6,6 +6,7 @@ import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import { useSpring, animated } from "react-spring";
+import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 
 // const calc = (x, y) => [
 //   -(y - window.innerHeight / 2) / 20,
@@ -22,6 +23,7 @@ export default function Lumos() {
   // }));
   return (
     <div className="projectPage">
+      <ScrollToTopOnMount />
       <NavBar type="projectPage" />
       <div className="lumos-page-wrapper">
         <LumosModel />

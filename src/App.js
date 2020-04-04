@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter,
   Route,
@@ -14,10 +14,23 @@ import "./App.css";
 import DayOfTheDead from "./Pages/DayOfTheDead.js";
 import Icpu from "./Pages/Icpu.js";
 import Waterbug from "./Pages/Waterbug.js";
+import { render } from "@testing-library/react";
+import ScrollToTopOnMount from "./Components/scrollToTopOnMount.js";
 
+// class App extends React.Component {
 function App() {
+  //   function ScrollToTopOnMount() {
+  //   useEffect(() => {
+  //     window.scrollTo(0, 0);
+  //   }, []);
+
+  //   return null;
+  //   }
+
+  // render() {
   return (
     <BrowserRouter>
+      <ScrollToTopOnMount />
       <Switch>
         {/* only need to use 'exact' on the root url. */}
         <Route path="/" component={Homepage} exact />
