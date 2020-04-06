@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   BrowserRouter,
   Route,
@@ -15,19 +15,8 @@ import DayOfTheDead from "./Pages/DayOfTheDead.js";
 import Icpu from "./Pages/Icpu.js";
 import Waterbug from "./Pages/Waterbug.js";
 import { render } from "@testing-library/react";
-import ScrollToTopOnMount from "./Components/scrollToTopOnMount.js";
 
-// class App extends React.Component {
 function App() {
-  //   function ScrollToTopOnMount() {
-  //   useEffect(() => {
-  //     window.scrollTo(0, 0);
-  //   }, []);
-
-  //   return null;
-  //   }
-
-  // render() {
   return (
     <BrowserRouter>
       <Switch>
