@@ -541,6 +541,15 @@ body {
   display: flex;
   justify-content: center;
 }
+.trigger:hover {
+  cursor: pointer;
+}
+.triggerSoftware:hover {
+  cursor: pointer;
+}
+.triggerHardware:hover {
+  cursor: pointer;
+}
 
 @keyframes dash {
   from {

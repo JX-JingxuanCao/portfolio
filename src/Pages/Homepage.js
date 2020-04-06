@@ -24,9 +24,9 @@ export default function Homepage() {
       <NavBar type="homepage" />
       <div className="cover-wrapper">
         <div className="cover-content">
-          <Video videoWidth="600" videoName="intro.mp4" />;
+          {/* <Video videoWidth="600" videoName="intro.mp4" />; */}
           <div className="cover-img">
-            <Image imgSrc="cover-home.png" />;
+            {/* <Image imgSrc="cover-home.png" />; */}
           </div>
         </div>
       </div>
