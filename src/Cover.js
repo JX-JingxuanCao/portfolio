@@ -141,7 +141,7 @@ import "./App.css";
 
 const svgResource = new Promise((resolve) =>
   new loader().load(
-    "https://raw.githubusercontent.com/JX-JingxuanCao/portfolio/master/src/resources/test.svg",
+    "https://raw.githubusercontent.com/JX-JingxuanCao/portfolio/master/public/test.svg",
     (shapes) =>
       resolve(
         flatten(
