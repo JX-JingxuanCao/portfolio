@@ -10,6 +10,7 @@ import Contact from "../Components/contact.js";
 import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import Cover from "../Cover.js";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
@@ -22,6 +23,7 @@ export default function Homepage() {
     <div className="App">
       <ScrollToTopOnMount />
       <NavBar type="homepage" />
+      <Cover />
       <div className="cover-wrapper">
         <div className="cover-content">
           {/* <Video videoWidth="600" videoName="intro.mp4" />; */}
