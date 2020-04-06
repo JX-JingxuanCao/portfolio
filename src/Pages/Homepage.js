@@ -11,6 +11,7 @@ import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import Cover from "../Cover.js";
+import ParallaxEffectImg from "../CoverV2.js";
 
 export default function Homepage() {
   let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
@@ -23,12 +24,13 @@ export default function Homepage() {
     <div className="App">
       <ScrollToTopOnMount />
       <NavBar type="homepage" />
-      <Cover />
       <div className="cover-wrapper">
         <div className="cover-content">
           {/* <Video videoWidth="600" videoName="intro.mp4" />; */}
           <div className="cover-img">
             {/* <Image imgSrc="cover-home.png" />; */}
+            {/* <ParallaxEffectImg /> */}
+            <Cover />
           </div>
         </div>
       </div>

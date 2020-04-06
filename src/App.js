@@ -5,7 +5,7 @@ import {
   Router,
   Link,
   Switch,
-  NavLink
+  NavLink,
 } from "react-router-dom";
 import Homepage from "./Pages/Homepage.js";
 import Lumos from "./Pages/Lumos.js";
@@ -30,7 +30,6 @@ function App() {
   // render() {
   return (
     <BrowserRouter>
-      <ScrollToTopOnMount />
       <Switch>
         {/* only need to use 'exact' on the root url. */}
         <Route path="/" component={Homepage} exact />
