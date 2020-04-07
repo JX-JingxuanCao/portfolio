@@ -8741,7 +8741,7 @@ export default class LumosModel extends React.Component {
               effect="solid"
             >
               <p className="tooltip-font">
-                Click me to hide the coll hardware 😢
+                Click me to hide the cool hardware 😢
               </p>
             </ReactTooltip>
 
@@ -16556,7 +16556,7 @@ export default class LumosModel extends React.Component {
               effect="solid"
             >
               <p className="tooltip-font">
-                Click me to hide the coll hardware 😢
+                Click me to hide the cool hardware 😢
               </p>
             </ReactTooltip>
 
