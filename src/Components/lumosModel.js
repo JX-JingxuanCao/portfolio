@@ -3572,7 +3572,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g data-tip data-for="Router" id="Router">
+                <g data-tip data-for="router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -3926,9 +3926,9 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="software"
-              place="bottom"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              place="left"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -3939,8 +3939,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="laptop"
               place="left"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -3952,8 +3952,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="Raspberry-Pi"
               place="left"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -3970,8 +3970,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="hardware"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -3980,10 +3980,10 @@ export default class LumosModel extends React.Component {
             </ReactTooltip>
 
             <ReactTooltip
-              id="Router"
-              place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              id="router"
+              place="left"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -4528,7 +4528,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g data-tip data-for="Router" id="Router">
+                <g data-tip data-for="router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -4941,7 +4941,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g data-tip data-for="blue-strip" id="blue-strip">
+                  <g id="blue-strip">
                     <rect
                       id="Rectangle 59_2"
                       x="847.5"
@@ -8723,9 +8723,9 @@ export default class LumosModel extends React.Component {
             </svg>
             <ReactTooltip
               id="software"
-              place="bottom"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              place="left"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -8736,8 +8736,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="hardware"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -8746,35 +8746,37 @@ export default class LumosModel extends React.Component {
             </ReactTooltip>
 
             <ReactTooltip
-              id="blue-strip"
+              id="router"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
-                We are the main character in this light installation 😎 <br />
-                But we take tons of electricity, so we are quite deadly..😰
+                I'm just a router, I'm here to help to communication <br />
+                between the software and the hardware 🙄
               </p>
             </ReactTooltip>
 
             <ReactTooltip
               id="red-strip"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
-                Yep...there are 10 of us...so we are quite deadly...😰
+                We are the main character in this light installation 😎 <br />
+                There are 10 of us, so we need tons of electricity, <br />
+                so we are quite deadly....😰
               </p>
             </ReactTooltip>
 
             <ReactTooltip
               id="dmx"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -8785,19 +8787,6 @@ export default class LumosModel extends React.Component {
                 middle man - router, I'll make the colors and animation
                 <br />
                 patterns the Leds strips need to turn to. 😏
-              </p>
-            </ReactTooltip>
-
-            <ReactTooltip
-              id="Router"
-              place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
-              effect="solid"
-            >
-              <p className="tooltip-font">
-                I'm just a router, I'm here to help to communication <br />
-                between the software and the hardware 🙄
               </p>
             </ReactTooltip>
           </div>
@@ -12323,7 +12312,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g data-tip data-for="Router" id="Router">
+                <g data-tip data-for="router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -12736,7 +12725,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g data-tip data-for="blue-strip" id="blue-strip">
+                  <g id="blue-strip">
                     <rect
                       id="Rectangle 59_2"
                       x="847.5"
@@ -16518,9 +16507,9 @@ export default class LumosModel extends React.Component {
             </svg>
             <ReactTooltip
               id="software"
-              place="bottom"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              place="left"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -16531,8 +16520,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="laptop"
               place="left"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -16544,8 +16533,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="Raspberry-Pi"
               place="left"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -16562,8 +16551,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="hardware"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -16572,35 +16561,24 @@ export default class LumosModel extends React.Component {
             </ReactTooltip>
 
             <ReactTooltip
-              id="blue-strip"
+              id="red-strip"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
                 We are the main character in this light installation 😎 <br />
-                But we take tons of electricity, so we are quite deadly..😰
-              </p>
-            </ReactTooltip>
-
-            <ReactTooltip
-              id="red-strip"
-              place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
-              effect="solid"
-            >
-              <p className="tooltip-font">
-                Yep...there are 10 of us...so we are quite deadly...😰
+                There are 10 of us, so we need tons of electricity, <br />
+                so we are quite deadly....😰
               </p>
             </ReactTooltip>
 
             <ReactTooltip
               id="dmx"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -16615,10 +16593,10 @@ export default class LumosModel extends React.Component {
             </ReactTooltip>
 
             <ReactTooltip
-              id="Router"
-              place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              id="router"
+              place="top"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -17163,7 +17141,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g data-tip data-for="Router" id="Router">
+                <g data-tip data-for="router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -17515,9 +17493,9 @@ export default class LumosModel extends React.Component {
             </svg>
             <ReactTooltip
               id="software"
-              place="bottom"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              place="left"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -17528,8 +17506,8 @@ export default class LumosModel extends React.Component {
             <ReactTooltip
               id="hardware"
               place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -17538,10 +17516,10 @@ export default class LumosModel extends React.Component {
             </ReactTooltip>
 
             <ReactTooltip
-              id="Router"
-              place="right"
-              textColor="#FF0000"
-              backgroundColor="#FFFFFF"
+              id="router"
+              place="top"
+              textColor="#FFFFFF"
+              backgroundColor="#3D2CA6"
               effect="solid"
             >
               <p className="tooltip-font">
@@ -18083,7 +18061,7 @@ export default class LumosModel extends React.Component {
                 </g>
               </svg>
 
-              <g data-tip data-for="Router" id="Router">
+              <g data-tip data-for="router" id="Router">
                 <g id="Group_306">
                   <g id="Group_307">
                     <path
@@ -18436,8 +18414,8 @@ export default class LumosModel extends React.Component {
           <ReactTooltip
             id="software"
             place="bottom"
-            textColor="#FF0000"
-            backgroundColor="#FFFFFF"
+            textColor="#FFFFFF"
+            backgroundColor="#3D2CA6"
             effect="solid"
           >
             <p className="tooltip-font">
@@ -18448,8 +18426,8 @@ export default class LumosModel extends React.Component {
           <ReactTooltip
             id="hardware"
             place="right"
-            textColor="#FF0000"
-            backgroundColor="#FFFFFF"
+            textColor="#FFFFFF"
+            backgroundColor="#3D2CA6"
             effect="solid"
           >
             <p className="tooltip-font">
@@ -18458,10 +18436,10 @@ export default class LumosModel extends React.Component {
           </ReactTooltip>
 
           <ReactTooltip
-            id="Router"
-            place="right"
-            textColor="#FF0000"
-            backgroundColor="#FFFFFF"
+            id="router"
+            place="top"
+            textColor="#FFFFFF"
+            backgroundColor="#3D2CA6"
             effect="solid"
           >
             <p className="tooltip-font">
