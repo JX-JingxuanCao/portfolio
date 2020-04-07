@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactTooltip from "react-tooltip";
 
 export default class LumosModel extends React.Component {
   constructor(props) {
@@ -46,6 +47,10 @@ export default class LumosModel extends React.Component {
     });
   };
 
+  componentDidUpdate() {
+    ReactTooltip.rebuild();
+  }
+
   render() {
     if (this.state.displayLogo) {
       if (this.state.displaySoftware && !this.state.displayHardware) {
@@ -60,7 +65,7 @@ export default class LumosModel extends React.Component {
             >
               <g id="All-SVG">
                 <svg className="triggerSoftware" onClick={this.displaySoftware}>
-                  <g id="software">
+                  <g data-tip data-for="software" id="software">
                     <g clip-path="url(#clip0)">
                       <g id="Group_326">
                         <path
@@ -634,7 +639,7 @@ export default class LumosModel extends React.Component {
                     />
                   </g>
 
-                  <g id="laptop">
+                  <g data-tip data-for="laptop" id="laptop">
                     <g clip-path="url(#clip1)">
                       <g id="Group_327">
                         <path
@@ -1001,7 +1006,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="Raspberry-Pi">
+                  <g data-tip data-for="Raspberry-Pi" id="Raspberry-Pi">
                     <g id="XMLID 1">
                       <g id="XMLID 2">
                         <path
@@ -3567,7 +3572,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g id="Router">
+                <g data-tip data-for="Router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -3677,7 +3682,7 @@ export default class LumosModel extends React.Component {
                 </g>
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
-                  <g id="hardware">
+                  <g data-tip data-for="hardware" id="hardware">
                     <rect
                       id="Rectangle-hardware"
                       x="660"
@@ -3918,6 +3923,75 @@ export default class LumosModel extends React.Component {
                 </clipPath>
               </defs>
             </svg>
+
+            <ReactTooltip
+              id="software"
+              place="bottom"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to hide software development 😢
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="laptop"
+              place="left"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                My job is to create a system that can animate <br />
+                amazing color gradients and control by users.😊
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Raspberry-Pi"
+              place="left"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I have something called Open Lighting Architecture framework
+                <br />
+                for lighting control. Once I received the update, I'll send
+                those
+                <br />
+                commands to DMX controller through router, beeeeecauseee <br />I
+                don't like talking to him. 😠
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="hardware"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to see some cool hardware 😃
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Router"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I'm just a router, I'm here to help to communication <br />
+                between the software and the hardware 🙄
+              </p>
+              <p className="tooltip-font">And Raspberry Pi needs WIFI...</p>
+            </ReactTooltip>
           </div>
         );
       }
@@ -3934,7 +4008,7 @@ export default class LumosModel extends React.Component {
             >
               <g id="All-SVG">
                 <svg className="triggerSoftware" onClick={this.displaySoftware}>
-                  <g id="software">
+                  <g data-tip data-for="software" id="software">
                     <g clip-path="url(#clip0)">
                       <g id="Group_326">
                         <path
@@ -4454,7 +4528,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g id="Router">
+                <g data-tip data-for="Router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -4564,7 +4638,7 @@ export default class LumosModel extends React.Component {
                 </g>
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
-                  <g id="hardware">
+                  <g data-tip data-for="hardware" id="hardware">
                     <rect
                       id="Rectangle-hardware"
                       x="660"
@@ -4684,7 +4758,7 @@ export default class LumosModel extends React.Component {
                     />
                   </g>
 
-                  <g id="red-strip">
+                  <g data-tip data-for="red-strip" id="red-strip">
                     <g id="Frame 1">
                       <rect
                         id="Rectangle 59"
@@ -4867,7 +4941,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="blue-strip">
+                  <g data-tip data-for="blue-strip" id="blue-strip">
                     <rect
                       id="Rectangle 59_2"
                       x="847.5"
@@ -5049,7 +5123,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="dmx">
+                  <g data-tip data-for="dmx" id="dmx">
                     <g id="Group">
                       <path
                         id="Vector"
@@ -8647,6 +8721,85 @@ export default class LumosModel extends React.Component {
                 </clipPath>
               </defs>
             </svg>
+            <ReactTooltip
+              id="software"
+              place="bottom"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to see software development 😃
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="hardware"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to hide the coll hardware 😢
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="blue-strip"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                We are the main character in this light installation 😎 <br />
+                But we take tons of electricity, so we are quite deadly..😰
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="red-strip"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Yep...there are 10 of us...so we are quite deadly...😰
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="dmx"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                So all the Leds strips are connected to me, I'm the handler
+                <br />
+                for all electricity, I'll receive some information from the{" "}
+                <br />
+                middle man - router, I'll make the colors and animation
+                <br />
+                patterns the Leds strips need to turn to. 😏
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Router"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I'm just a router, I'm here to help to communication <br />
+                between the software and the hardware 🙄
+              </p>
+            </ReactTooltip>
           </div>
         );
       }
@@ -8663,7 +8816,7 @@ export default class LumosModel extends React.Component {
             >
               <g id="All-SVG">
                 <svg className="triggerSoftware" onClick={this.displaySoftware}>
-                  <g id="software">
+                  <g data-tip data-for="software" id="software">
                     <g clip-path="url(#clip0)">
                       <g id="Group_326">
                         <path
@@ -9237,7 +9390,7 @@ export default class LumosModel extends React.Component {
                     />
                   </g>
 
-                  <g id="laptop">
+                  <g data-tip data-for="laptop" id="laptop">
                     <g clip-path="url(#clip1)">
                       <g id="Group_327">
                         <path
@@ -9604,7 +9757,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="Raspberry-Pi">
+                  <g data-tip data-for="Raspberry-Pi" id="Raspberry-Pi">
                     <g id="XMLID 1">
                       <g id="XMLID 2">
                         <path
@@ -12170,7 +12323,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g id="Router">
+                <g data-tip data-for="Router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -12280,7 +12433,7 @@ export default class LumosModel extends React.Component {
                 </g>
 
                 <svg className="triggerHardware" onClick={this.displayHardware}>
-                  <g id="hardware">
+                  <g data-tip data-for="hardware" id="hardware">
                     <rect
                       id="Rectangle-hardware"
                       x="660"
@@ -12400,7 +12553,7 @@ export default class LumosModel extends React.Component {
                     />
                   </g>
 
-                  <g id="red-strip">
+                  <g data-tip data-for="red-strip" id="red-strip">
                     <g id="Frame 1">
                       <rect
                         id="Rectangle 59"
@@ -12583,7 +12736,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="blue-strip">
+                  <g data-tip data-for="blue-strip" id="blue-strip">
                     <rect
                       id="Rectangle 59_2"
                       x="847.5"
@@ -12765,7 +12918,7 @@ export default class LumosModel extends React.Component {
                     </g>
                   </g>
 
-                  <g id="dmx">
+                  <g data-tip data-for="dmx" id="dmx">
                     <g id="Group">
                       <path
                         id="Vector"
@@ -16363,6 +16516,117 @@ export default class LumosModel extends React.Component {
                 </clipPath>
               </defs>
             </svg>
+            <ReactTooltip
+              id="software"
+              place="bottom"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to hide software development 😢
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="laptop"
+              place="left"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                My job is to create a system that can animate <br />
+                amazing color gradients and control by users.😊
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Raspberry-Pi"
+              place="left"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I have something called Open Lighting Architecture framework
+                <br />
+                for lighting control. Once I received the update, I'll send
+                those
+                <br />
+                commands to DMX controller through router, beeeeecauseee <br />I
+                don't like talking to him. 😠
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="hardware"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to hide the coll hardware 😢
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="blue-strip"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                We are the main character in this light installation 😎 <br />
+                But we take tons of electricity, so we are quite deadly..😰
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="red-strip"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Yep...there are 10 of us...so we are quite deadly...😰
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="dmx"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                So all the Leds strips are connected to me, I'm the handler
+                <br />
+                for all electricity, I'll receive some information from the{" "}
+                <br />
+                middle man - router, I'll make the colors and animation
+                <br />
+                patterns the Leds strips need to turn to. 😏
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Router"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I'm just a router, I'm here to help to communication <br />
+                between the software and the hardware 🙄
+              </p>
+              <p className="tooltip-font">And Raspberry Pi needs WIFI...</p>
+            </ReactTooltip>
           </div>
         );
       }
@@ -16379,7 +16643,7 @@ export default class LumosModel extends React.Component {
             >
               <g id="All-SVG">
                 <svg className="triggerSoftware" onClick={this.displaySoftware}>
-                  <g id="software">
+                  <g data-tip data-for="software" id="software">
                     <g clip-path="url(#clip0)">
                       <g id="Group_326">
                         <path
@@ -16899,7 +17163,7 @@ export default class LumosModel extends React.Component {
                   </g>
                 </svg>
 
-                <g id="Router">
+                <g data-tip data-for="Router" id="Router">
                   <g id="Group_306">
                     <g id="Group_307">
                       <path
@@ -17009,7 +17273,7 @@ export default class LumosModel extends React.Component {
                 </g>
 
                 <svg className="triggerSoftware" onClick={this.displayHardware}>
-                  <g id="hardware" onClick={this.displayHardware}>
+                  <g data-tip data-for="hardware" id="hardware">
                     <rect
                       id="Rectangle-hardware"
                       x="660"
@@ -17249,6 +17513,42 @@ export default class LumosModel extends React.Component {
                 </clipPath>
               </defs>
             </svg>
+            <ReactTooltip
+              id="software"
+              place="bottom"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to see software development 😃
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="hardware"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                Click me to see some cool hardware 😃
+              </p>
+            </ReactTooltip>
+
+            <ReactTooltip
+              id="Router"
+              place="right"
+              textColor="#FF0000"
+              backgroundColor="#FFFFFF"
+              effect="solid"
+            >
+              <p className="tooltip-font">
+                I'm just a router, I'm here to help to communication <br />
+                between the software and the hardware 🙄
+              </p>
+            </ReactTooltip>
           </div>
         );
       }
@@ -17263,7 +17563,7 @@ export default class LumosModel extends React.Component {
           >
             <g id="All-SVG">
               <svg className="triggerSoftware" onClick={this.displaySoftware}>
-                <g id="software">
+                <g data-tip data-for="software" id="software">
                   <g clip-path="url(#clip0)">
                     <g id="Group_326">
                       <path
@@ -17783,7 +18083,7 @@ export default class LumosModel extends React.Component {
                 </g>
               </svg>
 
-              <g id="Router">
+              <g data-tip data-for="Router" id="Router">
                 <g id="Group_306">
                   <g id="Group_307">
                     <path
@@ -17893,7 +18193,7 @@ export default class LumosModel extends React.Component {
               </g>
 
               <svg className="triggerHardware" onClick={this.displayHardware}>
-                <g id="hardware">
+                <g data-tip data-for="hardware" id="hardware">
                   <rect
                     id="Rectangle-hardware"
                     x="660"
@@ -18133,6 +18433,42 @@ export default class LumosModel extends React.Component {
               </clipPath>
             </defs>
           </svg>
+          <ReactTooltip
+            id="software"
+            place="bottom"
+            textColor="#FF0000"
+            backgroundColor="#FFFFFF"
+            effect="solid"
+          >
+            <p className="tooltip-font">
+              Click me to see software development 😃
+            </p>
+          </ReactTooltip>
+
+          <ReactTooltip
+            id="hardware"
+            place="right"
+            textColor="#FF0000"
+            backgroundColor="#FFFFFF"
+            effect="solid"
+          >
+            <p className="tooltip-font">
+              Click me to see some cool hardware 😃
+            </p>
+          </ReactTooltip>
+
+          <ReactTooltip
+            id="Router"
+            place="right"
+            textColor="#FF0000"
+            backgroundColor="#FFFFFF"
+            effect="solid"
+          >
+            <p className="tooltip-font">
+              I'm just a router, I'm here to help to communication <br />
+              between the software and the hardware 🙄
+            </p>
+          </ReactTooltip>
         </div>
       );
     }
