@@ -4,9 +4,11 @@ import Video from "../Components/video.js";
 import Image from "../Components/image.js";
 import "../App.css"; // // Icons made by Freepik from www.flaticon.com
 
+// Trans3D x: number is bigger the movement is smaller
+
 const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
 const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
-const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`;
+const trans2 = (x, y) => `translate3d(${x / 8}px,${y / 8}px,0)`;
 const trans3 = (x, y) => `translate3d(${x / 6 - 250}px,${y / 6 - 200}px,0)`;
 const trans4 = (x, y) => `translate3d(${x / 3.5}px,${y / 3.5}px,0)`;
 
@@ -20,25 +22,32 @@ export default function Card() {
       class="card-container"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
-      <Image imgSrc="cover-home.png" />;
+      <div className="bg-wrapper">
+        <Image imgSrc="cover-changed.png" />;
+      </div>
+
       <animated.div
         class="card1"
         style={{ transform: props.xy.interpolate(trans1) }}
       >
-        {/* <Video videoWidth="770" videoName="lumosvfxV2.mp4" />; */}
+        <Video videoWidth="1440" videoName="full-changed.mp4" />;
       </animated.div>
-      {/* <animated.div
+      <animated.div
         class="card2"
         style={{ transform: props.xy.interpolate(trans2) }}
-      />
-      <animated.div
+      >
+        <Image imgSrc="JustMe.png" />;
+      </animated.div>
+      {/* <animated.div
         class="card3"
         style={{ transform: props.xy.interpolate(trans3) }}
-      />
-      <animated.div
+      /> */}
+      {/* <animated.div
         class="card4"
         style={{ transform: props.xy.interpolate(trans4) }}
-      /> */}
+      >
+        <Image imgSrc="JustMe.png" />;
+      </animated.div> */}
     </div>
   );
 }

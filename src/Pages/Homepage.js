@@ -31,7 +31,7 @@ export default function Homepage() {
           {/* <Cover /> */}
           {/* <Image imgSrc="cover-home.png" />; */}
           {/* <ParallaxEffectImg /> */}
-          {/* <Card /> */}
+          <Card />
         </div>
       </div>
 
