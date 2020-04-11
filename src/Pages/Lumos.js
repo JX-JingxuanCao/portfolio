@@ -19,7 +19,7 @@ export default class Lumos extends React.Component {
           <LumosModel />
         </div>
 
-        <div className="lumos-container-wrapper">
+        <div className="project-container-wrapper">
           <div className="projectPage-content-container">
             <h1 className="ProjectTitle">Lumos</h1>
             <div className="projectPage-intro">
