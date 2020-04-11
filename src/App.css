@@ -143,8 +143,8 @@ body {
 
 .miniTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 20px;
+  color: #ffa45c;
   padding-top: 10px;
 }
 
@@ -155,11 +155,15 @@ body {
   color: white;
   margin-top: 10px;
 }
-
+.ProjectTitle {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 28px;
+  color: #ffa45c;
+}
 .contentTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
-  color: white;
+  font-size: 20px;
+  color: #ffa45c;
 }
 .mainContent {
   font-family: "Nota Sans", sans-serif;
@@ -556,19 +560,21 @@ body {
   outline: 0;
 }
 
-/* for lumos project page */
-.lumos-container-wrapper {
+/* for project page */
+.project-container-wrapper {
   width: 100vw;
   display: flex;
   justify-content: center;
 }
-.lumos-page-wrapper {
+.project-page-wrapper {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 50px;
 }
+
+/* for lumos project page */
 /* lumosmodel css  */
 .lumosmodel {
   width: 100vw;

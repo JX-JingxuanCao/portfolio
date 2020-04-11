@@ -1,70 +1,68 @@
 import React from "react";
+import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import LumosModel from "..//Components/lumosModel.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
-import { useSpring, animated } from "react-spring";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
-// const calc = (x, y) => [
-//   -(y - window.innerHeight / 2) / 20,
-//   (x - window.innerWidth / 2) / 20,
-//   1.1
-// ];
-// const trans = (x, y, s) =>
-//   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-export default function Lumos() {
-  // const [props, set] = useSpring(() => ({
-  //   xys: [0, 0, 1],
-  //   config: { mass: 5, tension: 350, friction: 40 }
-  // }));
-  return (
-    <div className="projectPage">
-      <ScrollToTopOnMount />
-      <NavBar type="projectPage" />
-      <div className="lumos-page-wrapper">
-        <LumosModel />
-        {/* <LumosPageSVG /> */}
-      </div>
+export default class Lumos extends React.Component {
+  render() {
+    return (
+      <div className="projectPage">
+        <ScrollToTopOnMount />
+        <NavBar type="projectPage" />
 
-      <div className="lumos-container-wrapper">
-        <div className="projectPage-content-container">
-          <h1 className="contentTitle">Lumos</h1>
-          <div className="projectPage-intro">
-            <ProjectPage
-              miniTitle="Role"
-              roleName="Hardware Engineer | UX Designer | Visual Designer | Interaction Designer | Researcher"
+        <div className="project-page-wrapper">
+          <LumosModel />
+        </div>
+
+        <div className="lumos-container-wrapper">
+          <div className="projectPage-content-container">
+            <h1 className="ProjectTitle">Lumos</h1>
+            <div className="projectPage-intro">
+              <ProjectPage
+                miniTitle="Role"
+                roleName="Hardware Engineer | UX Designer | Visual Designer | Interaction Designer | Researcher"
+              />
+              <ProjectPage
+                miniTitle="Team"
+                roleName="Anna Mylordis |  Jingxuan Cao | Mitch Hartigan  "
+              />
+            </div>
+
+            <ProjectContent
+              contentTitle="Abstract"
+              mainContent="Lumos was an interactive lighting installation designed to attract pedestrians in 
+                parks during nighttime. Users were encouraged to interact with the installation through the 
+                ability to customise Lumos’ colours, and its animations were designed to draw in large crowds 
+                and promote social activity and community through a shared experience. Lumos’ ultimate function
+                 was to transform parks into lively, safe, and well-used public spaces during the night.
+                "
             />
-            <ProjectPage
-              miniTitle="Team"
-              roleName="Elizabeth Anne | Edmond Hua | Ray Hwang | Jingxuan Cao | Angineh Karabedian | Miriam Green | Abhinav Bose | Oliver Frohlich "
+            <ProjectContent
+              mainContent="Building Lumos was a challenging journey - a process of ideation, 
+              iteration, prototyping, and teamwork. The team conducted research surrounding urban spaces and
+               decided, eventually, to pursue design opportunities within public parks our vision was clear:
+                we wanted to build something unique, practical, and visually stunning."
+            />
+
+            <ProjectContent contentTitle="Development Process" />
+
+            <ProjectContent
+              contentTitle="Conclusion"
+              mainContent="While the team thoroughly enjoyed the process of designing Lumos, there were 
+                certainly some challenges. None of us had experience developing on a Raspberry Pi or utilising 
+                the Open Lighting Architecture (OLA) Framework, and we frequently faced hardware and software 
+                issues during the design and building of the installation. It was effective work as a team unit 
+                which allowed us to overcome these obstacles throughout the project, and my team and I gained a 
+                great deal of practical design experience."
             />
           </div>
-          <ProjectContent
-            contentTitle="Abstract"
-            mainContent="Parks help cities, but only if people use them. Although parks promote a more active 
-        and less stressful lifestyle, research has shown that city parks are ‘underused’ by the general population. 
-        as people prefer to relax in places that are more accessible and conducive to social activity."
-          />
-          <ProjectContent
-            contentTitle="Overview"
-            mainContent="Lumos is a interactive lighting installation designed to draw in users with its big and bold 
-        lights, and provide them with the ability to customise the colours. This unique interactive experience can 
-        garner large crowds, promoting social activity. Thus, Lumos can transform parks into lively, safe and 
-        well-used spaces."
-          />
-          {/* <animated.div
-            class="card"
-            onMouseMove={({ clientX: x, clientY: y }) =>
-              set({ xys: calc(x, y) })
-            }
-            onMouseLeave={() => set({ xys: [0, 0, 1] })}
-            style={{ transform: props.xys.interpolate(trans) }}
-          /> */}
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }

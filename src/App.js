@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  BrowserRouter,
-  Route,
-  Router,
-  Link,
-  Switch,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./Pages/Homepage.js";
 import Lumos from "./Pages/Lumos.js";
 import D19page from "./Pages/D19page.js";
@@ -14,7 +7,6 @@ import "./App.css";
 import DayOfTheDead from "./Pages/DayOfTheDead.js";
 import Icpu from "./Pages/Icpu.js";
 import Waterbug from "./Pages/Waterbug.js";
-import { render } from "@testing-library/react";
 
 function App() {
   return (
