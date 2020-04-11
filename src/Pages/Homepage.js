@@ -10,8 +10,6 @@ import Contact from "../Components/contact.js";
 import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
-import Cover from "../Cover.js";
-import ParallaxEffectImg from "../CoverV2.js";
 import Card from "../Components/CoverV3.js";
 
 export default function Homepage() {
@@ -26,7 +24,6 @@ export default function Homepage() {
       <ScrollToTopOnMount />
       <NavBar type="homepage" />
       <div className="cover-wrapper">
-        {/* <Video videoWidth="600" videoName="intro.mp4" />; */}
         <div className="cover-img">
           {/* <Cover /> */}
           {/* <Image imgSrc="cover-home.png" />; */}
@@ -126,11 +123,13 @@ export default function Homepage() {
         </Element>
       </div>
 
-      <ToggleSkills />
-
       <div id="Profile">
         <Element name="Profile">
+          <div className="skill-intro">
+            <Video videoWidth="660" videoName="intro.mp4" />;
+          </div>
           <SkillSet />
+          <ToggleSkills />
         </Element>
       </div>
 
