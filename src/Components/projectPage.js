@@ -5,7 +5,9 @@ export function ProjectPage(props) {
     <div>
       <div className="titleBox">
         <div className="miniTitle">{props.miniTitle}</div>
-        <div className="roleName">{props.roleName}</div>
+        <div className="roleName">
+          {props.roleName} {props.iconSVG}
+        </div>
       </div>
     </div>
   );

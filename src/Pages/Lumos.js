@@ -1,5 +1,4 @@
 import React from "react";
-import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import LumosModel from "..//Components/lumosModel.js";
@@ -7,6 +6,16 @@ import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import {
+  UIdesign,
+  Vdesign,
+  Research,
+  UXdesign,
+  Build,
+  Interaction,
+  King,
+  Queen,
+} from "../Components/icons.js";
 
 export default class Lumos extends React.Component {
   render() {
@@ -27,6 +36,8 @@ export default class Lumos extends React.Component {
                 miniTitle="Role"
                 roleName="Hardware Engineer | UX Designer | Visual Designer | Interaction Designer | Researcher"
               />
+              <King /> <Queen /> <Build /> <UXdesign /> <Vdesign /> <UIdesign />{" "}
+              <Research /> <Interaction />
               <ProjectPage
                 miniTitle="Team"
                 roleName="Anna Mylordis |  Jingxuan Cao | Mitch Hartigan  "
