@@ -32,60 +32,58 @@ export default class Lumos extends React.Component {
           <div className="projectPage-content-container">
             <h1 className="ProjectTitle">Lumos</h1>
             <div className="projectPage-intro">
-              <ProjectPage
-                miniTitle="Role"
-                // roleName="Hardware Engineer | UX Designer | Visual Designer | Interaction Designer | Researcher"
-              />
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Role" />
 
-              <div className="iconTags-wrapper">
-                <div className="iconTags-container">
-                  <div className="iconTag">
-                    <Build />
-                    <ProjectPage roleName="Hardware Engineer" />
+                <div className="iconTags-wrapper">
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <Build />
+                      <ProjectPage roleName="Hardware Engineer" />
+                    </div>
+
+                    <div className="iconTag">
+                      <UXdesign />
+                      <ProjectPage roleName="UX Designer" />
+                    </div>
+
+                    <div className="iconTag">
+                      <Vdesign />
+                      <ProjectPage roleName="Visual Designer" />
+                    </div>
                   </div>
 
-                  <div className="iconTag">
-                    <UXdesign />
-                    <ProjectPage roleName="UX Designer" />
-                  </div>
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <Interaction />
+                      <ProjectPage roleName="Interaction Designer" />
+                    </div>
 
-                  <div className="iconTag">
-                    <Vdesign />
-                    <ProjectPage roleName="Visual Designer" />
-                  </div>
-                </div>
-
-                <div className="iconTags-container">
-                  <div className="iconTag">
-                    <Interaction />
-                    <ProjectPage roleName="Interaction Designer" />
-                  </div>
-
-                  <div className="iconTag">
-                    <Research />
-                    <ProjectPage roleName="Researcher" />
+                    <div className="iconTag">
+                      <Research />
+                      <ProjectPage roleName="Researcher" />
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <ProjectPage
-                miniTitle="Team"
-                // roleName="Anna Mylordis |  Jingxuan Cao | Mitch Hartigan  "
-              />
-              <div className="iconTags-container">
-                <div className="iconTag">
-                  <Queen />
-                  <ProjectPage roleName="Anna Mylordis" />
-                </div>
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Team" />
+                <div className="iconTags-container">
+                  <div className="iconTag">
+                    <Queen />
+                    <ProjectPage roleName="Anna Mylordis" />
+                  </div>
 
-                <div className="iconTag">
-                  <King />
-                  <ProjectPage roleName="Jingxuan Cao" />
-                </div>
+                  <div className="iconTag">
+                    <King />
+                    <ProjectPage roleName="Jingxuan Cao" />
+                  </div>
 
-                <div className="iconTag">
-                  <King />
-                  <ProjectPage roleName="Mitch Hartigan" />
+                  <div className="iconTag">
+                    <King />
+                    <ProjectPage roleName="Mitch Hartigan" />
+                  </div>
                 </div>
               </div>
             </div>

@@ -134,6 +134,34 @@ body {
   flex-direction: column;
 }
 
+/* for icons around title */
+.iconTags-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.iconTags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.iconTag {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-right: 18px;
+}
+.miniTitle-icon {
+  padding-top: 14px;
+}
+.miniTitle-icon-UX {
+  padding-top: 11px;
+}
+.miniTitle-icon-Queen {
+  padding-top: 14px;
+  padding-right: 3px;
+}
+/* ends for icons around title */
+
 .titleBox {
   max-width: 20vw;
   display: flex;
@@ -155,23 +183,6 @@ body {
   color: white;
   margin-top: 10px;
 }
-
-/* for icons around title */
-.iconTags-wrapper {
-  display: flex;
-  flex-direction: column;
-}
-.iconTags-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.iconTag {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-/* ends for icons around title */
 
 .ProjectTitle {
   font-family: "Nota Sans", sans-serif;

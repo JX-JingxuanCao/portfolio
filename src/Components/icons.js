@@ -3,6 +3,7 @@ import React from "react";
 export function UIdesign() {
   return (
     <svg
+      className="miniTitle-icon"
       width="22"
       height="34"
       viewBox="0 0 22 34"
@@ -32,6 +33,7 @@ export function UIdesign() {
 export function Vdesign() {
   return (
     <svg
+      className="miniTitle-icon"
       width="26"
       height="27"
       viewBox="0 0 26 27"
@@ -61,6 +63,7 @@ export function Vdesign() {
 export function Research() {
   return (
     <svg
+      className="miniTitle-icon"
       width="26"
       height="26"
       viewBox="0 0 26 26"
@@ -79,6 +82,7 @@ export function Research() {
 export function UXdesign() {
   return (
     <svg
+      className="miniTitle-icon-UX"
       width="27"
       height="32"
       viewBox="0 0 27 32"
@@ -106,6 +110,7 @@ export function UXdesign() {
 export function Build() {
   return (
     <svg
+      className="miniTitle-icon"
       width="27"
       height="26"
       viewBox="0 0 27 26"
@@ -136,6 +141,7 @@ export function Build() {
 export function Interaction() {
   return (
     <svg
+      className="miniTitle-icon"
       width="26"
       height="29"
       viewBox="0 0 26 29"
@@ -156,6 +162,7 @@ export function Interaction() {
 export function King() {
   return (
     <svg
+      className="miniTitle-icon"
       width="41"
       height="24"
       viewBox="0 0 41 24"
@@ -181,6 +188,7 @@ export function King() {
 export function Queen() {
   return (
     <svg
+      className="miniTitle-icon-Queen"
       width="33"
       height="23"
       viewBox="0 0 33 23"
