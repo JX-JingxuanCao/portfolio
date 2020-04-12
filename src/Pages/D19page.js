@@ -1,6 +1,13 @@
 import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
+import {
+  ProjectCurator,
+  FloorPlan,
+  Research,
+  King,
+  Queen,
+} from "../Components/icons.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
@@ -22,7 +29,7 @@ export default class D19 extends React.Component {
             <h1 className="ProjectTitle">
               University of Sydney | The Design Graduate Exhibition 2019
             </h1>
-            <div className="projectPage-intro">
+            {/* <div className="projectPage-intro">
               <ProjectPage
                 miniTitle="Role"
                 roleName=" Project Curator | Floor Plan Designer | Researcher 
@@ -33,6 +40,80 @@ export default class D19 extends React.Component {
                 roleName="Elizabeth Anne | Edmond Hua | Ray Hwang | Jingxuan Cao | Miriam Green | 
                 Angineh Karabedian | Abhinav Bose | Oliver Frohlich  "
               />
+            </div> */}
+            <div className="projectPage-intro">
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Role" />
+
+                <div className="iconTags-container">
+                  <div className="iconTag">
+                    <ProjectCurator />
+                    <ProjectPage roleName="Project Curator" />
+                  </div>
+
+                  <div className="iconTag">
+                    <FloorPlan />
+                    <ProjectPage roleName="Floor Plan Designer" />
+                  </div>
+
+                  <div className="iconTag">
+                    <Research />
+                    <ProjectPage roleName="Researcher" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Team" />
+
+                <div className="iconTags-wrapper">
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <Queen />
+                      <ProjectPage roleName="Elizabeth Anne" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Edmond Hua" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Ray Hwang" />
+                    </div>
+                  </div>
+
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Jingxuan Cao" />
+                    </div>
+
+                    <div className="iconTag">
+                      <Queen />
+                      <ProjectPage roleName="Miriam Green" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Oliver Frohlich" />
+                    </div>
+                  </div>
+
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <Queen />
+                      <ProjectPage roleName="Angineh Karabedian" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Abhinav Bose" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <ProjectContent

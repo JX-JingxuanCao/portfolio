@@ -125,6 +125,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
 .projectPage-content-container {
@@ -157,8 +158,11 @@ body {
   padding-top: 11px;
 }
 .miniTitle-icon-Queen {
-  padding-top: 14px;
+  padding-top: 12px;
   padding-right: 3px;
+}
+.miniTitle-icon-floorplan {
+  padding-top: 10px;
 }
 /* ends for icons around title */
 
