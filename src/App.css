@@ -155,6 +155,24 @@ body {
   color: white;
   margin-top: 10px;
 }
+
+/* for icons around title */
+.iconTags-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.iconTags-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.iconTag {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* ends for icons around title */
+
 .ProjectTitle {
   font-family: "Nota Sans", sans-serif;
   font-size: 28px;
@@ -171,6 +189,20 @@ body {
   font-weight: lighter;
   color: white;
 }
+.project-container-wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.project-page-wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+/* individual project page ends here */
 
 /* For skillSet section */
 .skill-intro {
@@ -558,20 +590,6 @@ body {
 }
 .navName button:focus {
   outline: 0;
-}
-
-/* for project page */
-.project-container-wrapper {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-.project-page-wrapper {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-top: 50px;
 }
 
 /* for lumos project page */
