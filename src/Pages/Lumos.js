@@ -45,8 +45,8 @@ export default class Lumos extends React.Component {
             <ProjectContent
               mainContent="Building Lumos was a challenging journey - a process of ideation, 
               iteration, prototyping, and teamwork. The team conducted research surrounding urban spaces and
-               decided, eventually, to pursue design opportunities within public parks our vision was clear:
-                we wanted to build something unique, practical, and visually stunning."
+               decided, eventually, to pursue design opportunities within public parks. Our vision was clear:
+               we wanted to build something unique, practical, and visually stunning."
             />
 
             <ProjectContent contentTitle="Development Process" />
