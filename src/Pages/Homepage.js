@@ -27,9 +27,6 @@ export default class Homepage extends React.Component {
 
         <div className="cover-wrapper">
           <div className="cover-img">
-            {/* <Cover /> */}
-            {/* <Image imgSrc="cover-home.png" />; */}
-            {/* <ParallaxEffectImg /> */}
             <Card />
           </div>
         </div>

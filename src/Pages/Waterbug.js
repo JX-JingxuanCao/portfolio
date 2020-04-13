@@ -10,8 +10,7 @@ import {
   Interaction,
   UXdesign,
   UIdesign,
-  King,
-  Queen,
+  King
 } from "../Components/icons.js";
 
 export default class Waterbug extends React.Component {

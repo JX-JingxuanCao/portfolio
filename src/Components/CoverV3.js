@@ -2,7 +2,7 @@ import React from "react";
 import { useSpring, animated } from "react-spring";
 import Video from "../Components/video.js";
 import Image from "../Components/image.js";
-import "../App.css"; // // Icons made by Freepik from www.flaticon.com
+import "../App.css";
 
 // Trans3D x: number is bigger the movement is smaller
 
