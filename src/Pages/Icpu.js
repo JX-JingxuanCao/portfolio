@@ -18,7 +18,7 @@ export default class Icpu extends React.Component {
         <ScrollToTopOnMount />
         <NavBar type="projectPage" />
 
-        <div className="project-page-wrapper">{/* <LumosModel /> */}</div>
+        <div className="project-page-wrapper"></div>
 
         <div className="project-container-wrapper">
           <div className="projectPage-content-container">
@@ -33,7 +33,7 @@ export default class Icpu extends React.Component {
                 <div className="iconTags-container">
                   <div className="iconTag">
                     <UXdesign />
-                    <ProjectPage roleName="UX Designer" />
+                    <ProjectPage roleName="User Experience Designer " />
                   </div>
 
                   <div className="iconTag">

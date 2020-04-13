@@ -5,6 +5,14 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import {
+  UXresearch,
+  Interaction,
+  UXdesign,
+  UIdesign,
+  King,
+  Queen,
+} from "../Components/icons.js";
 
 export default class Waterbug extends React.Component {
   render() {
@@ -21,16 +29,63 @@ export default class Waterbug extends React.Component {
           <div className="projectPage-content-container">
             <h1 className="ProjectTitle">Waterbug</h1>
             <div className="projectPage-intro">
-              <ProjectPage
-                miniTitle="Role"
-                roleName="  User Interface Designer | User Interaction Designer | User Experience Designer | User Researcher  
-                "
-              />
-              <ProjectPage
-                miniTitle="Team"
-                roleName="Tom Clarke | Jingxuan Cao | Jason Moisiadis | Abhinav Bose
-                "
-              />
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Role" />
+
+                <div className="iconTags-container">
+
+                  <div className="iconTag">
+                    <UIdesign />
+                    <ProjectPage roleName="User Interface Designer " />
+                  </div>
+
+                  <div className="iconTag">
+                    <UXdesign />
+                    <ProjectPage roleName="User Experience Designer " />
+                  </div>
+                </div>
+
+                <div className="iconTags-container">
+                  <div className="iconTag">
+                    <Interaction />
+                    <ProjectPage roleName="User Interaction Designer" />
+                  </div>
+                  <div className="iconTag">
+                    <UXresearch />
+                    <ProjectPage roleName="User Researcher" />
+                  </div>
+                </div>
+              </div>
+
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Team" />
+
+                <div className="iconTags-wrapper">
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Tom Clarke" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Jingxuan Cao" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Jason Moisiadis" />
+                    </div>
+                  </div>
+
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName=" Abhinav Bose" />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <ProjectContent

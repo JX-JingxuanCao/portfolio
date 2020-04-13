@@ -136,15 +136,20 @@ body {
 }
 
 /* for icons around title */
+/* wrapper wraps all containter in COLUMN */
 .iconTags-wrapper {
   display: flex;
   flex-direction: column;
 }
+
+/* each container can have 2-3 tags in ROW */
 .iconTags-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
+/* each tag contains ONE icon + One Name/Role in ROW */
 .iconTag {
   display: flex;
   flex-direction: row;
@@ -163,6 +168,22 @@ body {
 }
 .miniTitle-icon-floorplan {
   padding-top: 10px;
+}
+.miniTitle-icon-GameDesign {
+  padding-top: 16px;
+  padding-right: 3px;
+}
+.miniTitle-icon-Modeller {
+  padding-top: 15px;
+  padding-right: 3px;
+}
+.miniTitle-icon-VR {
+  padding-top: 17px;
+  padding-right: 3px;
+}
+.miniTitle-icon-UI {
+  padding-top:12px;
+  padding-right:3px;
 }
 /* ends for icons around title */
 

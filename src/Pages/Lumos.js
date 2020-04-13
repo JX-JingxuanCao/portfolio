@@ -7,7 +7,6 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import {
-  UIdesign,
   Vdesign,
   Research,
   UXdesign,

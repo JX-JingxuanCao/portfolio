@@ -3,6 +3,15 @@ import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import NavBar from "../Components/NavBar.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import {
+  GameDesign,
+  VR,
+  Modeller,
+  Interaction,
+  UXdesign,
+  King,
+  Queen,
+} from "../Components/icons.js";
 
 export default class DayOfTheDead extends React.Component {
   render() {
@@ -16,17 +25,78 @@ export default class DayOfTheDead extends React.Component {
         <div className="project-container-wrapper">
           <div className="projectPage-content-container">
             <h1 className="ProjectTitle">Day of the Dead - VR game</h1>
+          
             <div className="projectPage-intro">
-              <ProjectPage
-                miniTitle="Role"
-                roleName=" Game Designer | 3D modeller | User Experience Designer | User Interaction Designer 
-                "
-              />
-              <ProjectPage
-                miniTitle="Team"
-                roleName="Andrew Aiello | Dorren Lam Longworth | Georgina Jajjo |  Jingxuan Cao | 
-                Sergio De Las Heras "
-              />
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Role" />
+
+                <div className="iconTags-container">
+                  <div className="iconTag">
+                    <GameDesign />
+                    <ProjectPage roleName="Game Designer" />
+                  </div>
+
+                  <div className="iconTag">
+                    <Modeller />
+                    <ProjectPage roleName="3D modeller" />
+                  </div>
+
+                  <div className="iconTag">
+                    <VR />
+                    <ProjectPage roleName="VR Design" />
+                  </div>
+                </div>
+
+                <div className="iconTags-container">
+                <div className="iconTag">
+                  <UXdesign />
+                  <ProjectPage roleName="User Experience Designer " />
+                </div>
+
+                <div className="iconTag">
+                    <Interaction />
+                    <ProjectPage roleName="User Interaction Designer " />
+                    </div>
+                </div>
+              </div>
+
+              <div className="mini-content-box">
+                <ProjectPage miniTitle="Team" />
+
+                <div className="iconTags-wrapper">
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Andrew Aiello" />
+                    </div>
+
+                    <div className="iconTag">
+                      <Queen />
+                      <ProjectPage roleName="Dorren Lam Longworth" />
+                    </div>
+                  </div>
+
+                  <div className="iconTags-container">
+
+                    <div className="iconTag">
+                      <Queen />
+                      <ProjectPage roleName="Georgina Jajjo" />
+                    </div>
+
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Jingxuan Cao" />
+                    </div>
+                  </div>
+
+                  <div className="iconTags-container">
+                    <div className="iconTag">
+                      <King />
+                      <ProjectPage roleName="Sergio De Las Heras " />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
 
             <ProjectContent

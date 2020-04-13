@@ -29,18 +29,7 @@ export default class D19 extends React.Component {
             <h1 className="ProjectTitle">
               University of Sydney | The Design Graduate Exhibition 2019
             </h1>
-            {/* <div className="projectPage-intro">
-              <ProjectPage
-                miniTitle="Role"
-                roleName=" Project Curator | Floor Plan Designer | Researcher 
-                "
-              />
-              <ProjectPage
-                miniTitle="Team"
-                roleName="Elizabeth Anne | Edmond Hua | Ray Hwang | Jingxuan Cao | Miriam Green | 
-                Angineh Karabedian | Abhinav Bose | Oliver Frohlich  "
-              />
-            </div> */}
+
             <div className="projectPage-intro">
               <div className="mini-content-box">
                 <ProjectPage miniTitle="Role" />
