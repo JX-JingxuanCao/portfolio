@@ -627,6 +627,14 @@ body {
 .navName button:focus {
   outline: 0;
 }
+.mainlogo-wrapper {
+  width: 35px;
+  height: 35px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+/* ends navbar css */
 
 /* for lumos project page */
 /* lumosmodel css  */

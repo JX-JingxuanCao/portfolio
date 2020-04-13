@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import MainLogo from "./mainLogo.js";
 import { Link } from "react-scroll";
 
 const scrollLinks = [
@@ -71,7 +72,7 @@ function NavBar(props) {
     <header className="mainNav">
       <nav className="navBar">
         <div className="navLogo">
-          <a href="/">Jingxuan Cao</a>
+          <a href="/"><MainLogo /></a>
         </div>
         <div className="spacer"></div>
         <div className="navName">
