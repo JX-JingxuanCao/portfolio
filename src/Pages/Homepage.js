@@ -11,6 +11,7 @@ import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import Card from "../Components/CoverV3.js";
+import Loading from "../Components/Loading.js";
 
 let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
 let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="770" alt="D19 Image" />;
@@ -18,8 +19,52 @@ let deadMedia = <Video videoWidth="770" videoName="dead-cover.mp4" />;
 let WaterbugMedia = <Video videoWidth="770" videoName="waterbug-cover.mp4" />;
 let icpuMedia = <Image imgSrc="abs-empty.jpg" imgWidth="770" />;
 
+
+
 export default class Homepage extends React.Component {
+
+  state = { loading: true };
+  sleep = milliseconds => {
+    return new Promise(resolve => setTimeout(resolve, milliseconds));
+  };
+  wait = async (milliseconds = 2000) => {
+    await this.sleep(milliseconds);
+
+    // Idk how I change here
+    this.setState({
+      loading: false
+    });
+  };
+
+  // Idk how I change here
+  fetchGitHub = () => {
+    fetch("https://api.github.com/users/krissanawat")
+      .then(res => res.json())
+      .then(res => {
+        let { name, company, blog, location, bio } = res;
+        this.setState({
+          name: name,
+          company: company,
+          blog: blog,
+          location: location,
+          bio: bio,
+          loading: false
+        });
+
+      })
+      .catch(error => {
+        console.log(error);
+        this.wait();
+      });
+  };
+  componentDidMount() {
+    this.wait(2000);
+    // this.fetchGitHub();
+  }
+
   render() {
+    if (this.state.loading) return <Loading />;
+
     return (
       <div className="App">
         <ScrollToTopOnMount />
@@ -122,6 +167,7 @@ export default class Homepage extends React.Component {
               }
             />
           </div>
+
         </Element>
 
         <div id="Profile">

@@ -901,6 +901,8 @@ body {
 .tooltip-font {
   font-size: 0.938rem;
 }
-/* .tooltip-custom {
-  border-top-width: 1rem 1rem 1rem 1rem !important;
-} */
+
+/* Testing Loading */
+.fa{
+  color:white;
+}

@@ -19,7 +19,7 @@ export default function Card() {
   }));
   return (
     <div
-      class="card-container"
+      className="card-container"
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
       <div className="bg-wrapper">
@@ -27,13 +27,13 @@ export default function Card() {
       </div>
 
       <animated.div
-        class="card1"
+        className="card1"
         style={{ transform: props.xy.interpolate(trans1) }}
       >
         <Video videoWidth="1440" videoName="full-changed.mp4" />;
       </animated.div>
       <animated.div
-        class="card2"
+        className="card2"
         style={{ transform: props.xy.interpolate(trans2) }}
       >
         <Image imgSrc="JustMe.png" />;
