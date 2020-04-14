@@ -23,7 +23,7 @@ export default class Video extends React.Component {
       );
     }
     return (
-      <video width={this.props.videoWidth} onCanPlayThrough="Loading()" autoPlay loop muted>
+      <video width={this.props.videoWidth} onCanPlayThrough={this.Loading} autoPlay loop muted>
         <source src={this.props.videoName} type="video/mp4" />
       </video>
     );
