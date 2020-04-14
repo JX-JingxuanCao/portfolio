@@ -47,6 +47,7 @@ export default class Homepage extends React.Component {
         ) : (
             <div className="App">
               <ScrollToTopOnMount />
+
               <NavBar type="homepage" />
 
               <div className="cover-wrapper">
