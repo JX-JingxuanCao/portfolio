@@ -5,13 +5,13 @@ export default class Video extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      Loading: false,
+      Loading: true,
     };
   }
 
   Loading = () => {
     this.setState({
-      Loading: true
+      Loading: false
     })
   }
 
@@ -22,13 +22,13 @@ export default class Video extends React.Component {
         <Loading />
       );
     }
-    if (!this.state.Loading) {
-      return (
-        <video width={this.props.videoWidth} autoPlay loop muted>
-          <source src={this.props.videoName} type="video/mp4" />
-        </video>
-      );
-    }
+    // if (!this.state.Loading) {
+    //   return (
+    //     <video width={this.props.videoWidth} autoPlay loop muted>
+    //       <source src={this.props.videoName} type="video/mp4" />
+    //     </video>
+    //   );
+    // }
     return (
       <video width={this.props.videoWidth} onCanPlayThrough={this.Loading} autoPlay loop muted>
         <source src={this.props.videoName} type="video/mp4" />
