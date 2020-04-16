@@ -21,8 +21,8 @@ export default class Video extends React.Component {
   };
 
   render() {
-    const contentStyles = this.state.loading ? "none" : "initial";
-    const loadingStyles = this.state.loading ? "initial" : "none";
+    const contentStyles = this.state.loading ? "none" : "inherit";
+    const loadingStyles = this.state.loading ? "inherit" : "none";
 
     return (
       <>
