@@ -9,30 +9,34 @@ export default class Video extends React.Component {
     };
   }
 
-  Loading = () => {
+  doneLoading = () => {
+    console.log("done loading called!");
     this.setState({
-      Loading: false
-    })
-  }
-
+      Loading: false,
+    });
+  };
 
   render() {
-    if (this.state.Loading) {
-      return (
-        <Loading />
-      );
-    }
-    if (!this.state.Loading) {
-      return (
-        <video width={this.props.videoWidth} autoPlay loop muted>
+    const contentStyles = this.state.loading ? "none" : "block";
+    const loadingStyles = this.state.loading ? "block" : "none";
+
+    return (
+      <>
+        <video
+          width={this.props.videoWidth}
+          onCanPlayThrough={this.doneLoading}
+          style={{ display: contentStyles }}
+          autoPlay
+          loop
+          muted
+        >
           <source src={this.props.videoName} type="video/mp4" />
         </video>
-      );
-    }
-    return (
-      <video width={this.props.videoWidth} onCanPlayThrough={this.Loading} autoPlay loop muted>
-        <source src={this.props.videoName} type="video/mp4" />
-      </video>
+
+        <div style={{ display: loadingStyles }}>
+          <Loading />
+        </div>
+      </>
     );
   }
-};
+}
