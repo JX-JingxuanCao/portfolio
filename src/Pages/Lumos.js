@@ -16,6 +16,13 @@ import {
   Queen,
 } from "../Components/icons.js";
 
+
+let lumosBuild1 = <Image imgSrc="lumos-build-1.png" imgWidth="870" />;
+let lumosBuild2 = <Image imgSrc="lumos-build-2.png" imgWidth="870" />;
+let lumosBuild3 = <Image imgSrc="lumos-build-3.png" imgWidth="870" />;
+let lumosBuild4 = <Image imgSrc="lumos-build-4.png" imgWidth="870" />;
+let lumosBuild5 = <Image imgSrc="lumos-build-5.png" imgWidth="870" />;
+
 export default class Lumos extends React.Component {
   render() {
     return (
@@ -95,23 +102,19 @@ export default class Lumos extends React.Component {
                 and promote social activity and community through a shared experience. Lumos’ ultimate function
                  was to transform parks into lively, safe, and well-used public spaces during the night.
                 "
-            />
-            <ProjectContent
-              mainContent="Building Lumos was a challenging journey - a process of ideation, 
+              secondContent="Building Lumos was a challenging journey - a process of ideation, 
               iteration, prototyping, and teamwork. The team conducted research surrounding urban spaces and
                decided, eventually, to pursue design opportunities within public parks. Our vision was clear:
                we wanted to build something unique, practical, and visually stunning."
             />
 
-            <ProjectContent contentTitle="Development Process" />
-
-            <div className="lumos-building-box">
-              <Image imgSrc="lumos-build-1.png" imgWidth="870" />
-              <Image imgSrc="lumos-build-2.png" imgWidth="870" />
-              <Image imgSrc="lumos-build-3.png" imgWidth="870" />
-              <Image imgSrc="lumos-build-4.png" imgWidth="870" />
-              <Image imgSrc="lumos-build-5.png" imgWidth="870" />
-            </div>
+            <ProjectContent contentTitle="Development Process"
+              contentMediaOne={lumosBuild1}
+              contentMediaTwo={lumosBuild2}
+              contentMediaThree={lumosBuild3}
+              contentMediaFour={lumosBuild4}
+              contentMediaFive={lumosBuild5}
+            />
 
             <ProjectContent
               contentTitle="Conclusion"

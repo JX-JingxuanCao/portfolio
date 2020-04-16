@@ -5,7 +5,13 @@ export function ProjectContent(props) {
     <div className="contentBox">
       <h1 className="contentTitle">{props.contentTitle}</h1>
       <p className="mainContent">{props.mainContent}</p>
-      <div>{props.contentMedia}</div>
+      <p className="secondContent">{props.secondContent}</p>
+      <p className="thirdContent">{props.thirdContent}</p>
+      <div className="pic-box">{props.contentMediaOne}</div>
+      <div className="pic-box">{props.contentMediaTwo}</div>
+      <div className="pic-box">{props.contentMediaThree}</div>
+      <div className="pic-box">{props.contentMediaFour}</div>
+      <div className="pic-box">{props.contentMediaFive}</div>
     </div>
   );
 }

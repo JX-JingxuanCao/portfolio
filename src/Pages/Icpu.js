@@ -12,6 +12,9 @@ import {
 import NavBar from "../Components/NavBar.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 
+let icpupic1 = <Image imgSrc="icpu-timeline.png" imgWidth="870" />;
+let icpupic2 = <Image imgSrc="icpu-main.png" imgWidth="870" />
+
 export default class Icpu extends React.Component {
   render() {
     return (
@@ -96,10 +99,8 @@ export default class Icpu extends React.Component {
             />
             <ProjectContent
               contentTitle="Timeline"
+              contentMediaOne={icpupic1}
             />
-            <div className="pic-box">
-              <Image imgSrc="icpu-timeline.png" imgWidth="870" />
-            </div>
 
             <ProjectContent
               contentTitle="Research"
@@ -109,10 +110,9 @@ export default class Icpu extends React.Component {
               around designing user-testing models, facilitating data collection through interviews and
                journey-mapping, assisting in data analysis, and producing templates for both digital and 
                in-person presentation of our findings."
+              contentMediaOne={icpupic2}
             />
-            <div className="pic-box">
-              <Image imgSrc="icpu-main.png" imgWidth="870" />
-            </div>
+
           </div>
         </div>
       </div>

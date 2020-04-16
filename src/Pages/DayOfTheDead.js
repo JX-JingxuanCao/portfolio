@@ -14,6 +14,11 @@ import {
   Queen,
 } from "../Components/icons.js";
 
+let deadvr1 = <Image imgSrc="dead-1.jpg" imgWidth="870" />;
+let deadvr2 = <Image imgSrc="dead-2.jpg" imgWidth="870" />;
+let deadvr3 = <Image imgSrc="dead-3.jpg" imgWidth="870" />;
+let deadvr4 = <Image imgSrc="dead-4.jpg" imgWidth="870" />;
+
 export default class DayOfTheDead extends React.Component {
   render() {
     return (
@@ -115,13 +120,12 @@ export default class DayOfTheDead extends React.Component {
               they are facing. To turn, they simply adjust their head, press the button, and proceed in the new 
               direction."
             />
-            <ProjectContent contentTitle="Screenshots" />
-            <div className="pic-box">
-              <Image imgSrc="dead-1.jpg" imgWidth="870" />
-              <Image imgSrc="dead-2.jpg" imgWidth="870" />
-              <Image imgSrc="dead-3.jpg" imgWidth="870" />
-              <Image imgSrc="dead-4.jpg" imgWidth="870" />
-            </div>
+            <ProjectContent contentTitle="Screenshots"
+              contentMediaOne={deadvr1}
+              contentMediaTwo={deadvr2}
+              contentMediaThree={deadvr3}
+              contentMediaFour={deadvr4}
+            />
           </div>
         </div>
       </div>

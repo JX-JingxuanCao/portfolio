@@ -13,6 +13,12 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 
+
+let D19Build1 = <Image imgSrc="D19-4.jpg" imgWidth="870" />;
+let D19Build2 = <Image imgSrc="D19-1.jpg" imgWidth="870" />;
+let D19Build3 = <Image imgSrc="D19-2.jpg" imgWidth="870" />;
+let D19Build4 = <Image imgSrc="D19-3.jpg" imgWidth="870" />;
+
 export default class D19 extends React.Component {
   render() {
     return (
@@ -108,34 +114,29 @@ export default class D19 extends React.Component {
             <ProjectContent
               contentTitle="Overview"
               mainContent="The University of Sydney annually showcases works by graduating Bachelor of 
-              Design Computing and Master of Interaction Design and Electronic Arts students.
-                "
-            />
-            <ProjectContent
-              mainContent="The show exhibits students’ ground-breaking design innovations and ideas, working with emerging 
+              Design Computing and Master of Interaction Design and Electronic Arts students."
+              secondContent="The show exhibits students’ ground-breaking design innovations and ideas, working with emerging 
               digital technologies to produce a variety of products, services, and systems, including mobile apps, digital 
               systems and experiences, and wearable technology. The 2019 theme - “D19 Wonderlab” - centred 
               around the playful transformation of a target venue, the Wilkinson Building Homebase at the University of Sydney."
-            />
-            <ProjectContent
-              mainContent="As part of the D19 curation team, my job centred around collecting and organising creative 
+              thirdContent="As part of the D19 curation team, my job centred around collecting and organising creative 
               projects from target students and producing a floor plan in discussion with them. The project 
               demonstrated my ease designing and assessing a floor plan; I was in constant communication with 
               both the curation team and students in order to fully cater to the project’s particular needs and 
               functionalities, assisting ultimately in producing a memorable showcase."
             />
+
             <ProjectContent contentTitle="Floor Plan" />
             <div className="pic-box">
               {/* <Image imgSrc="lumos-build-1.png" imgWidth="870" /> */}
             </div>
 
-            <ProjectContent contentTitle="Designing Homebase" />
-            <div className="pic-box">
-              <Image imgSrc="D19-4.jpg" imgWidth="870" />
-              <Image imgSrc="D19-1.jpg" imgWidth="870" />
-              <Image imgSrc="D19-2.jpg" imgWidth="870" />
-              <Image imgSrc="D19-3.jpg" imgWidth="870" />
-            </div>
+            <ProjectContent contentTitle="Designing Homebase"
+              contentMediaOne={D19Build4}
+              contentMediaTwo={D19Build1}
+              contentMediaThree={D19Build2}
+              contentMediaFour={D19Build3}
+            />
 
             <ProjectContent contentTitle="D19 Team" />
           </div>

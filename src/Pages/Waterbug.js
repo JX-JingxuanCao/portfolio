@@ -13,6 +13,11 @@ import {
   King
 } from "../Components/icons.js";
 
+let waterbugpic1 = <Image imgSrc="waterbug-user.png" imgWidth="670" />;
+let waterbugpic2 = <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
+let waterbugpic3 = <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
+let waterbugpic4 = <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
+
 export default class Waterbug extends React.Component {
   render() {
     return (
@@ -97,8 +102,19 @@ export default class Waterbug extends React.Component {
                their garden - even when away from home.
                 "
             />
-            <ProjectContent contentTitle="Users" />
-            <ProjectContent contentTitle="Prototype & User flow" />
+            <ProjectContent contentTitle="User Needs"
+              contentMediaOne={waterbugpic1}
+            />
+
+
+            <ProjectContent contentTitle="Design Process"
+              contentMediaOne={waterbugpic2}
+            />
+
+            <ProjectContent contentTitle="Prototype & User flow"
+              contentMediaOne={waterbugpic3}
+            />
+
             <ProjectContent
               contentTitle="Final Prototype"
               mainContent="It took significant user-testing and multiple design iterations to produce 
@@ -107,7 +123,9 @@ export default class Waterbug extends React.Component {
               inviting and simple visual design, but our final prototype was successful in providing 
               the app’s flexible services without overwhelming users visually with information.
               "
+              contentMediaOne={waterbugpic4}
             />
+
           </div>
         </div>
       </div>

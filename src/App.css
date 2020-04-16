@@ -219,11 +219,29 @@ body {
   font-size: 20px;
   color: #ffa45c;
 }
+.contentBox{
+  padding-bottom: 30px;
+}
 .mainContent {
   font-family: "Nota Sans", sans-serif;
   font-size: 16px;
   font-weight: lighter;
   color: white;
+  padding-bottom: 10px;
+}
+.secondContent {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  padding-bottom: 10px;
+}
+.thirdContent {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: white;
+  padding-bottom: 10px;
 }
 .project-container-wrapper {
   width: 100vw;
@@ -236,6 +254,9 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 50px;
+}
+.pic-box{
+  padding-bottom: 20px;
 }
 
 /* individual project page ends here */
