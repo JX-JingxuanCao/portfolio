@@ -9,8 +9,13 @@ export default class Video extends React.Component {
     };
   }
 
+  componentDidMount() {
+    const videoContent = document.getElementById("videoContent");
+    videoContent.addEventListener("canplaythrough", this.doneLoading);
+  }
+
   doneLoading = () => {
-    console.log("done loading called!");
+    console.log("done loading!");
     this.setState({
       Loading: false,
     });
@@ -18,20 +23,23 @@ export default class Video extends React.Component {
 
   render() {
     const contentStyles = this.state.loading ? "none" : "block";
-    const loadingStyles = this.state.loading ? "block" : "none";
+    const loadingStyles = this.state.loading ? "auto" : "none";
 
     return (
       <>
-        <video
-          width={this.props.videoWidth}
-          onCanPlayThrough={this.doneLoading}
-          style={{ display: contentStyles }}
-          autoPlay
-          loop
-          muted
-        >
-          <source src={this.props.videoName} type="video/mp4" />
-        </video>
+        <div style={{ display: contentStyles }}>
+          <video
+            id="videoContent"
+            width={this.props.videoWidth}
+            wq
+            onCanPlayThrough={this.doneLoading}
+            autoPlay
+            loop
+            muted
+          >
+            <source src={this.props.videoName} type="video/mp4" />
+          </video>
+        </div>
 
         <div style={{ display: loadingStyles }}>
           <Loading />
