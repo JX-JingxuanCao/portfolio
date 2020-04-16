@@ -1,6 +1,7 @@
 import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
+import Image from "../Components/image.js";
 import {
   Vdesign,
   Research,
@@ -40,7 +41,9 @@ export default class Icpu extends React.Component {
                     <Vdesign />
                     <ProjectPage roleName="Visual Designer" />
                   </div>
+                </div>
 
+                <div className="iconTags-container">
                   <div className="iconTag">
                     <Research />
                     <ProjectPage roleName="Researcher" />
@@ -92,6 +95,13 @@ export default class Icpu extends React.Component {
                 "
             />
             <ProjectContent
+              contentTitle="Timeline"
+            />
+            <div className="pic-box">
+              <Image imgSrc="icpu-timeline.png" imgWidth="870" />
+            </div>
+
+            <ProjectContent
               contentTitle="Research"
               mainContent="From our research, the team decided a key intervention opportunity was 
               the promotion of ‘purpose’ as a core experiential concept, and developed research into 
@@ -100,6 +110,9 @@ export default class Icpu extends React.Component {
                journey-mapping, assisting in data analysis, and producing templates for both digital and 
                in-person presentation of our findings."
             />
+            <div className="pic-box">
+              <Image imgSrc="icpu-main.png" imgWidth="870" />
+            </div>
           </div>
         </div>
       </div>

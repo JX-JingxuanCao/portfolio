@@ -125,7 +125,18 @@ export default class D19 extends React.Component {
               functionalities, assisting ultimately in producing a memorable showcase."
             />
             <ProjectContent contentTitle="Floor Plan" />
+            <div className="pic-box">
+              {/* <Image imgSrc="lumos-build-1.png" imgWidth="870" /> */}
+            </div>
+
             <ProjectContent contentTitle="Designing Homebase" />
+            <div className="pic-box">
+              <Image imgSrc="D19-4.jpg" imgWidth="870" />
+              <Image imgSrc="D19-1.jpg" imgWidth="870" />
+              <Image imgSrc="D19-2.jpg" imgWidth="870" />
+              <Image imgSrc="D19-3.jpg" imgWidth="870" />
+            </div>
+
             <ProjectContent contentTitle="D19 Team" />
           </div>
         </div>

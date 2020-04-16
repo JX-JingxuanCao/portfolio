@@ -2,6 +2,7 @@ import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import NavBar from "../Components/NavBar.js";
+import Image from "../Components/image.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import {
   GameDesign,
@@ -25,7 +26,7 @@ export default class DayOfTheDead extends React.Component {
         <div className="project-container-wrapper">
           <div className="projectPage-content-container">
             <h1 className="ProjectTitle">Day of the Dead - VR game</h1>
-          
+
             <div className="projectPage-intro">
               <div className="mini-content-box">
                 <ProjectPage miniTitle="Role" />
@@ -48,15 +49,15 @@ export default class DayOfTheDead extends React.Component {
                 </div>
 
                 <div className="iconTags-container">
-                <div className="iconTag">
-                  <UXdesign />
-                  <ProjectPage roleName="User Experience Designer " />
-                </div>
+                  <div className="iconTag">
+                    <UXdesign />
+                    <ProjectPage roleName="User Experience Designer " />
+                  </div>
 
-                <div className="iconTag">
+                  <div className="iconTag">
                     <Interaction />
                     <ProjectPage roleName="User Interaction Designer " />
-                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -115,6 +116,12 @@ export default class DayOfTheDead extends React.Component {
               direction."
             />
             <ProjectContent contentTitle="Screenshots" />
+            <div className="pic-box">
+              <Image imgSrc="dead-1.jpg" imgWidth="870" />
+              <Image imgSrc="dead-2.jpg" imgWidth="870" />
+              <Image imgSrc="dead-3.jpg" imgWidth="870" />
+              <Image imgSrc="dead-4.jpg" imgWidth="870" />
+            </div>
           </div>
         </div>
       </div>

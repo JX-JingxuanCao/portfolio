@@ -4,7 +4,7 @@ import { ProjectContent } from "../Components/ProjectContent.js";
 import LumosModel from "..//Components/lumosModel.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
-import Video from "../Components/video.js";
+// import ParallaxEffectImg from "../Components/tilt.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import {
   Vdesign,
@@ -105,6 +105,14 @@ export default class Lumos extends React.Component {
 
             <ProjectContent contentTitle="Development Process" />
 
+            <div className="lumos-building-box">
+              <Image imgSrc="lumos-build-1.png" imgWidth="870" />
+              <Image imgSrc="lumos-build-2.png" imgWidth="870" />
+              <Image imgSrc="lumos-build-3.png" imgWidth="870" />
+              <Image imgSrc="lumos-build-4.png" imgWidth="870" />
+              <Image imgSrc="lumos-build-5.png" imgWidth="870" />
+            </div>
+
             <ProjectContent
               contentTitle="Conclusion"
               mainContent="While the team thoroughly enjoyed the process of designing Lumos, there were 
@@ -115,6 +123,10 @@ export default class Lumos extends React.Component {
                 great deal of practical design experience."
             />
           </div>
+
+          {/* <ParallaxEffectImg
+            imgSrc="lumos-final.png" imgWidth="770"
+          /> */}
         </div>
       </div>
     );
