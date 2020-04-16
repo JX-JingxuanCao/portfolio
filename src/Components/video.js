@@ -15,15 +15,14 @@ export default class Video extends React.Component {
   }
 
   doneLoading = () => {
-    console.log("done loading!");
     this.setState({
       Loading: false,
     });
   };
 
   render() {
-    const contentStyles = this.state.loading ? "none" : "block";
-    const loadingStyles = this.state.loading ? "auto" : "none";
+    const contentStyles = this.state.loading ? "none" : "initial";
+    const loadingStyles = this.state.loading ? "initial" : "none";
 
     return (
       <>
