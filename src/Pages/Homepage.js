@@ -163,10 +163,9 @@ export default class Homepage extends React.Component {
             </div>
             <div className="skillBox">
               <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
-
             </div>
             <div className="skillBox">
-              <button className="ButtonMain"><a id="linkName" href="https://www.w3schools.com" target="_blank">VIEW RESUME</a> </button>
+              <button className="ButtonMain"><a className="linkName" href="https://www.w3schools.com" target="_blank">VIEW RESUME</a> </button>
             </div>
           </Element>
         </div>

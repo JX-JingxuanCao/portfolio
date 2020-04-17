@@ -113,9 +113,16 @@ body {
   color:#ffa45c;
   text-decoration: underline;
 }
-#linkName{
+.linkName{
   font-family: "Noto Sans", sans-serif;
+  text-decoration: none;
+  color:#ffa45c;
 }
+.linkName:hover,
+.linkName:active {
+  color: #ffffff;
+}
+
 /* For individual project page */
 .projectName {
   font-family: "Nota Sans", sans-serif;
@@ -554,8 +561,6 @@ body {
   padding: 0 1rem;
 }
 .navLogo a {
-  color: white;
-  font-weight: 30px;
   padding: 0 1.5rem;
 }
 .spacer {
