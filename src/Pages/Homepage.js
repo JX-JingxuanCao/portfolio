@@ -154,11 +154,20 @@ export default class Homepage extends React.Component {
 
         <div id="Profile">
           <Element name="Profile">
-            <div className="skill-intro">
-              <Video videoWidth="660" videoName="intro.mp4" />;
-            </div>
             <SkillSet />
-            <ToggleSkills />
+            <div className="skill-intro">
+              <Video videoWidth="660" videoName="intro.mp4" />
+            </div>
+            <div className="toggleSkills">
+              <ToggleSkills />
+            </div>
+            <div className="skillBox">
+              <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
+
+            </div>
+            <div className="skillBox">
+              <button className="ButtonMain"><a id="linkName" href="https://www.w3schools.com" target="_blank">VIEW RESUME</a> </button>
+            </div>
           </Element>
         </div>
 
