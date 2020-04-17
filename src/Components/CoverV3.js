@@ -23,20 +23,20 @@ export default function Card() {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}
     >
       <div className="bg-wrapper">
-        <Image imgSrc="cover-changed.png" />;
+        <Image imgSrc="cover-changed.png" />
       </div>
 
       <animated.div
         className="card1"
         style={{ transform: props.xy.interpolate(trans1) }}
       >
-        <Video videoWidth="1440" videoName="full-changed.mp4" />;
+        <Video videoWidth="1440" videoName="full-changed.mp4" />
       </animated.div>
       <animated.div
         className="card2"
         style={{ transform: props.xy.interpolate(trans2) }}
       >
-        <Image imgSrc="JustMe.png" />;
+        <Image imgSrc="JustMe.png" />
       </animated.div>
       {/* <animated.div
         class="card3"

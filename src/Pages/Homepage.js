@@ -54,8 +54,11 @@ export default class Homepage extends React.Component {
           </div>
         </div>
 
-        <Element id="Work" name="Work">
-          <div className="preview-wrapper">
+        <div className="preview-wrapper">
+          <Element id="Work" name="Work">
+            <div className="work-text">
+              <h1 className="work-title">Recent Work</h1>
+            </div>
             <Preview
               previewMedia={lumosMedia}
               projectTitle="Lumos"
@@ -144,9 +147,10 @@ export default class Homepage extends React.Component {
                 <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
               }
             />
-          </div>
+          </Element>
+        </div>
 
-        </Element>
+
 
         <div id="Profile">
           <Element name="Profile">
