@@ -9,9 +9,9 @@ const ParallaxEffectImg = (props) => {
       className="parallax-effect-img"
       tiltMaxAngleX={5}
       tiltMaxAngleY={5}
-      perspective={1000}
+      perspective={1300}
       transitionSpeed={1500}
-      scale={1.0}
+      scale={1.03}
       gyroscope={true}
     >
       <img src={props.imgSrc} width={props.imgWidth} alt={props.imgAlt} />

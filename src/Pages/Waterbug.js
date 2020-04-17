@@ -6,6 +6,8 @@ import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import { MagicSpinner } from "react-spinners-kit";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import {
   UXresearch,
   Interaction,
@@ -13,11 +15,6 @@ import {
   UIdesign,
   King
 } from "../Components/icons.js";
-
-let waterbugpic1 = <Image imgSrc="waterbug-user.png" imgWidth="670" />;
-let waterbugpic2 = <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
-let waterbugpic3 = <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
-let waterbugpic4 = <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
 
 export default class Waterbug extends React.Component {
   constructor(props) {
@@ -32,7 +29,7 @@ export default class Waterbug extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
         .then(json => this.setState({ done: true }));
-    }, 7000);
+    }, 5000);
   }
 
   render() {
@@ -44,7 +41,7 @@ export default class Waterbug extends React.Component {
           </div>
         ) : (
 
-            <div className="projectPage-waterbug">
+            <div className="projectPage">
               <ScrollToTopOnMount />
               <NavBar type="projectPage" />
 
@@ -115,45 +112,55 @@ export default class Waterbug extends React.Component {
                     </div>
                   </div>
 
-                  <div>
-                    <ProjectContent
-                      contentTitle="Overview"
-                      mainContent="Waterbug is an app created to improve and ease gardening experiences 
+
+                  <ProjectContent
+                    contentTitle="Overview"
+                    mainContent="Waterbug is an app created to improve and ease gardening experiences 
               through use of autonomous drones. The app is customisable for particular plants and
                garden-types, and addresses gardening needs such as watering, weeding, soil quality, 
                and offers monitoring and notification services for users on the day-to-day state of 
                their garden.  Waterbug’s design means users have full control over, and access to, 
-               their garden - even when away from home.
-                "
-                    />
+               their garden - even when away from home."/>
 
-                    <ProjectContent contentTitle="User Needs"
-                      contentMediaOne={waterbugpic1}
-                    />
+                  <ProjectContent contentTitle="User Needs">
+                    <div className="pic-box">
+                      <Image imgSrc="waterbug-user.png" imgWidth="670" />
+                    </div>
+                  </ProjectContent>
 
-
-                    <ProjectContent contentTitle="Design Process"
-                      contentMediaOne={waterbugpic2}
-                    />
-
-                    <ProjectContent contentTitle="Prototype & User flow"
-                      contentMediaOne={waterbugpic3}
-                    />
-
-                    <ProjectContent
-                      contentTitle="Final Prototype"
-                      mainContent="It took significant user-testing and multiple design iterations to produce 
-              the right balance of information to display on the screen of the app. It was a challenging 
-              process to combine the depth of the app’s function and customizability options with an 
-              inviting and simple visual design, but our final prototype was successful in providing 
-              the app’s flexible services without overwhelming users visually with information.
-              "
-                      contentMediaOne={waterbugpic4}
-                    />
-                  </div>
-
+                  <ProjectContent contentTitle="Design Process">
+                    <div className="pic-box">
+                      <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
+                    </div>
+                  </ProjectContent>
                 </div>
               </div>
+
+              <ScrollAnimation
+                animateIn="fadeInUp"
+                duration="2"
+              >
+                <div className="project-container-wrapper-white">
+                  <div className="projectPage-content-container">
+                    <ProjectContent contentTitle="Prototype & User flow">
+                      <div className="pic-box">
+                        <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
+                      </div>
+                    </ProjectContent>
+
+                    <ProjectContent
+                      contentTitle="Final Prototype">
+                      <p className="waterbug-final-text">It took significant user-testing and multiple design iterations to produce
+                      the right balance of information to display on the screen of the app. It was a challenging
+                      process to combine the depth of the app’s function and customizability options with an
+                      inviting and simple visual design, but our final prototype was successful in providing
+                        the app’s flexible services without overwhelming users visually with information. </p>
+
+                      <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
+                    </ProjectContent>
+                  </div>
+                </div>
+              </ScrollAnimation>
             </div>
           )}
       </div>

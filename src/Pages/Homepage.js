@@ -37,7 +37,7 @@ export default class Homepage extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
         .then(json => this.setState({ done: true }));
-    }, 10000);
+    }, 6000);
   }
 
   render() {
@@ -66,7 +66,7 @@ export default class Homepage extends React.Component {
                   </div>
 
                   <ScrollAnimation
-                    animateIn="slideInUp">
+                    animateIn="fadeInUp">
                     <Preview
                       previewMedia={lumosMedia}
                       projectTitle="Lumos"
@@ -86,7 +86,7 @@ export default class Homepage extends React.Component {
                   </ScrollAnimation>
 
                   <ScrollAnimation
-                    animateIn="slideInUp">
+                    animateIn="fadeInUp">
                     <Preview
                       previewMedia={D19Media}
                       projectTitle="University of Sydney The Design Graduate Exhibition 2019"
@@ -103,7 +103,7 @@ export default class Homepage extends React.Component {
                   </ScrollAnimation>
 
                   <ScrollAnimation
-                    animateIn="slideInUp">
+                    animateIn="fadeInUp">
                     <Preview
                       previewMedia={deadMedia}
                       projectTitle="Day of the Dead VR"
@@ -128,7 +128,7 @@ export default class Homepage extends React.Component {
                   </ScrollAnimation>
 
                   <ScrollAnimation
-                    animateIn="slideInUp">
+                    animateIn="fadeInUp">
                     <Preview
                       previewMedia={icpuMedia}
                       projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
@@ -149,7 +149,7 @@ export default class Homepage extends React.Component {
                   </ScrollAnimation>
 
                   <ScrollAnimation
-                    animateIn="slideInUp">
+                    animateIn="fadeInUp">
                     <Preview
                       previewMedia={WaterbugMedia}
                       projectTitle="Waterbug"

@@ -246,20 +246,6 @@ body {
   color: white;
   padding-bottom: 10px;
 }
-.secondContent {
-  font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
-  color: white;
-  padding-bottom: 10px;
-}
-.thirdContent {
-  font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
-  font-weight: lighter;
-  color: white;
-  padding-bottom: 10px;
-}
 .project-container-wrapper {
   width: 100vw;
   display: flex;
@@ -273,23 +259,9 @@ body {
   padding-top: 50px;
 }
 .pic-box{
-  padding-bottom: 20px;
+  padding-top:20px;
+  padding-bottom:20px;
 }
-.projectPage-waterbug {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  /* background: linear-gradient(#000000 0% ,#272727 85%, #ffffff 90%); */
-  /* background: linear-gradient(180deg, #000000 0%, #ffffff 95%); */
-  background: linear-gradient(#000000 0%, #000000 70%, #ffffff 80%);
-  transition: background .2s ease;
-}
-.waterbug-page {
-  background: linear-gradient(#000000 , #ffffff);
-  /* background: linear-gradient(180deg, #000000 0%, #ffffff 95%); */
-}
-
 /* individual project page ends here */
 
 /* For skillSet section */
@@ -759,6 +731,22 @@ body {
   stroke-dasharray: 10;
   stroke-dashoffset: 10;
   animation: dash 19.5s linear forwards alternate infinite;
+}
+/* ends lumos page css */
+
+/* waterbug page css */
+.project-container-wrapper-white{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+.waterbug-final-text{
+  font-family: "Nota Sans", sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: black;
+  padding-bottom: 10px;
 }
 
 /* d19 page css */

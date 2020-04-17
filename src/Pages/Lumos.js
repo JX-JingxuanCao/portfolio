@@ -5,7 +5,7 @@ import LumosModel from "..//Components/lumosModel.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
 import { MagicSpinner } from "react-spinners-kit";
-// import ParallaxEffectImg from "../Components/tilt.js";
+import ParallaxEffectImg from "../Components/tilt.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import {
   Vdesign,
@@ -16,13 +16,6 @@ import {
   King,
   Queen,
 } from "../Components/icons.js";
-
-
-let lumosBuild1 = <Image imgSrc="lumos-build-1.png" imgWidth="870" />;
-let lumosBuild2 = <Image imgSrc="lumos-build-2.png" imgWidth="870" />;
-let lumosBuild3 = <Image imgSrc="lumos-build-3.png" imgWidth="870" />;
-let lumosBuild4 = <Image imgSrc="lumos-build-4.png" imgWidth="870" />;
-let lumosBuild5 = <Image imgSrc="lumos-build-5.png" imgWidth="870" />;
 
 export default class Lumos extends React.Component {
   constructor(props) {
@@ -37,7 +30,7 @@ export default class Lumos extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
         .then(json => this.setState({ done: true }));
-    }, 5000);
+    }, 4000);
   }
 
   render() {
@@ -120,24 +113,39 @@ export default class Lumos extends React.Component {
                   <ProjectContent
                     contentTitle="Abstract"
                     mainContent="Lumos was an interactive lighting installation designed to attract pedestrians in 
-                parks during nighttime. Users were encouraged to interact with the installation through the 
-                ability to customise Lumos’ colours, and its animations were designed to draw in large crowds 
-                and promote social activity and community through a shared experience. Lumos’ ultimate function
-                 was to transform parks into lively, safe, and well-used public spaces during the night.
-                "
-                    secondContent="Building Lumos was a challenging journey - a process of ideation, 
-              iteration, prototyping, and teamwork. The team conducted research surrounding urban spaces and
-               decided, eventually, to pursue design opportunities within public parks. Our vision was clear:
-               we wanted to build something unique, practical, and visually stunning."
-                  />
+                      parks during nighttime. Users were encouraged to interact with the installation through the 
+                      ability to customise Lumos’ colours, and its animations were designed to draw in large crowds 
+                      and promote social activity and community through a shared experience. Lumos’ ultimate function
+                      was to transform parks into lively, safe, and well-used public spaces during the night.">
 
-                  <ProjectContent contentTitle="Development Process"
-                    contentMediaOne={lumosBuild1}
-                    contentMediaTwo={lumosBuild2}
-                    contentMediaThree={lumosBuild3}
-                    contentMediaFour={lumosBuild4}
-                    contentMediaFive={lumosBuild5}
-                  />
+                    <p>Building Lumos was a challenging journey - a process of ideation,
+                    iteration, prototyping, and teamwork. The team conducted research surrounding urban spaces and
+                    decided, eventually, to pursue design opportunities within public parks. Our vision was clear:
+                    we wanted to build something unique, practical, and visually stunning.</p>
+                  </ProjectContent>
+
+                  <ProjectContent contentTitle="Development Process">
+                    <div className="pic-box">
+                      <Image imgSrc="lumos-build-1.png" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="lumos-build-2.png" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="lumos-build-3.png" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="lumos-build-4.png" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="lumos-build-5.png" imgWidth="870" />
+                    </div>
+                  </ProjectContent>
+
 
                   <ProjectContent
                     contentTitle="Conclusion"
@@ -146,16 +154,22 @@ export default class Lumos extends React.Component {
                 the Open Lighting Architecture (OLA) Framework, and we frequently faced hardware and software 
                 issues during the design and building of the installation. It was effective work as a team unit 
                 which allowed us to overcome these obstacles throughout the project, and my team and I gained a 
-                great deal of practical design experience."
-                  />
-                </div>
+                great deal of practical design experience.">
 
-                {/* <ParallaxEffectImg
-            imgSrc="lumos-final.png" imgWidth="770"
-          /> */}
-                {/* <ParallaxEffectImg
-            imgSrc="lumos-gradshow.jpg" imgWidth="770"
-          /> */}
+                    <div className="pic-box">
+                      <ParallaxEffectImg
+                        imgSrc="lumos-final.jpg" imgWidth="670" />
+                    </div>
+                  </ProjectContent>
+
+                  <ProjectContent contentTitle="Lumos at D19">
+                    <div className="pic-box">
+                      <ParallaxEffectImg
+                        imgSrc="lumos-gradshow.jpg" imgWidth="870" />
+                    </div>
+                  </ProjectContent>
+
+                </div>
               </div>
             </div>
           )}

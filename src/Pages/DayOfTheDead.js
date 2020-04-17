@@ -15,11 +15,6 @@ import {
   Queen,
 } from "../Components/icons.js";
 
-let deadvr1 = <Image imgSrc="dead-1.jpg" imgWidth="870" />;
-let deadvr2 = <Image imgSrc="dead-2.jpg" imgWidth="870" />;
-let deadvr3 = <Image imgSrc="dead-3.jpg" imgWidth="870" />;
-let deadvr4 = <Image imgSrc="dead-4.jpg" imgWidth="870" />;
-
 export default class DayOfTheDead extends React.Component {
   constructor(props) {
     super(props);
@@ -130,23 +125,36 @@ export default class DayOfTheDead extends React.Component {
                   <ProjectContent
                     contentTitle="Overview"
                     mainContent="This project was designed as an educational aid to increase awareness about the 
-              Mexican Festival known as the Day of the Dead through a virtual reality (VR) experience. 
-              The user gains an understanding of the festival through completion of objectives throughout 
-              the game, with assistance and accompaniment by a virtual guide who provides relevant information.
-               Interaction is enabled through use of a virtual reality headset, in which buttons on the headset 
-               are used to interact with corresponding buttons and phenomena within the game.
-                "
-                    secondContent="While the headset is on, the user can hold down the button to move in the direction 
-              they are facing. To turn, they simply adjust their head, press the button, and proceed in the new 
-              direction."
-                  />
+                        Mexican Festival known as the Day of the Dead through a virtual reality (VR) experience. 
+                        The user gains an understanding of the festival through completion of objectives throughout 
+                        the game, with assistance and accompaniment by a virtual guide who provides relevant information.
+                        Interaction is enabled through use of a virtual reality headset, in which buttons on the headset 
+                        are used to interact with corresponding buttons and phenomena within the game.">
 
-                  <ProjectContent contentTitle="Screenshots"
-                    contentMediaOne={deadvr1}
-                    contentMediaTwo={deadvr2}
-                    contentMediaThree={deadvr3}
-                    contentMediaFour={deadvr4}
-                  />
+                    <p>While the headset is on, the user can hold down the button to move in the direction
+                    they are facing. To turn, they simply adjust their head, press the button, and proceed in the new
+                    direction.
+                    </p>
+                  </ProjectContent>
+
+                  <ProjectContent contentTitle="Screenshots">
+                    <div className="pic-box">
+                      <Image imgSrc="dead-1.jpg" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="dead-2.jpg" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="dead-3.jpg" imgWidth="870" />
+                    </div>
+
+                    <div className="pic-box">
+                      <Image imgSrc="dead-4.jpg" imgWidth="870" />
+                    </div>
+                  </ProjectContent>
+
                 </div>
               </div>
             </div>
