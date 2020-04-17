@@ -967,3 +967,8 @@ body {
 .fa{
   color:white;
 }
+.loading-wrapper{
+  display:flex;
+  justify-content: center;
+  padding-top:23%;
+}

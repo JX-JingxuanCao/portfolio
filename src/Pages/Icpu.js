@@ -2,6 +2,9 @@ import React from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import Image from "../Components/image.js";
+import NavBar from "../Components/NavBar.js";
+import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import { MagicSpinner } from "react-spinners-kit";
 import {
   Vdesign,
   Research,
@@ -9,85 +12,105 @@ import {
   King,
   Queen,
 } from "../Components/icons.js";
-import NavBar from "../Components/NavBar.js";
-import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+
 
 let icpupic1 = <Image imgSrc="icpu-timeline.png" imgWidth="870" />;
 let icpupic2 = <Image imgSrc="icpu-main.png" imgWidth="870" />
 
 export default class Icpu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      done: undefined
+    };
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then(response => response.json())
+        .then(json => this.setState({ done: true }));
+    }, 4000);
+  }
   render() {
     return (
-      <div className="projectPage">
-        <ScrollToTopOnMount />
-        <NavBar type="projectPage" />
+      <div>
+        {!this.state.done ? (
+          <div className="loading-wrapper">
+            <MagicSpinner size="150" color="#ffa45c" />
+          </div>
+        ) : (
 
-        <div className="project-page-wrapper"></div>
+            <div className="projectPage">
+              <ScrollToTopOnMount />
+              <NavBar type="projectPage" />
 
-        <div className="project-container-wrapper">
-          <div className="projectPage-content-container">
-            <h1 className="ProjectTitle">
-              University of Sydney & Industry experts - Create Space
+              <div className="project-page-wrapper"></div>
+
+              <div className="project-container-wrapper">
+                <div className="projectPage-content-container">
+                  <h1 className="ProjectTitle">
+                    University of Sydney & Industry experts - Create Space
             </h1>
 
-            <div className="projectPage-intro">
-              <div className="mini-content-box">
-                <ProjectPage miniTitle="Role" />
+                  <div className="projectPage-intro">
+                    <div className="mini-content-box">
+                      <ProjectPage miniTitle="Role" />
 
-                <div className="iconTags-container">
-                  <div className="iconTag">
-                    <UXdesign />
-                    <ProjectPage roleName="User Experience Designer " />
-                  </div>
+                      <div className="iconTags-container">
+                        <div className="iconTag">
+                          <UXdesign />
+                          <ProjectPage roleName="User Experience Designer " />
+                        </div>
 
-                  <div className="iconTag">
-                    <Vdesign />
-                    <ProjectPage roleName="Visual Designer" />
-                  </div>
-                </div>
+                        <div className="iconTag">
+                          <Vdesign />
+                          <ProjectPage roleName="Visual Designer" />
+                        </div>
+                      </div>
 
-                <div className="iconTags-container">
-                  <div className="iconTag">
-                    <Research />
-                    <ProjectPage roleName="Researcher" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="mini-content-box">
-                <ProjectPage miniTitle="Team" />
-
-                <div className="iconTags-wrapper">
-                  <div className="iconTags-container">
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Callan Williams" />
+                      <div className="iconTags-container">
+                        <div className="iconTag">
+                          <Research />
+                          <ProjectPage roleName="Researcher" />
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="iconTag">
-                      <Queen />
-                      <ProjectPage roleName="Eleanor Curran" />
-                    </div>
+                    <div className="mini-content-box">
+                      <ProjectPage miniTitle="Team" />
 
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Jingxuan Cao" />
+                      <div className="iconTags-wrapper">
+                        <div className="iconTags-container">
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Callan Williams" />
+                          </div>
+
+                          <div className="iconTag">
+                            <Queen />
+                            <ProjectPage roleName="Eleanor Curran" />
+                          </div>
+
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Jingxuan Cao" />
+                          </div>
+                        </div>
+
+                        <div className="iconTags-container">
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Matthew Raad" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="iconTags-container">
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Matthew Raad" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <ProjectContent
-              contentTitle="Overview"
-              mainContent="I participated in an intensive interdisciplinary group project, 
+                  <ProjectContent
+                    contentTitle="Overview"
+                    mainContent="I participated in an intensive interdisciplinary group project, 
               working with one of the University of Sydney’s industry and community partners
                to research and prototype an innovative solution to a complex issue. As a 
                research team, we were asked to address issues within the University of Sydney’s 
@@ -96,25 +119,27 @@ export default class Icpu extends React.Component {
                user research, we produced various proposals and solutions for systemic policy issues
                 to the Head of USYD Student Strategic Team. 
                 "
-            />
-            <ProjectContent
-              contentTitle="Timeline"
-              contentMediaOne={icpupic1}
-            />
+                  />
+                  <ProjectContent
+                    contentTitle="Timeline"
+                    contentMediaOne={icpupic1}
+                  />
 
-            <ProjectContent
-              contentTitle="Research"
-              mainContent="From our research, the team decided a key intervention opportunity was 
+                  <ProjectContent
+                    contentTitle="Research"
+                    mainContent="From our research, the team decided a key intervention opportunity was 
               the promotion of ‘purpose’ as a core experiential concept, and developed research into 
               purpose-building activities accordingly. My roles within this research project centred 
               around designing user-testing models, facilitating data collection through interviews and
                journey-mapping, assisting in data analysis, and producing templates for both digital and 
                in-person presentation of our findings."
-              contentMediaOne={icpupic2}
-            />
+                    contentMediaOne={icpupic2}
+                  />
 
-          </div>
-        </div>
+                </div>
+              </div>
+            </div>
+          )}
       </div>
     );
   }
