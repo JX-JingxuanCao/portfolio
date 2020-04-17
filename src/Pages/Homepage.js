@@ -11,6 +11,8 @@ import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import Card from "../Components/CoverV3.js";
+import ScrollAnimation from 'react-animate-on-scroll';
+import "animate.css/animate.min.css";
 import Loading from "../Components/Loading.js";
 import ReactLoading from "react-loading";
 
@@ -59,94 +61,110 @@ export default class Homepage extends React.Component {
             <div className="work-text">
               <h1 className="work-title">Recent Work</h1>
             </div>
-            <Preview
-              previewMedia={lumosMedia}
-              projectTitle="Lumos"
-              skillList={[
-                <Skill
-                  key="Interaction Product Design"
-                  text="Interaction Product Design"
-                />,
-                <Skill
-                  key="Electrical Engineering"
-                  text="Electrical Engineering"
-                />,
-                <Skill key="Physical Computing" text="Physical Computing" />,
-              ]}
-              button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
-            />
 
-            <Preview
-              previewMedia={D19Media}
-              projectTitle="University of Sydney The Design Graduate Exhibition 2019"
-              skillList={[
-                <Skill
-                  key="User Experience Design"
-                  text="User Experience Design"
-                />,
-                <Skill key="Exhibition Planning" text="Exhibition Planning" />,
-                <Skill key="Branding" text="Branding" />,
-              ]}
-              button={<ButtonMain buttonText="VIEW PROJECT" linkName="D19" />}
-            />
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <Preview
+                previewMedia={lumosMedia}
+                projectTitle="Lumos"
+                skillList={[
+                  <Skill
+                    key="Interaction Product Design"
+                    text="Interaction Product Design"
+                  />,
+                  <Skill
+                    key="Electrical Engineering"
+                    text="Electrical Engineering"
+                  />,
+                  <Skill key="Physical Computing" text="Physical Computing" />,
+                ]}
+                button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
+              />
+            </ScrollAnimation>
 
-            <Preview
-              previewMedia={deadMedia}
-              projectTitle="Day of the Dead VR"
-              skillList={[
-                <Skill key="VR Game Design" text="VR Game Design" />,
-                <Skill
-                  key="User Interaction Design"
-                  text="User Interaction Design"
-                />,
-                <Skill
-                  key="User Experience Design"
-                  text="User Experience Design"
-                />,
-              ]}
-              button={
-                <ButtonMain
-                  buttonText="VIEW PROJECT"
-                  linkName="Day Of The Dead"
-                />
-              }
-            />
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <Preview
+                previewMedia={D19Media}
+                projectTitle="University of Sydney The Design Graduate Exhibition 2019"
+                skillList={[
+                  <Skill
+                    key="User Experience Design"
+                    text="User Experience Design"
+                  />,
+                  <Skill key="Exhibition Planning" text="Exhibition Planning" />,
+                  <Skill key="Branding" text="Branding" />,
+                ]}
+                button={<ButtonMain buttonText="VIEW PROJECT" linkName="D19" />}
+              />
+            </ScrollAnimation>
 
-            <Preview
-              previewMedia={icpuMedia}
-              projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
-              skillList={[
-                <Skill
-                  key="User Experience Design"
-                  text="User Experience Design"
-                />,
-                <Skill key="Data Analysis" text="Data Analysis" />,
-              ]}
-              button={
-                <ButtonMain
-                  buttonText="VIEW PROJECT"
-                  linkName="University of Sydney & Industry experts - Create Space"
-                />
-              }
-            />
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <Preview
+                previewMedia={deadMedia}
+                projectTitle="Day of the Dead VR"
+                skillList={[
+                  <Skill key="VR Game Design" text="VR Game Design" />,
+                  <Skill
+                    key="User Interaction Design"
+                    text="User Interaction Design"
+                  />,
+                  <Skill
+                    key="User Experience Design"
+                    text="User Experience Design"
+                  />,
+                ]}
+                button={
+                  <ButtonMain
+                    buttonText="VIEW PROJECT"
+                    linkName="Day Of The Dead"
+                  />
+                }
+              />
+            </ScrollAnimation>
 
-            <Preview
-              previewMedia={WaterbugMedia}
-              projectTitle="Waterbug"
-              skillList={[
-                <Skill
-                  key="User Interface Design"
-                  text="User Interface Design"
-                />,
-                <Skill
-                  key="User Experience Design"
-                  text="User Experience Design"
-                />,
-              ]}
-              button={
-                <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
-              }
-            />
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <Preview
+                previewMedia={icpuMedia}
+                projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
+                skillList={[
+                  <Skill
+                    key="User Experience Design"
+                    text="User Experience Design"
+                  />,
+                  <Skill key="Data Analysis" text="Data Analysis" />,
+                ]}
+                button={
+                  <ButtonMain
+                    buttonText="VIEW PROJECT"
+                    linkName="University of Sydney & Industry experts - Create Space"
+                  />
+                }
+              />
+            </ScrollAnimation>
+
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <Preview
+                previewMedia={WaterbugMedia}
+                projectTitle="Waterbug"
+                skillList={[
+                  <Skill
+                    key="User Interface Design"
+                    text="User Interface Design"
+                  />,
+                  <Skill
+                    key="User Experience Design"
+                    text="User Experience Design"
+                  />,
+                ]}
+                button={
+                  <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
+                }
+              />
+            </ScrollAnimation>
           </Element>
         </div>
 
@@ -161,14 +179,18 @@ export default class Homepage extends React.Component {
             <div className="toggleSkills">
               <ToggleSkills />
             </div>
-            <div className="skillBox">
-              <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
-            </div>
+            <ScrollAnimation
+              animateIn="slideInUp">
+              <div className="skillBox">
+                <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
+              </div>
+            </ScrollAnimation>
             <div className="skillBox">
               <button className="ButtonMain"><a className="linkName" href="https://www.w3schools.com" target="_blank">VIEW RESUME</a> </button>
             </div>
           </Element>
         </div>
+
 
         <div id="Contact">
           <Element name="Contact">
