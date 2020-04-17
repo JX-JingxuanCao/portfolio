@@ -13,6 +13,7 @@ import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import { MagicSpinner } from "react-spinners-kit";
+// import ParallaxEffectImg from "../Components/tilt.js";
 
 
 let D19Build1 = <Image imgSrc="D19-4.jpg" imgWidth="870" />;
@@ -157,6 +158,9 @@ export default class D19 extends React.Component {
                   />
 
                   <ProjectContent contentTitle="D19 Team" />
+                  {/* <ParallaxEffectImg
+            imgSrc="D19-goup.JPG" imgWidth="770"
+          /> */}
                 </div>
               </div>
             </div>

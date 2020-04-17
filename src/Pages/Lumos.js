@@ -153,6 +153,9 @@ export default class Lumos extends React.Component {
                 {/* <ParallaxEffectImg
             imgSrc="lumos-final.png" imgWidth="770"
           /> */}
+                {/* <ParallaxEffectImg
+            imgSrc="lumos-gradshow.jpg" imgWidth="770"
+          /> */}
               </div>
             </div>
           )}
