@@ -114,12 +114,11 @@ export default class DayOfTheDead extends React.Component {
                Interaction is enabled through use of a virtual reality headset, in which buttons on the headset 
                are used to interact with corresponding buttons and phenomena within the game.
                 "
-            />
-            <ProjectContent
-              mainContent="While the headset is on, the user can hold down the button to move in the direction 
+              secondContent="While the headset is on, the user can hold down the button to move in the direction 
               they are facing. To turn, they simply adjust their head, press the button, and proceed in the new 
               direction."
             />
+
             <ProjectContent contentTitle="Screenshots"
               contentMediaOne={deadvr1}
               contentMediaTwo={deadvr2}

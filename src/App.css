@@ -17,9 +17,7 @@ body {
   margin: 0;
   padding: 0;
 }
-/* .bg-wrapper {
-  z-index: 999;
-} */
+
 .card1,
 .card2,
 .card3,
@@ -257,6 +255,20 @@ body {
 }
 .pic-box{
   padding-bottom: 20px;
+}
+.projectPage-waterbug {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background: linear-gradient(#000000 0% ,#272727 85%, #ffffff 90%); */
+  /* background: linear-gradient(180deg, #000000 0%, #ffffff 95%); */
+  background: linear-gradient(#000000 0%, #000000 70%, #ffffff 80%);
+  transition: background .2s ease;
+}
+.waterbug-page {
+  background: linear-gradient(#000000 , #ffffff);
+  /* background: linear-gradient(180deg, #000000 0%, #ffffff 95%); */
 }
 
 /* individual project page ends here */
@@ -730,16 +742,16 @@ body {
 }
 
 /* d19 page css */
-.D19logo {
+/* .D19logo {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   padding-top: 3.125rem;
-}
+} */
 
 /* waterbug page css */
-.WaterbugPage {
+/* .WaterbugPage {
   background-color: black;
 }
 .WaterbugIntro {
@@ -748,7 +760,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 3.125rem;
-}
+} */
 
 /* third button testing */
 .ButtonMain {
@@ -770,8 +782,8 @@ body {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  border: 3px solid #89d6fb;
-  color: #02a9f7;
+  border: 3px solid #ffa45c;
+  color: #ffa45c;
 }
 
 .ButtonMain:after {
@@ -788,12 +800,12 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: #02577a;
+  background: #ffa45c;
 }
 
 .ButtonMain:hover,
 .ButtonMain:active {
-  color: #79ceb8;
+  color: #ffffff;
 }
 
 .ButtonMain:hover:after,

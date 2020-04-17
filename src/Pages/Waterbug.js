@@ -21,7 +21,7 @@ let waterbugpic4 = <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
 export default class Waterbug extends React.Component {
   render() {
     return (
-      <div className="projectPage">
+      <div className="projectPage-waterbug">
         <ScrollToTopOnMount />
         <NavBar type="projectPage" />
 
@@ -92,39 +92,42 @@ export default class Waterbug extends React.Component {
               </div>
             </div>
 
-            <ProjectContent
-              contentTitle="Overview"
-              mainContent="Waterbug is an app created to improve and ease gardening experiences 
+            <div>
+              <ProjectContent
+                contentTitle="Overview"
+                mainContent="Waterbug is an app created to improve and ease gardening experiences 
               through use of autonomous drones. The app is customisable for particular plants and
                garden-types, and addresses gardening needs such as watering, weeding, soil quality, 
                and offers monitoring and notification services for users on the day-to-day state of 
                their garden.  Waterbug’s design means users have full control over, and access to, 
                their garden - even when away from home.
                 "
-            />
-            <ProjectContent contentTitle="User Needs"
-              contentMediaOne={waterbugpic1}
-            />
+              />
+
+              <ProjectContent contentTitle="User Needs"
+                contentMediaOne={waterbugpic1}
+              />
 
 
-            <ProjectContent contentTitle="Design Process"
-              contentMediaOne={waterbugpic2}
-            />
+              <ProjectContent contentTitle="Design Process"
+                contentMediaOne={waterbugpic2}
+              />
 
-            <ProjectContent contentTitle="Prototype & User flow"
-              contentMediaOne={waterbugpic3}
-            />
+              <ProjectContent contentTitle="Prototype & User flow"
+                contentMediaOne={waterbugpic3}
+              />
 
-            <ProjectContent
-              contentTitle="Final Prototype"
-              mainContent="It took significant user-testing and multiple design iterations to produce 
+              <ProjectContent
+                contentTitle="Final Prototype"
+                mainContent="It took significant user-testing and multiple design iterations to produce 
               the right balance of information to display on the screen of the app. It was a challenging 
               process to combine the depth of the app’s function and customizability options with an 
               inviting and simple visual design, but our final prototype was successful in providing 
               the app’s flexible services without overwhelming users visually with information.
               "
-              contentMediaOne={waterbugpic4}
-            />
+                contentMediaOne={waterbugpic4}
+              />
+            </div>
 
           </div>
         </div>

@@ -70,7 +70,7 @@ export default class Homepage extends React.Component {
                 />,
                 <Skill key="Physical Computing" text="Physical Computing" />,
               ]}
-              button={<ButtonMain buttonText="View Project" linkName="Lumos" />}
+              button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
             />
 
             <Preview
@@ -84,7 +84,7 @@ export default class Homepage extends React.Component {
                 <Skill key="Exhibition Planning" text="Exhibition Planning" />,
                 <Skill key="Branding" text="Branding" />,
               ]}
-              button={<ButtonMain buttonText="View Project" linkName="D19" />}
+              button={<ButtonMain buttonText="VIEW PROJECT" linkName="D19" />}
             />
 
             <Preview
@@ -103,7 +103,7 @@ export default class Homepage extends React.Component {
               ]}
               button={
                 <ButtonMain
-                  buttonText="View Project"
+                  buttonText="VIEW PROJECT"
                   linkName="Day Of The Dead"
                 />
               }
@@ -121,7 +121,7 @@ export default class Homepage extends React.Component {
               ]}
               button={
                 <ButtonMain
-                  buttonText="View Project"
+                  buttonText="VIEW PROJECT"
                   linkName="University of Sydney & Industry experts - Create Space"
                 />
               }
@@ -141,7 +141,7 @@ export default class Homepage extends React.Component {
                 />,
               ]}
               button={
-                <ButtonMain buttonText="View Project" linkName="Waterbug" />
+                <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
               }
             />
           </div>
