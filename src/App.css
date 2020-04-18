@@ -113,15 +113,6 @@ body {
   color:#ffa45c;
   text-decoration: underline;
 }
-.linkName{
-  font-family: "Noto Sans", sans-serif;
-  text-decoration: none;
-  color:#ffa45c;
-}
-.linkName:hover,
-.linkName:active {
-  color: #ffffff;
-}
 
 /* For individual project page */
 .projectName {
@@ -747,6 +738,21 @@ body {
   font-weight: lighter;
   color: black;
   padding-bottom: 10px;
+}
+.app-prototype{
+  display: flex;
+  flex-direction: column;
+}
+.prototype-box{
+  display:flex;
+  justify-content: center;
+}
+/* ends waterbug css */
+
+/* day of the dead css */
+.gamelink-wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 /* d19 page css */
