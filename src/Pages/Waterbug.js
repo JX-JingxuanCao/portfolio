@@ -165,7 +165,6 @@ export default class Waterbug extends React.Component {
                 contentTitle="Interactive Prototype">
                 <div className="prototype-box">
                   <div className="app-prototype">
-                    <p className="waterbug-final-text">It might takek awhile to load, please be patient 😃</p>
                     <iframe width="350" height="650" align="middle" src="https://xd.adobe.com/embed/f8c64398-892f-4bf7-4975-770aaebe6f0b-8ef7/" frameborder="0"></iframe>
                   </div>
                 </div>

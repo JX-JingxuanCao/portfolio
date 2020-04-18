@@ -723,6 +723,12 @@ body {
   stroke-dashoffset: 10;
   animation: dash 19.5s linear forwards alternate infinite;
 }
+.pic-box-lumos{
+  padding-top:20px;
+  padding-bottom:20px;
+  display: flex;
+  justify-content: center;
+}
 /* ends lumos page css */
 
 /* waterbug page css */
