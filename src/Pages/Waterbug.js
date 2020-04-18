@@ -4,6 +4,7 @@ import { ProjectContent } from "../Components/ProjectContent.js";
 import Image from "../Components/image.js";
 import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
+import FooterWhite from "../Components/footer-white.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import { MagicSpinner } from "react-spinners-kit";
 import ScrollAnimation from 'react-animate-on-scroll';
@@ -173,6 +174,7 @@ export default class Waterbug extends React.Component {
             </div>
           </div>
         </ScrollAnimation>
+        <FooterWhite />
       </div>
       //     )}
       // </div>

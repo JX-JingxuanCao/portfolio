@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Contact() {
   return (
-    <div className="footer">
-      <div className="contactTitle">Anyway...I'm always around</div>
+    <div className="contact-wrapper">
+      <div className="contactTitle">So...what do you say? BFF on the internet? 😉</div>
 
       <div className="contactIcon">
         <link
@@ -42,40 +42,6 @@ export default function Contact() {
           >
             <i className="fa fa-envelope"></i>
           </a>
-        </div>
-      </div>
-
-      <div className="credit-line">
-        <svg
-          width="1020"
-          height="1"
-          viewBox="0 0 1020 1"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <line
-            x1="1020"
-            y1="0.5"
-            x2="-2.82126e-07"
-            y2="0.499911"
-            stroke="#989898"
-          />
-        </svg>
-      </div>
-      <div className="lastBox">
-        <div className="credit-box">
-          <p className="credit-text">Copyright 2020 © Jingxuan Cao</p>
-          <p className="credit-text">
-            React consultant: Mitch Hartigan, check out his awesome portfolio
-            {/* <a
-              className="social-button website"
-              href="https://mitchhartigan.com/"
-              target="_blank"
-              title="Mitch's Portfolio"
-            >
-              <i class="fa fa-globe"></i>
-            </a> */}
-          </p>
         </div>
       </div>
     </div>

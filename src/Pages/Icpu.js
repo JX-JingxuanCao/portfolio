@@ -3,6 +3,7 @@ import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import Image from "../Components/image.js";
 import NavBar from "../Components/NavBar.js";
+import FooterDark from "../Components/footer-dark.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import { MagicSpinner } from "react-spinners-kit";
 import {
@@ -139,6 +140,7 @@ export default class Icpu extends React.Component {
 
           </div>
         </div>
+        <FooterDark />
       </div>
       //     )}
       // </div>

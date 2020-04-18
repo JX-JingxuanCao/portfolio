@@ -1,6 +1,13 @@
 import React, { Component } from "react";
 import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
+import NavBar from "../Components/NavBar.js";
+import Image from "../Components/image.js";
+import Video from "../Components/video.js";
+import FooterDark from "../Components/footer-dark.js";
+import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
+import { MagicSpinner } from "react-spinners-kit";
+import ParallaxEffectImg from "../Components/tilt.js";
 import {
   ProjectCurator,
   FloorPlan,
@@ -8,12 +15,6 @@ import {
   King,
   Queen,
 } from "../Components/icons.js";
-import NavBar from "../Components/NavBar.js";
-import Image from "../Components/image.js";
-import Video from "../Components/video.js";
-import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
-import { MagicSpinner } from "react-spinners-kit";
-import ParallaxEffectImg from "../Components/tilt.js";
 
 
 
@@ -179,6 +180,7 @@ export default class D19 extends React.Component {
 
           </div>
         </div>
+        <FooterDark />
       </div>
       //     )}
       // </div>

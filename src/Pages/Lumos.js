@@ -4,6 +4,7 @@ import { ProjectContent } from "../Components/ProjectContent.js";
 import LumosModel from "..//Components/lumosModel.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
+import FooterDark from "../Components/footer-dark.js";
 import { MagicSpinner } from "react-spinners-kit";
 import ParallaxEffectImg from "../Components/tilt.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
@@ -158,7 +159,7 @@ export default class Lumos extends React.Component {
 
               <div className="pic-box-lumos">
                 <ParallaxEffectImg
-                  imgSrc="lumos-final.jpg" imgWidth="670" />
+                  imgSrc="lumos-final.jpg" imgWidth="570" />
               </div>
             </ProjectContent>
 
@@ -171,6 +172,7 @@ export default class Lumos extends React.Component {
 
           </div>
         </div>
+        <FooterDark />
       </div>
       //     )}
       // </div>

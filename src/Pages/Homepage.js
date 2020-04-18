@@ -7,6 +7,8 @@ import Video from "../Components/video.js";
 import NavBar from "../Components/NavBar.js";
 import SkillSet from "../Components/skillSet.js";
 import Contact from "../Components/contact.js";
+import FooterWhite from "../Components/footer-white.js";
+import ThanksNote from "../Components/ThanksNote.js";
 import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
@@ -194,12 +196,15 @@ export default class Homepage extends React.Component {
           </Element>
         </div>
 
-
-        <div id="Contact">
-          <Element name="Contact">
-            <Contact />
-          </Element>
-        </div>
+        <ScrollAnimation animateIn='fadeInUp'>
+          <div id="Contact">
+            <Element name="Contact">
+              <Contact />
+              <ThanksNote />
+              <FooterWhite />
+            </Element>
+          </div>
+        </ScrollAnimation>
       </div>
       //     )}
       // </div>
