@@ -3,6 +3,7 @@ import { ProjectPage } from "../Components/projectPage.js";
 import { ProjectContent } from "../Components/ProjectContent.js";
 import NavBar from "../Components/NavBar.js";
 import Image from "../Components/image.js";
+import Video from "../Components/video.js";
 import FooterDark from "../Components/footer-dark.js";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import { MagicSpinner } from "react-spinners-kit";
@@ -44,7 +45,7 @@ export default class DayOfTheDead extends React.Component {
         <ScrollToTopOnMount />
         <NavBar type="projectPage" />
 
-        <div className="project-page-wrapper">{/* <LumosModel /> */}</div>
+        <div className="project-page-wrapper"><Video videoWidth="1620" videoName="dead-title.mp4" /></div>
 
         <div className="project-container-wrapper">
           <div className="projectPage-content-container">

@@ -13,16 +13,18 @@ export default function Contact() {
         <div className="social-buttons">
           <a
             className="social-button facebook"
-            href="https://www.facebook.com"
+            href="https://www.facebook.com/profile.php?id=100001732766115"
             title="Jingxuan's Facebook"
+            target="_blank"
           >
             <i className="fa fa-facebook"></i>
           </a>
 
           <a
             className="social-button linkedin"
-            href="https://www.linkedin.com"
+            href="https://www.linkedin.com/in/jingxuan-cao/"
             title="Jingxuan's Linkedin"
+            target="_blank"
           >
             <i className="fa fa-linkedin"></i>
           </a>
@@ -31,6 +33,7 @@ export default function Contact() {
             className="social-button instagram"
             href="https://www.instagram.com/mr.jingxuan/"
             title="Jingxuan's Instagram"
+            target="_blank"
           >
             <i className="fa fa-instagram"></i>
           </a>

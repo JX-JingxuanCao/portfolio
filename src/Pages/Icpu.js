@@ -42,7 +42,7 @@ export default class Icpu extends React.Component {
         <ScrollToTopOnMount />
         <NavBar type="projectPage" />
 
-        <div className="project-page-wrapper"></div>
+        <div className="project-page-wrapper"><Image imgSrc="icpu-cover.png" imgWidth="970" /></div>
 
         <div className="project-container-wrapper">
           <div className="projectPage-content-container">
