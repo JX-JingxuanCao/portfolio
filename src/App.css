@@ -1,6 +1,5 @@
 body {
   background-color: black;
-  /* background-color: white; */
   overflow-x: hidden;
 }
 
@@ -72,10 +71,10 @@ body {
 .project-title {
   font-family: "Noto Sans", sans-serif;
   font-style: bold;
-  font-size: 35px;
-  padding-left: 30px;
-  margin-top: 25px;
-  margin-bottom: 10px;
+  font-size: 2.188rem;
+  padding-left: 1.875rem;
+  margin-top: 1.563rem;
+  margin-bottom: 0.625rem;
 }
 
 .previewBox {
@@ -99,10 +98,11 @@ body {
 
 .Skill-text {
   font-family: "Noto Sans", sans-serif;
-  font-size: 20px;
-  padding-left: 30px;
-  padding-top: 5px;
+  font-size: 1.25rem;
+  padding-left: 1.875rem;
+  padding-top: 0.313rem;
 }
+/* for homepage "recent work" css */
 .work-text{
   width: 20rem;
   display:flex;
@@ -113,11 +113,12 @@ body {
   color:#ffa45c;
   text-decoration: underline;
 }
+/* ends homepage css */
 
 /* For individual project page */
 .projectName {
   font-family: "Nota Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   display: flex;
   justify-content: center;
   color: white;
@@ -133,7 +134,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 
 .projectPage-content-container {
@@ -162,36 +163,36 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding-right: 18px;
+  padding-right: 1.125rem;
 }
 .miniTitle-icon {
-  padding-top: 14px;
+  padding-top: 0.875rem;
 }
 .miniTitle-icon-UX {
-  padding-top: 11px;
+  padding-top: 0.688rem;
 }
 .miniTitle-icon-Queen {
-  padding-top: 12px;
-  padding-right: 3px;
+  padding-top: 0.688rem;
+  padding-right: 0.188rem;
 }
 .miniTitle-icon-floorplan {
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 .miniTitle-icon-GameDesign {
-  padding-top: 16px;
-  padding-right: 3px;
+  padding-top: 1rem;
+  padding-right: 0.188rem;
 }
 .miniTitle-icon-Modeller {
-  padding-top: 15px;
-  padding-right: 3px;
+  padding-top: 0.938rem;
+  padding-right: 0.188rem;
 }
 .miniTitle-icon-VR {
-  padding-top: 17px;
-  padding-right: 3px;
+  padding-top: 1.063rem;
+  padding-right: 0.188rem;
 }
 .miniTitle-icon-UI {
-  padding-top:12px;
-  padding-right:3px;
+  padding-top: 0.75rem;
+  padding-right:0.188rem;
 }
 /* ends for icons around title */
 
@@ -204,38 +205,38 @@ body {
 
 .miniTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.813rem;
   color: #ffa45c;
-  padding-top: 10px;
+  padding-top: 0.625rem;
 }
 
 .roleName {
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
   color: white;
-  margin-top: 10px;
+  margin-top: 0.625rem;
 }
 
 .ProjectTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 28px;
+  font-size: 1.75rem;
   color: #ffa45c;
 }
 .contentTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.813rem;
   color: #ffa45c;
 }
 .contentBox{
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
 }
 .mainContent {
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
   color: white;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 .project-container-wrapper {
   width: 100vw;
@@ -247,11 +248,11 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 3.125rem;
 }
 .pic-box{
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:1.813rem;
+  padding-bottom:1.813rem;
 }
 /* individual project page ends here */
 
@@ -262,7 +263,7 @@ body {
 }
 .skillSet {
   font-family: "Nota Sans", sans-serif;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: lighter;
   color: #ffa45c;
 }
@@ -271,7 +272,7 @@ body {
   justify-content: center;
 }
 .toggleSkills{
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 @keyframes fadeInUp {
   from {
@@ -381,7 +382,7 @@ body {
   height: 3em;
   font-family: "Nota Sans", sans-serif;
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 1.875rem;
   color: black;
   display: flex;
   justify-content: center;
@@ -391,7 +392,7 @@ body {
   height: 12vh;
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  padding-bottom: 3.125rem;
 }
 .social-button {
   display: inline-block;
@@ -423,7 +424,7 @@ body {
   transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
 }
 .social-button .fa {
-  font-size: 38px;
+  font-size: 2.375rem;
   vertical-align: middle;
   -webkit-transform: scale(0.8);
   transform: scale(0.8);
@@ -573,24 +574,24 @@ body {
 }
 .navName a {
   color: #838383;
-  font-weight: 20px;
+  font-weight: 1.813rem;
 }
 .buttons {
   display: flex;
   justify-content: space-around;
-  top: 20px;
-  left: 2px;
+  top: 1.813rem;
+  left: 0.125rem;
 }
 .navName button {
-  width: 150px;
-  height: 50px;
+  width: 9.375rem;
+  height: 3.125rem;
   background-color: transparent;
-  margin: 20px;
+  margin: 1.813rem;
   color: #51fff1;
   position: relative;
   overflow: hidden;
-  font-size: 14px;
-  letter-spacing: 1px;
+  font-size: 0.875rem;
+  letter-spacing: 0.063rem;
   font-weight: 500;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -601,7 +602,7 @@ body {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px;
+  height: 0.125rem;
   background-color: #ffa45c;
   transition: all 0.3s 0.2s ease;
   left: 0;
@@ -611,7 +612,7 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
+  height: 0.125rem;
   background-color: #ffa45c;
   transition: all 0.3s ease;
   right: 0;
@@ -633,7 +634,7 @@ body {
 .navName button p:before {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 0.125rem;
   height: 0;
   background-color: #ffa45c;
   transition: all 0.3s 0.4s ease;
@@ -643,7 +644,7 @@ body {
 .navName button p:after {
   content: "";
   position: absolute;
-  width: 2px;
+  width: 0.125rem;
   height: 0;
   background-color: #ffa45c;
   transition: all 0.3s ease;
@@ -652,7 +653,7 @@ body {
 }
 .navName button:hover {
   color: #ffa45c;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
 }
 .navName button:hover:before,
 .navName button:hover:after {
@@ -677,8 +678,8 @@ body {
   outline: 0;
 }
 .mainlogo-wrapper {
-  width: 35px;
-  height: 35px;
+  width: 2.188rem;
+  height: 2.188rem;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -757,8 +758,8 @@ body {
   animation: dash 19.5s linear forwards alternate infinite;
 }
 .pic-box-lumos{
-  padding-top:20px;
-  padding-bottom:20px;
+  padding-top:1.813rem;
+  padding-bottom:1.813rem;
   display: flex;
   justify-content: center;
 }
@@ -773,10 +774,10 @@ body {
 }
 .waterbug-final-text{
   font-family: "Nota Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: lighter;
   color: black;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
 }
 .app-prototype{
   display: flex;
@@ -818,8 +819,8 @@ body {
 /* third button testing */
 .ButtonMain {
   border: none;
-  width: 200px;
-  height: 60px;
+  width: 12.5rem;
+  height: 3.75rem;
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -828,14 +829,14 @@ body {
   display: inline-block;
   justify-content: center;
   text-align: center;
-  margin: 15px 30px;
-  letter-spacing: 1px;
+  margin: 0.938rem 1.875rem;
+  letter-spacing: 0.063rem;
   outline: none;
   position: relative;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
-  border: 3px solid #ffa45c;
+  border: 0.188rem solid #ffa45c;
   color: #ffa45c;
 }
 
@@ -891,7 +892,7 @@ body {
   width: 18.75rem;
   height: 3rem;
   background: none;
-  border: 2px solid;
+  border: 0.125rem solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
@@ -922,7 +923,7 @@ body {
   width: 18.75rem;
   height: 3rem;
   background: none;
-  border: 2px solid;
+  border: 0.125rem solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
@@ -953,7 +954,7 @@ body {
   width: 18.75rem;
   height: 3rem;
   background: none;
-  border: 2px solid;
+  border: 0.125rem solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
@@ -984,7 +985,7 @@ body {
   width: 18.75rem;
   height: 3rem;
   background: none;
-  border: 2px solid;
+  border: 0.125rem solid;
   font: inherit;
   line-height: 1;
   margin: 0.5em;
