@@ -7,7 +7,6 @@ body {
 .cover-wrapper {
   width: 100vw;
   height: 100vh;
-  /* background-image: url("https://github.com/JX-JingxuanCao/portfolio/blob/master/public/cover-home.png"); */
 }
 
 .cover-img {
@@ -36,12 +35,11 @@ body {
   height: 45vw;
   max-width: 35vw;
   max-height: 100vw;
-  /* background-image: url(https://image.flaticon.com/icons/svg/119/119596.svg); */
 }
 
 .card2 {
-  width: 5vw;
-  height: 0vh;
+  width: 10vw;
+  height: 5vh;
 }
 
 .card3 {
@@ -795,28 +793,7 @@ body {
   justify-content: center;
 }
 
-/* d19 page css */
-/* .D19logo {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-top: 3.125rem;
-} */
-
-/* waterbug page css */
-/* .WaterbugPage {
-  background-color: black;
-}
-.WaterbugIntro {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  padding-top: 3.125rem;
-} */
-
-/* third button testing */
+/* main button styles start here*/
 .ButtonMain {
   border: none;
   width: 12.5rem;
@@ -866,8 +843,9 @@ body {
 .ButtonMain:active:after {
   width: 100%;
 }
+/* main button styles ends here */
 
-/* For skillset button */
+/* For skillset toggle button */
 .offset-first {
   box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
 }
@@ -991,16 +969,14 @@ body {
   margin: 0.5em;
   padding: 1em 2em;
 }
+/* ends toogle button css  */
 
 /* for tooltip css */
 .tooltip-font {
   font-size: 0.938rem;
 }
 
-/* Testing Loading */
-.fa{
-  color:white;
-}
+/* Loading */
 .loading-wrapper{
   display:flex;
   justify-content: center;
