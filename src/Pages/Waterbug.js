@@ -65,13 +65,13 @@ export default class Waterbug extends React.Component {
                         </div>
 
                         <div className="iconTag">
-                          <UXdesign />
-                          <ProjectPage roleName="User Experience Designer " />
+                          <Interaction />
+                          <ProjectPage roleName="User Interaction Designer" />
                         </div>
 
                         <div className="iconTag">
-                          <Interaction />
-                          <ProjectPage roleName="User Interaction Designer" />
+                          <UXdesign />
+                          <ProjectPage roleName="User Experience Designer " />
                         </div>
 
                         <div className="iconTag">
@@ -128,8 +128,8 @@ export default class Waterbug extends React.Component {
 
 
                   <ProjectContent contentTitle="Design Process">
-                    <div className="pic-box">
-                      <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="waterbug-design-process.png" />
                     </div>
                   </ProjectContent>
 
@@ -156,7 +156,9 @@ export default class Waterbug extends React.Component {
                       inviting and simple visual design, but our final prototype was successful in providing
                         the app’s flexible services without overwhelming users visually with information. </p>
 
-                      <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
+                      <div className="pic-box-default">
+                        <Image imgSrc="waterbug-final-design.png" />
+                      </div>
                     </ProjectContent>
 
                     <ProjectContent

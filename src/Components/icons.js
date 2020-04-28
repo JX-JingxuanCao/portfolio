@@ -286,7 +286,7 @@ export function Modeller() {
 
 export function UXresearch() {
   return (
-    <svg className="miniTitle-icon" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="miniTitle-icon-uxresearch" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g id="UX research">
         <path id="icon/action/supervisor_account_24px" fill-rule="evenodd" clip-rule="evenodd" d="M13.2408 7.52853C13.2408 8.37204 12.7652 9.0989 12.0832 9.48476C11.7601 9.66423 11.3922 9.77191 10.9974 9.77191C10.6026 9.77191 10.2346 9.66423 9.9116 9.48476C9.22961 9.0989 8.75401 8.37204 8.75401 7.52853C8.75401 6.29019 9.75905 5.28516 10.9974 5.28516C12.2357 5.28516 13.2408 6.29019 13.2408 7.52853ZM6.06201 13.8098C6.06201 12.0241 9.34631 11.1178 10.9974 11.1178C12.6486 11.1178 15.9329 12.0241 15.9329 13.8098V15.1559H6.06201V13.8098Z" fill="#17ACF1" />
         <g id="Group">

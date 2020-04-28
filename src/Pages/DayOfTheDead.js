@@ -133,20 +133,20 @@ export default class DayOfTheDead extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="Screenshots">
-                    <div className="pic-box">
-                      <Image imgSrc="dead-1.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="dead-1.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="dead-2.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="dead-2.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="dead-3.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="dead-3.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="dead-4.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="dead-4.jpg" />
                     </div>
 
                     <div className="gamelink-wrapper">

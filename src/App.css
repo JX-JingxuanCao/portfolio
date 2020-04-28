@@ -114,41 +114,6 @@ body {
 /* ends homepage css */
 
 /* For individual project page */
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px)  and (max-width: 1600px)  {
-
-  /* each container can have 2-3 tags in ROW */
-  .iconTags-container {
-    flex-wrap: wrap;
-  }
-  
-  /* each tag contains ONE icon + One Name/Role in ROW */
-  .iconTag {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .mini-content-box{
-    width:100%;
-  }
-}
-@media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
-
-  /* each container can have 2-3 tags in ROW */
-  .iconTags-container {
-    flex-wrap: wrap;
-  }
-  
-  /* each tag contains ONE icon + One Name/Role in ROW */
-  .iconTag {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .mini-content-box{
-    width:100%;
-  }
-}
 
 .projectName {
   font-family: "Nota Sans", sans-serif;
@@ -205,6 +170,10 @@ body {
 .miniTitle-icon-UX {
   padding-top: 0.688rem;
 }
+.miniTitle-icon-uxresearch{
+  padding-top: 0.875rem;
+  padding-right: 0.188rem;
+}
 .miniTitle-icon-Queen {
   padding-top: 0.688rem;
   padding-right: 0.188rem;
@@ -227,6 +196,9 @@ body {
 .miniTitle-icon-UI {
   padding-top: 0.75rem;
   padding-right:0.188rem;
+}
+.mini-content-box{
+  width: 100%;
 }
 /* ends for icons around title */
 
@@ -284,9 +256,12 @@ body {
   justify-content: center;
   padding-top: 3.125rem;
 }
-.pic-box{
+.pic-box-default{
   padding-top:1.813rem;
   padding-bottom:1.813rem;
+}
+.pic-box-default img{
+  width:100%;
 }
 /* individual project page ends here */
 
@@ -797,6 +772,9 @@ body {
   display: flex;
   justify-content: center;
 }
+.lumosPics{
+ width:100;
+}
 /* ends lumos page css */
 
 /* waterbug page css */
@@ -1017,4 +995,16 @@ body {
   display:flex;
   justify-content: center;
   padding-top:23%;
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)  and (max-width: 1600px)  {
+  .roleName{
+    font-size: 0.83rem;
+  }
+}
+@media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
+  .roleName{
+    font-size: 1rem;
+  }
 }

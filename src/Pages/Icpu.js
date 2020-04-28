@@ -48,7 +48,7 @@ export default class Icpu extends React.Component {
                 <div className="projectPage-content-container">
                   <h1 className="ProjectTitle">
                     University of Sydney & Industry experts - Create Space
-            </h1>
+                  </h1>
 
                   <div className="projectPage-intro">
                     <div className="mini-content-box">
@@ -115,7 +115,9 @@ export default class Icpu extends React.Component {
                       to the Head of USYD Student Strategic Team."/>
 
                   <ProjectContent contentTitle="Timeline">
-                    <Image imgSrc="icpu-timeline.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="icpu-timeline.png" />
+                    </div>
                     <a href="https://drive.google.com/open?id=1tWBrY4vtHzRXNA02gGNqLcrwoHAayCDg" target="_blank"><button className="ButtonMain">VIEW REPORT</button></a>
                   </ProjectContent>
 
@@ -130,8 +132,8 @@ export default class Icpu extends React.Component {
                         journey-mapping, assisting in data analysis, and producing templates for both digital and 
                         in-person presentation of our findings.">
 
-                    <div className="pic-box">
-                      <Image imgSrc="icpu-main.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="icpu-main.png" />
                     </div>
                     <a href="https://unisydneyedu-my.sharepoint.com/personal/mraa3096_uni_sydney_edu_au/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fmraa3096%5Funi%5Fsydney%5Fedu%5Fau%2FDocuments%2FDocuments%2FICPU%2FReport%2FGroup%202%20report%2Epdf&parent=%2Fpersonal%2Fmraa3096%5Funi%5Fsydney%5Fedu%5Fau%2FDocuments%2FDocuments%2FICPU%2FReport&originalPath=aHR0cHM6Ly91bmlzeWRuZXllZHUtbXkuc2hhcmVwb2ludC5jb20vOmI6L2cvcGVyc29uYWwvbXJhYTMwOTZfdW5pX3N5ZG5leV9lZHVfYXUvRWNIWW9aVXRHNVZFdTVlUWJVQnFya1VCR1ZBbWw2LUIxOXZJclZvWlF6RXhKdz9ydGltZT11NDFjeFV2ajEwZw" target="_blank"><button className="ButtonMain">VIEW RESEARCH</button></a>
                   </ProjectContent>

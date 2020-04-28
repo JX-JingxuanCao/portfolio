@@ -145,25 +145,25 @@ export default class D19 extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="Designing Homebase">
-                    <div className="pic-box">
-                      <Image imgSrc="D19-4.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="D19-4.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="D19-1.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="D19-1.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="D19-2.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="D19-2.jpg" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="D19-3.jpg" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="D19-3.jpg" />
                     </div>
                   </ProjectContent>
 
                   <ProjectContent contentTitle="D19 Team">
-                    <div className="pic-box">
+                    <div className="pic-box-default">
                       <ParallaxEffectImg imgSrc="D19-goup.JPG" imgWidth="670" />
                     </div>
                   </ProjectContent>

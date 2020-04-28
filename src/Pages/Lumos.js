@@ -124,24 +124,24 @@ export default class Lumos extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="Development Process">
-                    <div className="pic-box">
-                      <Image imgSrc="lumos-build-1.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="lumos-build-1.png" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="lumos-build-2.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="lumos-build-2.png" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="lumos-build-3.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="lumos-build-3.png" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="lumos-build-4.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="lumos-build-4.png" />
                     </div>
 
-                    <div className="pic-box">
-                      <Image imgSrc="lumos-build-5.png" imgWidth="870" />
+                    <div className="pic-box-default">
+                      <Image imgSrc="lumos-build-5.png" />
                     </div>
                   </ProjectContent>
 
