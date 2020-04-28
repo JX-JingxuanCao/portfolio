@@ -70,9 +70,7 @@ export default class DayOfTheDead extends React.Component {
                           <VR />
                           <ProjectPage roleName="VR Design" />
                         </div>
-                      </div>
 
-                      <div className="iconTags-container">
                         <div className="iconTag">
                           <UXdesign />
                           <ProjectPage roleName="User Experience Designer " />
@@ -99,9 +97,6 @@ export default class DayOfTheDead extends React.Component {
                             <Queen />
                             <ProjectPage roleName="Dorren Lam Longworth" />
                           </div>
-                        </div>
-
-                        <div className="iconTags-container">
 
                           <div className="iconTag">
                             <Queen />
@@ -112,9 +107,7 @@ export default class DayOfTheDead extends React.Component {
                             <King />
                             <ProjectPage roleName="Jingxuan Cao" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <King />
                             <ProjectPage roleName="Sergio De Las Heras " />

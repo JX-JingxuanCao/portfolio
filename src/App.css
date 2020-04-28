@@ -114,6 +114,42 @@ body {
 /* ends homepage css */
 
 /* For individual project page */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)  and (max-width: 1600px)  {
+
+  /* each container can have 2-3 tags in ROW */
+  .iconTags-container {
+    flex-wrap: wrap;
+  }
+  
+  /* each tag contains ONE icon + One Name/Role in ROW */
+  .iconTag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mini-content-box{
+    width:100%;
+  }
+}
+@media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
+
+  /* each container can have 2-3 tags in ROW */
+  .iconTags-container {
+    flex-wrap: wrap;
+  }
+  
+  /* each tag contains ONE icon + One Name/Role in ROW */
+  .iconTag {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .mini-content-box{
+    width:100%;
+  }
+}
+
 .projectName {
   font-family: "Nota Sans", sans-serif;
   font-size: 1.25rem;
@@ -121,7 +157,6 @@ body {
   justify-content: center;
   color: white;
 }
-
 .projectPage {
   width: 100vw;
   display: flex;
@@ -154,6 +189,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 
 /* each tag contains ONE icon + One Name/Role in ROW */

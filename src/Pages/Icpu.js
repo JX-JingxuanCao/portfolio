@@ -93,9 +93,7 @@ export default class Icpu extends React.Component {
                             <King />
                             <ProjectPage roleName="Jingxuan Cao" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <King />
                             <ProjectPage roleName="Matthew Raad" />

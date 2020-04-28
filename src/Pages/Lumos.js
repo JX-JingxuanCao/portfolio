@@ -74,9 +74,7 @@ export default class Lumos extends React.Component {
                             <Vdesign />
                             <ProjectPage roleName="Visual Designer" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <Interaction />
                             <ProjectPage roleName="Interaction Designer" />

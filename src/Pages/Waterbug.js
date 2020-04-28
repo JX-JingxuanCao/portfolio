@@ -68,13 +68,12 @@ export default class Waterbug extends React.Component {
                           <UXdesign />
                           <ProjectPage roleName="User Experience Designer " />
                         </div>
-                      </div>
 
-                      <div className="iconTags-container">
                         <div className="iconTag">
                           <Interaction />
                           <ProjectPage roleName="User Interaction Designer" />
                         </div>
+
                         <div className="iconTag">
                           <UXresearch />
                           <ProjectPage roleName="User Researcher" />
@@ -101,9 +100,7 @@ export default class Waterbug extends React.Component {
                             <King />
                             <ProjectPage roleName="Jason Moisiadis" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <King />
                             <ProjectPage roleName=" Abhinav Bose" />

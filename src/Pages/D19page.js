@@ -97,9 +97,7 @@ export default class D19 extends React.Component {
                             <King />
                             <ProjectPage roleName="Ray Hwang" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <King />
                             <ProjectPage roleName="Jingxuan Cao" />
@@ -114,9 +112,7 @@ export default class D19 extends React.Component {
                             <King />
                             <ProjectPage roleName="Oliver Frohlich" />
                           </div>
-                        </div>
 
-                        <div className="iconTags-container">
                           <div className="iconTag">
                             <Queen />
                             <ProjectPage roleName="Angineh Karabedian" />
