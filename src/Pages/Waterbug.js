@@ -18,166 +18,166 @@ import {
 } from "../Components/icons.js";
 
 export default class Waterbug extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     done: undefined
-  //   };
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      done: undefined
+    };
+  }
 
-  // componentDidMount() {
-  //   setTimeout(() => {
-  //     fetch("https://jsonplaceholder.typicode.com/posts")
-  //       .then(response => response.json())
-  //       .then(json => this.setState({ done: true }));
-  //   }, 5000);
-  // }
+  componentDidMount() {
+    setTimeout(() => {
+      fetch("https://jsonplaceholder.typicode.com/posts")
+        .then(response => response.json())
+        .then(json => this.setState({ done: true }));
+    }, 5000);
+  }
 
   render() {
     return (
-      // <div>
-      //   {!this.state.done ? (
-      //     <div className="loading-wrapper">
-      //       <MagicSpinner size="150" color="#ffa45c" />
-      //     </div>
-      //   ) : (
+      <div>
+        {!this.state.done ? (
+          <div className="loading-wrapper">
+            <MagicSpinner size="150" color="#ffa45c" />
+          </div>
+        ) : (
 
-      <div className="projectPage">
-        <ScrollToTopOnMount />
-        <NavBar type="projectPage" />
+            <div className="projectPage">
+              <ScrollToTopOnMount />
+              <NavBar type="projectPage" />
 
-        <div className="project-page-wrapper">
-          <Video videoWidth="100%" videoName="waterbug-main.mp4" />;
+              <div className="project-page-wrapper">
+                <Video videoWidth="100%" videoName="waterbug-main.mp4" />;
         </div>
 
-        <div className="project-container-wrapper">
-          <div className="projectPage-content-container">
-            <h1 className="ProjectTitle">Waterbug</h1>
-            <div className="projectPage-intro">
-              <div className="mini-content-box">
-                <ProjectPage miniTitle="Role" />
+              <div className="project-container-wrapper">
+                <div className="projectPage-content-container">
+                  <h1 className="ProjectTitle">Waterbug</h1>
+                  <div className="projectPage-intro">
+                    <div className="mini-content-box">
+                      <ProjectPage miniTitle="Role" />
 
-                <div className="iconTags-container">
+                      <div className="iconTags-container">
 
-                  <div className="iconTag">
-                    <UIdesign />
-                    <ProjectPage roleName="User Interface Designer " />
-                  </div>
+                        <div className="iconTag">
+                          <UIdesign />
+                          <ProjectPage roleName="User Interface Designer " />
+                        </div>
 
-                  <div className="iconTag">
-                    <UXdesign />
-                    <ProjectPage roleName="User Experience Designer " />
-                  </div>
-                </div>
+                        <div className="iconTag">
+                          <UXdesign />
+                          <ProjectPage roleName="User Experience Designer " />
+                        </div>
+                      </div>
 
-                <div className="iconTags-container">
-                  <div className="iconTag">
-                    <Interaction />
-                    <ProjectPage roleName="User Interaction Designer" />
-                  </div>
-                  <div className="iconTag">
-                    <UXresearch />
-                    <ProjectPage roleName="User Researcher" />
-                  </div>
-                </div>
-              </div>
-
-              <div className="mini-content-box">
-                <ProjectPage miniTitle="Team" />
-
-                <div className="iconTags-wrapper">
-                  <div className="iconTags-container">
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Tom Clarke" />
+                      <div className="iconTags-container">
+                        <div className="iconTag">
+                          <Interaction />
+                          <ProjectPage roleName="User Interaction Designer" />
+                        </div>
+                        <div className="iconTag">
+                          <UXresearch />
+                          <ProjectPage roleName="User Researcher" />
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Jingxuan Cao" />
-                    </div>
+                    <div className="mini-content-box">
+                      <ProjectPage miniTitle="Team" />
 
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName="Jason Moisiadis" />
+                      <div className="iconTags-wrapper">
+                        <div className="iconTags-container">
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Tom Clarke" />
+                          </div>
+
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Jingxuan Cao" />
+                          </div>
+
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName="Jason Moisiadis" />
+                          </div>
+                        </div>
+
+                        <div className="iconTags-container">
+                          <div className="iconTag">
+                            <King />
+                            <ProjectPage roleName=" Abhinav Bose" />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
-                  <div className="iconTags-container">
-                    <div className="iconTag">
-                      <King />
-                      <ProjectPage roleName=" Abhinav Bose" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-
-            <ProjectContent
-              contentTitle="Overview"
-              mainContent="Waterbug is an app created to improve and ease gardening experiences 
+                  <ProjectContent
+                    contentTitle="Overview"
+                    mainContent="Waterbug is an app created to improve and ease gardening experiences 
               through use of autonomous drones. The app is customisable for particular plants and
                garden-types, and addresses gardening needs such as watering, weeding, soil quality, 
                and offers monitoring and notification services for users on the day-to-day state of 
                their garden.  Waterbug’s design means users have full control over, and access to, 
                their garden - even when away from home."/>
 
-            <ProjectContent contentTitle="User Needs">
-              <div className="pic-box">
-                <Image imgSrc="waterbug-user.png" imgWidth="670" />
-              </div>
-            </ProjectContent>
+                  <ProjectContent contentTitle="User Needs">
+                    <div className="pic-box">
+                      <Image imgSrc="waterbug-user.png" imgWidth="670" />
+                    </div>
+                  </ProjectContent>
 
 
-            <ProjectContent contentTitle="Design Process">
-              <div className="pic-box">
-                <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
-              </div>
-            </ProjectContent>
+                  <ProjectContent contentTitle="Design Process">
+                    <div className="pic-box">
+                      <Image imgSrc="waterbug-design-process.png" imgWidth="870" />
+                    </div>
+                  </ProjectContent>
 
-          </div>
-        </div>
-
-        <ScrollAnimation
-          animateIn="fadeInUp"
-          duration="2"
-        >
-          <div className="project-container-wrapper-white">
-            <div className="projectPage-content-container">
-              <ProjectContent contentTitle="Prototype & User flow">
-                <div className="pic-box">
-                  <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
                 </div>
-              </ProjectContent>
+              </div>
 
-              <ProjectContent
-                contentTitle="Final Prototype">
-                <p className="waterbug-final-text">It took significant user-testing and multiple design iterations to produce
-                the right balance of information to display on the screen of the app. It was a challenging
-                process to combine the depth of the app’s function and customizability options with an
-                inviting and simple visual design, but our final prototype was successful in providing
+              <ScrollAnimation
+                animateIn="fadeInUp"
+                duration="2"
+              >
+                <div className="project-container-wrapper-white">
+                  <div className="projectPage-content-container">
+                    <ProjectContent contentTitle="Prototype & User flow">
+                      <div className="pic-box">
+                        <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
+                      </div>
+                    </ProjectContent>
+
+                    <ProjectContent
+                      contentTitle="Final Prototype">
+                      <p className="waterbug-final-text">It took significant user-testing and multiple design iterations to produce
+                      the right balance of information to display on the screen of the app. It was a challenging
+                      process to combine the depth of the app’s function and customizability options with an
+                      inviting and simple visual design, but our final prototype was successful in providing
                         the app’s flexible services without overwhelming users visually with information. </p>
 
-                <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
-              </ProjectContent>
+                      <Image imgSrc="waterbug-final-design.png" imgWidth="870" />
+                    </ProjectContent>
 
-              <ProjectContent
-                contentTitle="Interactive Prototype">
-                <div className="prototype-box">
-                  <div className="app-prototype">
-                    <iframe width="350" height="650" align="middle" src="https://xd.adobe.com/embed/f8c64398-892f-4bf7-4975-770aaebe6f0b-8ef7/" frameborder="0"></iframe>
+                    <ProjectContent
+                      contentTitle="Interactive Prototype">
+                      <div className="prototype-box">
+                        <div className="app-prototype">
+                          <iframe width="350" height="650" align="middle" src="https://xd.adobe.com/embed/f8c64398-892f-4bf7-4975-770aaebe6f0b-8ef7/" frameborder="0"></iframe>
+                        </div>
+                      </div>
+                    </ProjectContent>
+
                   </div>
                 </div>
-              </ProjectContent>
-
+              </ScrollAnimation>
+              <FooterWhite />
             </div>
-          </div>
-        </ScrollAnimation>
-        <FooterWhite />
+          )}
       </div>
-      //     )}
-      // </div>
     );
   }
 }
