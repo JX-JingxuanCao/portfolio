@@ -13,6 +13,7 @@ import ToggleSkills from "../Components/toggleSkills/index";
 import { Element } from "react-scroll";
 import ScrollToTopOnMount from "../Components/scrollToTopOnMount.js";
 import Card from "../Components/CoverV3.js";
+import SkillSVG from "../Components/skillSVG.js";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import { MagicSpinner } from "react-spinners-kit";
@@ -182,6 +183,12 @@ export default class Homepage extends React.Component {
                     <Video videoWidth="660" videoName="intro.mp4" />
                   </div>
                   <div className="toggleSkills">
+                    <ScrollAnimation
+                      animateIn="slideInUp">
+                      <div className="skillBox">
+                        <SkillSVG />
+                      </div>
+                    </ScrollAnimation>
                     <ToggleSkills />
                   </div>
                   <ScrollAnimation
@@ -200,7 +207,9 @@ export default class Homepage extends React.Component {
                 <div id="Contact">
                   <Element name="Contact">
                     <Contact />
+
                     <ThanksNote />
+
                     <FooterWhite />
                   </Element>
                 </div>
