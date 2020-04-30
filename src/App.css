@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
 }
+.bg-wrapper img{
+  width:100%
+}
 
 .card1,
 .card2,
@@ -36,12 +39,17 @@ body {
   max-width: 35vw;
   max-height: 100vw;
 }
+.card1 video{
+  width:225%;
+}
 
 .card2 {
   width: 10vw;
   height: 5vh;
 }
-
+.card2 img{
+  width:130%;
+}
 .card3 {
   opacity: 0.9;
   width: 25ch;
