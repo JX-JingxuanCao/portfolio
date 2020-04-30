@@ -17,8 +17,6 @@ import SkillSVG from "../Components/skillSVG.js";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 import { MagicSpinner } from "react-spinners-kit";
-import Loading from "../Components/Loading.js";
-import ReactLoading from "react-loading";
 
 let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
 let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="770" alt="D19 Image" />;
