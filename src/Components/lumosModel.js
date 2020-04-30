@@ -3938,7 +3938,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="laptop"
-              place="left"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -3951,7 +3951,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="Raspberry-Pi"
-              place="left"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -8760,7 +8760,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="red-strip"
-              place="right"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -8774,7 +8774,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="dmx"
-              place="right"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -16519,7 +16519,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="laptop"
-              place="left"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -16532,7 +16532,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="Raspberry-Pi"
-              place="left"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -16562,7 +16562,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="red-strip"
-              place="right"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
@@ -16576,7 +16576,7 @@ export default class LumosModel extends React.Component {
 
             <ReactTooltip
               id="dmx"
-              place="right"
+              place="bottom"
               textColor="#FFFFFF"
               backgroundColor="#3D2CA6"
               effect="solid"
