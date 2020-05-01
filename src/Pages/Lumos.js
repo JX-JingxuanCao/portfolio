@@ -126,23 +126,33 @@ export default class Lumos extends React.Component {
                   <ProjectContent contentTitle="Development Process">
                     <div className="pic-box-default">
                       <Image imgSrc="lumos-build-1.png" />
+                      <p>Designing color gradient and animation</p>
                     </div>
+
 
                     <div className="pic-box-default">
                       <Image imgSrc="lumos-build-2.png" />
+                      <p>Structure is ready </p>
                     </div>
+
 
                     <div className="pic-box-default">
                       <Image imgSrc="lumos-build-3.png" />
+                      <p>Setting up DMX and Raspberry Pi inside </p>
                     </div>
+
 
                     <div className="pic-box-default">
                       <Image imgSrc="lumos-build-4.png" />
+                      <p>Setting up Leds strips to DMX </p>
                     </div>
+
 
                     <div className="pic-box-default">
                       <Image imgSrc="lumos-build-5.png" />
+                      <p>Tada~</p>
                     </div>
+
                   </ProjectContent>
 
 
@@ -162,9 +172,9 @@ export default class Lumos extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="Lumos at D19">
-                    <div className="pic-box">
+                    <div className="pic-box-default">
                       <ParallaxEffectImg
-                        imgSrc="lumos-gradshow.jpg" imgWidth="870" />
+                        imgSrc="lumos-gradshow.jpg" />
                     </div>
                   </ProjectContent>
 

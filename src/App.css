@@ -3,6 +3,7 @@ body {
   overflow-x: hidden;
 }
 
+/* Homepage css starts here */
 /* Cover page - first thing user sees */
 .cover-wrapper {
   width: 100vw;
@@ -118,6 +119,255 @@ body {
 .work-title{
   color:#ffa45c;
   text-decoration: underline;
+}
+
+/* For skillSet section on homepage*/
+.skill-intro {
+  display: flex;
+  justify-content: center;
+}
+.skillSet {
+  font-family: "Nota Sans", sans-serif;
+  font-size: 2.188rem;
+  font-weight: lighter;
+  color: #ffa45c;
+}
+.skillBox {
+  display: flex;
+  justify-content: center;
+}
+.toggleSkills{
+  padding-bottom: 2.5rem;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 0, 0);
+    transform: translate(0, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.icon-box {
+  margin-left: 6.25rem;
+  height: auto;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  opacity: 0;
+  animation: fadeInUp 0.5s ease-in-out 0s forwards;
+}
+
+.AdobeText {
+  color: #ffa45c;
+}
+.figmaDiv {
+  padding-top: 0.813rem;
+  padding-left: 0.625rem;
+}
+.figmaText {
+  padding-top: 0.625rem;
+  color: #ffa45c;
+}
+
+.threeDprocessText {
+  color: #19bc8b;
+}
+.unityDiv {
+  padding-top: 0.313rem;
+  padding-left: 1.875rem;
+}
+.unityText {
+  padding-top: 0.625rem;
+  padding-left: 1rem;
+  color: #19bc8b;
+}
+.processDiv {
+  padding-left: 2.5rem;
+}
+
+.learnText {
+  color: #b593ff;
+}
+.ueDiv {
+  padding-left: 1.875rem;
+}
+.ueText {
+  padding-top: 0.313rem;
+  color: #b593ff;
+}
+.c4dDiv {
+  padding-left: 2.5rem;
+}
+.rctDiv {
+  padding-left: 1.875rem;
+}
+
+.webText {
+  color: #17acf1;
+}
+.netDiv {
+  padding-left: 1.875rem;
+}
+.cssDiv {
+  padding-left: 1.75rem;
+}
+
+/* For 4 skillset buttons div */
+.profile-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+.skill-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 20vw;
+}
+/* Skill-set on homepage ends here */
+
+/* For contact section */
+.contact-wrapper {
+  width: 100%;
+  height: 40vh;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contactTitle {
+  width: 100vw;
+  height: 3em;
+  font-family: "Nota Sans", sans-serif;
+  font-weight: bolder;
+  font-size: 1.875rem;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.contactIcon {
+  width: 100vw;
+  height: 12vh;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3.125rem;
+}
+.social-button {
+  display: inline-block;
+  background-color: #f1f1f1;
+  width: 5.625rem;
+  height: 5.625rem;
+  line-height: 5.625rem;
+  margin: 1rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  opacity: 0.99;
+  border-radius: 28%;
+  box-shadow: 0 0.3125rem 1.875rem -0.5rem #00000090;
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button:before {
+  content: "";
+  background-color: #000;
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  top: 90%;
+  left: -110%;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-button .fa {
+  font-size: 2.375rem;
+  vertical-align: middle;
+  -webkit-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+/* Facbook */
+.social-button.facebook:before {
+  background-color: #3b5998;
+}
+.social-button.facebook .fa {
+  color: #3b5998;
+}
+/* Linkedin */
+.social-button.linkedin:before {
+  background-color: #007bb5;
+}
+.social-button.linkedin .fa {
+  color: #007bb5;
+}
+/* Instagram */
+.social-button.instagram:before {
+  background-color: #d62976;
+}
+.social-button.instagram .fa {
+  color: #d62976;
+}
+/* email */
+.social-button.email:before {
+  background-color: #4caf72;
+}
+.social-button.email .fa {
+  color: #4caf72;
+}
+
+.social-button.website .fa {
+  color: #4e4e4e;
+}
+.social-button:focus:before,
+.social-button:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-button:focus .fa,
+.social-button:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* ends for contact section */
+
+/* thanks note css start here */
+.thanks-box{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+.extraClass {
+  pointer-events: auto !important;
+}
+.extraClass:hover {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+.thanks-font{
+  color:white;
+  text-decoration: none;
+}
+.openedBox:hover {
+  cursor: pointer;
+}
+.closedBox:hover {
+  cursor: pointer;
+}
+.closeBox-animate{
+  animation-iteration-count: infinite;
 }
 /* ends homepage css */
 
@@ -273,253 +523,6 @@ body {
 }
 /* individual project page ends here */
 
-/* For skillSet section */
-.skill-intro {
-  display: flex;
-  justify-content: center;
-}
-.skillSet {
-  font-family: "Nota Sans", sans-serif;
-  font-size: 2.188rem;
-  font-weight: lighter;
-  color: #ffa45c;
-}
-.skillBox {
-  display: flex;
-  justify-content: center;
-}
-.toggleSkills{
-  padding-bottom: 2.5rem;
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate(0, 0, 0);
-    transform: translate(0, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
-}
-.icon-box {
-  margin-left: 6.25rem;
-  height: auto;
-  color: white;
-  text-align: center;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
-  opacity: 0;
-  animation: fadeInUp 0.5s ease-in-out 0s forwards;
-}
-
-.AdobeText {
-  color: #ffa45c;
-}
-.figmaDiv {
-  padding-top: 0.813rem;
-  padding-left: 0.625rem;
-}
-.figmaText {
-  padding-top: 0.625rem;
-  color: #ffa45c;
-}
-
-.threeDprocessText {
-  color: #19bc8b;
-}
-.unityDiv {
-  padding-top: 0.313rem;
-  padding-left: 1.875rem;
-}
-.unityText {
-  padding-top: 0.625rem;
-  padding-left: 1rem;
-  color: #19bc8b;
-}
-.processDiv {
-  padding-left: 2.5rem;
-}
-
-.learnText {
-  color: #b593ff;
-}
-.ueDiv {
-  padding-left: 1.875rem;
-}
-.ueText {
-  padding-top: 0.313rem;
-  color: #b593ff;
-}
-.c4dDiv {
-  padding-left: 2.5rem;
-}
-.rctDiv {
-  padding-left: 1.875rem;
-}
-
-.webText {
-  color: #17acf1;
-}
-.netDiv {
-  padding-left: 1.875rem;
-}
-.cssDiv {
-  padding-left: 1.75rem;
-}
-/* For 4 skillset buttons div */
-.profile-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-}
-.skill-wrapper {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  padding-left: 20vw;
-}
-/* Skill-set on homepage ends here */
-
-/* For contact section */
-.contact-wrapper {
-  width: 100%;
-  height: 40vh;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.contactTitle {
-  width: 100vw;
-  height: 3em;
-  font-family: "Nota Sans", sans-serif;
-  font-weight: bolder;
-  font-size: 1.875rem;
-  color: black;
-  display: flex;
-  justify-content: center;
-}
-.contactIcon {
-  width: 100vw;
-  height: 12vh;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 3.125rem;
-}
-.social-button {
-  display: inline-block;
-  background-color: #f1f1f1;
-  width: 5.625rem;
-  height: 5.625rem;
-  line-height: 5.625rem;
-  margin: 1rem;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  opacity: 0.99;
-  border-radius: 28%;
-  box-shadow: 0 0.3125rem 1.875rem -0.5rem #00000090;
-  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-.social-button:before {
-  content: "";
-  background-color: #000;
-  width: 120%;
-  height: 120%;
-  position: absolute;
-  top: 90%;
-  left: -110%;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-.social-button .fa {
-  font-size: 2.375rem;
-  vertical-align: middle;
-  -webkit-transform: scale(0.8);
-  transform: scale(0.8);
-  -webkit-transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-  transition: all 0.35s cubic-bezier(0.31, -0.105, 0.43, 1.59);
-}
-/* Facbook */
-.social-button.facebook:before {
-  background-color: #3b5998;
-}
-.social-button.facebook .fa {
-  color: #3b5998;
-}
-/* Linkedin */
-.social-button.linkedin:before {
-  background-color: #007bb5;
-}
-.social-button.linkedin .fa {
-  color: #007bb5;
-}
-/* Instagram */
-.social-button.instagram:before {
-  background-color: #d62976;
-}
-.social-button.instagram .fa {
-  color: #d62976;
-}
-/* email */
-.social-button.email:before {
-  background-color: #4caf72;
-}
-.social-button.email .fa {
-  color: #4caf72;
-}
-
-.social-button.website .fa {
-  color: #4e4e4e;
-}
-.social-button:focus:before,
-.social-button:hover:before {
-  top: -10%;
-  left: -10%;
-}
-.social-button:focus .fa,
-.social-button:hover .fa {
-  color: #fff;
-  -webkit-transform: scale(1);
-  transform: scale(1);
-}
-/* ends for contact section */
-
-/* thanks note css start here */
-.thanks-box{
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-}
-.extraClass {
-  pointer-events: auto !important;
-}
-.extraClass:hover {
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-.thanks-font{
-  color:white;
-  text-decoration: none;
-}
-.openedBox:hover {
-  cursor: pointer;
-}
-.closedBox:hover {
-  cursor: pointer;
-}
-.closeBox-animate{
-  animation-iteration-count: infinite;
-}
 /* Footer css starts here */
 .footer-wrapper-white{
   width: 100%;
@@ -782,6 +785,10 @@ body {
 }
 .lumosPics{
  width:100;
+}
+#clickme{
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 /* ends lumos page css */
 
