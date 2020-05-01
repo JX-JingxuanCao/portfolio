@@ -165,7 +165,7 @@ export default class Lumos extends React.Component {
                 which allowed us to overcome these obstacles throughout the project, and my team and I gained a 
                 great deal of practical design experience.">
 
-                    <div className="pic-box-lumos">
+                    <div className="pic-box-mid">
                       <ParallaxEffectImg
                         imgSrc="lumos-final.jpg" imgWidth="570" />
                     </div>

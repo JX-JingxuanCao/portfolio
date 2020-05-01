@@ -173,7 +173,6 @@ export default class Homepage extends React.Component {
               </div>
 
 
-
               <div id="Profile">
                 <Element name="Profile">
                   <SkillSet />

@@ -121,8 +121,8 @@ export default class Waterbug extends React.Component {
                their garden - even when away from home."/>
 
                   <ProjectContent contentTitle="User Needs">
-                    <div className="pic-box">
-                      <Image imgSrc="waterbug-user.png" imgWidth="670" />
+                    <div className="pic-box-small">
+                      <Image imgSrc="waterbug-user.png" />
                     </div>
                   </ProjectContent>
 
@@ -143,8 +143,8 @@ export default class Waterbug extends React.Component {
                 <div className="project-container-wrapper-white">
                   <div className="projectPage-content-container">
                     <ProjectContent contentTitle="Prototype & User flow">
-                      <div className="pic-box">
-                        <Image imgSrc="waterbug-userflow.png" imgWidth="970" />
+                      <div className="pic-box-default">
+                        <Image imgSrc="waterbug-userflow.png" />
                       </div>
                     </ProjectContent>
 

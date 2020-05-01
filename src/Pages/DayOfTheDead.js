@@ -45,7 +45,7 @@ export default class DayOfTheDead extends React.Component {
               <ScrollToTopOnMount />
               <NavBar type="projectPage" />
 
-              <div className="project-page-wrapper"><Video videoWidth="1620" videoName="dead-title.mp4" /></div>
+              <div className="project-page-wrapper"><Video videoWidth="100%" videoName="dead-title.mp4" /></div>
 
               <div className="project-container-wrapper">
                 <div className="projectPage-content-container">

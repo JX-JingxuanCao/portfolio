@@ -48,7 +48,7 @@ export default class D19 extends React.Component {
 
               <div className="D19logo">
                 <Video videoWidth="100%" videoName="d19.mp4" />;
-            </div>
+              </div>
 
               <div className="project-container-wrapper">
                 <div className="projectPage-content-container">
@@ -163,7 +163,7 @@ export default class D19 extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="D19 Team">
-                    <div className="pic-box-default">
+                    <div className="pic-box-mid">
                       <ParallaxEffectImg imgSrc="D19-goup.JPG" imgWidth="670" />
                     </div>
                   </ProjectContent>

@@ -514,12 +514,29 @@ body {
   justify-content: center;
   padding-top: 3.125rem;
 }
+/* .project-page-wrapper img{
+  width:55%;
+  justify-content: center;
+} */
 .pic-box-default{
   padding-top:1.813rem;
   padding-bottom:1.813rem;
 }
 .pic-box-default img{
   width:100%;
+}
+.pic-box-mid{
+  padding-top:1.813rem;
+  padding-bottom:1.813rem;
+  display: flex;
+  justify-content: center;
+}
+.pic-box-small{
+  padding-top:1.813rem;
+  padding-bottom:1.813rem;
+}
+.pic-box-small img{
+  width:70%;
 }
 /* individual project page ends here */
 
@@ -776,15 +793,6 @@ body {
   stroke-dasharray: 10;
   stroke-dashoffset: 10;
   animation: dash 19.5s linear forwards alternate infinite;
-}
-.pic-box-lumos{
-  padding-top:1.813rem;
-  padding-bottom:1.813rem;
-  display: flex;
-  justify-content: center;
-}
-.lumosPics{
- width:100;
 }
 #clickme{
   animation-duration: 2s;
