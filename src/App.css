@@ -726,10 +726,17 @@ body {
 /* for lumos project page */
 /* lumosmodel css  */
 .lumosmodel {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
+}
+.svg-content { 
+	display: inline-block;
+  justify-content: center;
+  width: 55%;
+	top: 0;
+	left: 0;
 }
 .trigger:hover {
   cursor: pointer;

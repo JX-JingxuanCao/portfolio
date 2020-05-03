@@ -59,8 +59,8 @@ export default class LumosModel extends React.Component {
         return (
           <div className="lumosmodel">
             <svg
-              width="1029"
-              height="767"
+              preserveAspectRatio="xMinYMin meet"
+              class="svg-content"
               viewBox="0 0 1029 767"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -4002,8 +4002,8 @@ export default class LumosModel extends React.Component {
         return (
           <div className="lumosmodel">
             <svg
-              width="1029"
-              height="767"
+              preserveAspectRatio="xMinYMin meet"
+              class="svg-content"
               viewBox="0 0 1029 767"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -8799,8 +8799,8 @@ export default class LumosModel extends React.Component {
         return (
           <div className="lumosmodel">
             <svg
-              width="1029"
-              height="767"
+              preserveAspectRatio="xMinYMin meet"
+              class="svg-content"
               viewBox="0 0 1029 767"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -16615,8 +16615,8 @@ export default class LumosModel extends React.Component {
         return (
           <div className="lumosmodel">
             <svg
-              width="1029"
-              height="767"
+              preserveAspectRatio="xMinYMin meet"
+              class="svg-content"
               viewBox="0 0 1029 767"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -17535,8 +17535,8 @@ export default class LumosModel extends React.Component {
       return (
         <div className="lumosmodel">
           <svg
-            width="1029"
-            height="767"
+            preserveAspectRatio="xMinYMin meet"
+            class="svg-content"
             viewBox="0 0 1029 767"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -18457,8 +18457,8 @@ export default class LumosModel extends React.Component {
       return (
         <div className="lumosmodel">
           <svg
-            width="1029"
-            height="767"
+            preserveAspectRatio="xMinYMin meet"
+            class="svg-content"
             viewBox="0 0 1029 767"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
