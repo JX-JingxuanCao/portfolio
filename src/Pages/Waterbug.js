@@ -30,7 +30,7 @@ export default class Waterbug extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
         .then(json => this.setState({ done: true }));
-    }, 5000);
+    }, 7000);
   }
 
   render() {

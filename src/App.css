@@ -575,7 +575,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-right: 5rem;
+  padding-right: 6%;
 }
 .lastBox {
   width: 100vw;
