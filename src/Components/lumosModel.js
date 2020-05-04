@@ -3947,7 +3947,7 @@ export default class LumosModel extends React.Component {
             >
               <p className="tooltip-font">
                 My job is to create a system that can animate <br />
-                amazing color gradients and control by users.😊
+                amazing color gradients and be easily control by users.😊
               </p>
             </ReactTooltip>
 
@@ -8769,8 +8769,8 @@ export default class LumosModel extends React.Component {
             >
               <p className="tooltip-font">
                 We are the main character in this light installation 😎 <br />
-                There are 10 of us, so we need tons of electricity, <br />
-                so we are quite deadly....😰
+                There are 10 of us, we need tons of electricity, <br />
+                oh... and also we are quite deadly...😰
               </p>
             </ReactTooltip>
 
@@ -8784,11 +8784,11 @@ export default class LumosModel extends React.Component {
               <p className="tooltip-font">
                 So all the Leds strips are connected to me, I'm the handler
                 <br />
-                for all electricity, I'll receive some information from the{" "}
+                for all electricity, I'll receive some information from the
                 <br />
                 middle man - router, I'll make the colors and animation
                 <br />
-                patterns the Leds strips need to turn to. 😏
+                patterns the Leds strips need to function. 😏
               </p>
             </ReactTooltip>
           </div>
@@ -16528,7 +16528,7 @@ export default class LumosModel extends React.Component {
             >
               <p className="tooltip-font">
                 My job is to create a system that can animate <br />
-                amazing color gradients and control by users.😊
+                amazing color gradients and be easily control by users.😊
               </p>
             </ReactTooltip>
 
@@ -16571,8 +16571,8 @@ export default class LumosModel extends React.Component {
             >
               <p className="tooltip-font">
                 We are the main character in this light installation 😎 <br />
-                There are 10 of us, so we need tons of electricity, <br />
-                so we are quite deadly....😰
+                There are 10 of us, we need tons of electricity, <br />
+                oh... and also we are quite deadly...😰
               </p>
             </ReactTooltip>
 
@@ -16590,7 +16590,7 @@ export default class LumosModel extends React.Component {
                 <br />
                 middle man - router, I'll make the colors and animation
                 <br />
-                patterns the Leds strips need to turn to. 😏
+                patterns the Leds strips need to function. 😏
               </p>
             </ReactTooltip>
 
