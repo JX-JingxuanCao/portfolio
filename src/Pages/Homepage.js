@@ -62,9 +62,6 @@ export default class Homepage extends React.Component {
 
               <div className="preview-wrapper">
                 <Element id="Work" name="Work">
-                  <div className="work-text">
-                    <h1 className="work-title">Recent Work</h1>
-                  </div>
 
                   <ScrollAnimation
                     animateIn="fadeInUp">
@@ -83,7 +80,12 @@ export default class Homepage extends React.Component {
                         <Skill key="Physical Computing" text="Physical Computing" />,
                       ]}
                       button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
-                    />
+                    >
+                      <div className="work-text">
+                        <h1 className="work-title">Recent Work</h1>
+                      </div>
+                    </Preview>
+
                   </ScrollAnimation>
 
                   <ScrollAnimation

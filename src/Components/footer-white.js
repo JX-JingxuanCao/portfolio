@@ -5,8 +5,8 @@ export default function FooterWhite() {
         <div className="footer-wrapper-white">
             <div className="credit-line">
                 <svg
-                    width="1020"
-                    height="1"
+                    preserveAspectRatio="xMinYMin meet"
+                    class="footer-line"
                     viewBox="0 0 1020 1"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"

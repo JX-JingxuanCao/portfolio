@@ -111,12 +111,13 @@ body {
 }
 /* for homepage "recent work" css */
 .work-text{
-  width: 20rem;
   display:flex;
-  justify-content: center;
-  padding-left: 16%;
+  justify-content: flex-start;
+  padding-left: 2%;
 }
 .work-title{
+  font-family: "Nota Sans", sans-serif;
+  font-weight: bold;
   color:#ffa45c;
   text-decoration: underline;
 }
@@ -553,6 +554,13 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 8rem;
+}
+.footer-line{
+  display: inline-block;
+  justify-content: center;
+  width: 55%;
+	top: 0;
+	left: 0;
 }
 .credit-text-white {
   justify-content: flex-start;
