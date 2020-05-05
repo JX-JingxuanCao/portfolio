@@ -169,7 +169,7 @@ export default class D19 extends React.Component {
                   </ProjectContent>
 
                   <ProjectContent contentTitle="D19 Video">
-                    <div className="pic-box">
+                    <div className="video-box">
                       <iframe width="1024" height="576" src="https://www.youtube.com/embed/zIqdmNU0IMk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </ProjectContent>
