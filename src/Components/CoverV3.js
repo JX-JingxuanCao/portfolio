@@ -28,7 +28,7 @@ export default function Card() {
         className="card1"
         style={{ transform: props.xy.interpolate(trans1) }}
       >
-        <Video videoName="Final.mp4" />
+        <Video videoName="Final-1.mp4" />
       </animated.div>
       <animated.div
         className="card2"

@@ -30,7 +30,7 @@ export default class DayOfTheDead extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
         .then(json => this.setState({ done: true }));
-    }, 5000);
+    }, 3000);
   }
   render() {
     return (

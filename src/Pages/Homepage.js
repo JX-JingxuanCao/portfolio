@@ -21,7 +21,7 @@ import { MagicSpinner } from "react-spinners-kit";
 let lumosMedia = <Video videoWidth="770" videoName="lumosvfxV2.mp4" />;
 let D19Media = <Image imgSrc="D19cover.jpg" imgWidth="770" alt="D19 Image" />;
 let deadMedia = <Video videoWidth="770" videoName="dead-cover.mp4" />;
-let WaterbugMedia = <Video videoWidth="770" videoName="waterbug-cover.mp4" />;
+let WaterbugMedia = <Video videoWidth="770" videoName="waterbug-cover-1.mp4" />;
 let icpuMedia = <Image imgSrc="abs-empty.jpg" imgWidth="770" />;
 
 export default class Homepage extends React.Component {

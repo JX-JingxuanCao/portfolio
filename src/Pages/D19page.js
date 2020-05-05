@@ -31,7 +31,7 @@ export default class D19 extends React.Component {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then((response) => response.json())
         .then((json) => this.setState({ done: true }));
-    }, 4000);
+    }, 3000);
   }
 
   render() {
