@@ -4,7 +4,7 @@ import Image from "../image";
 export default function TopSkill(props) {
   return (
     <div className="icon-box">
-      <div>
+      <div className="adobeSoftware-icon">
         <Image imgSrc="Ai.png" imgWidth="100" imgAlt="Ai" />
         <p className="AdobeText">Illustrator</p>
       </div>
