@@ -1059,19 +1059,26 @@ body {
   .offset-first {
     width: 15.625rem;
     height: 2.375rem;
-    font-size: 0.875rem;
+    border: 0.019rem solid;
+    font-size: 0.906rem;
   }
   .offset-second {
     width: 15.625rem;
     height: 2.375rem;
+    border: 0.019rem solid;
+    font-size: 0.906rem;
   }
   .offset-third {
     width: 15.625rem;
     height: 2.375rem;
+    border: 0.019rem solid;
+    font-size: 0.906rem;
   }
   .offset-last {
     width: 15.625rem;
     height: 2.375rem;
+    border: 0.019rem solid;
+    font-size: 0.906rem;
   }
 }
 @media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
