@@ -154,7 +154,7 @@ body {
   }
 }
 .icon-box {
-  margin-left: 2%;
+  margin-left: 2.5%;
   height: auto;
   color: white;
   text-align: center;
@@ -1056,6 +1056,23 @@ body {
   /* .adobeSoftware-icon img{
     width:50%
   } */
+  .offset-first {
+    width: 15.625rem;
+    height: 2.375rem;
+    font-size: 0.875rem;
+  }
+  .offset-second {
+    width: 15.625rem;
+    height: 2.375rem;
+  }
+  .offset-third {
+    width: 15.625rem;
+    height: 2.375rem;
+  }
+  .offset-last {
+    width: 15.625rem;
+    height: 2.375rem;
+  }
 }
 @media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
   .roleName{
