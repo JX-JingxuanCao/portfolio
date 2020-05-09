@@ -490,8 +490,9 @@ body {
 }
 .contentTitle {
   font-family: "Nota Sans", sans-serif;
-  font-size: 1.813rem;
+  font-size: 1.875rem;
   color: #ffa45c;
+  text-transform: uppercase;
 }
 .contentBox{
   padding-bottom: 1.875rem;
@@ -515,10 +516,8 @@ body {
   justify-content: center;
   padding-top: 3.125rem;
 }
-/* .project-page-wrapper img{
-  width:55%;
-  justify-content: center;
-} */
+
+/* for presenting img responsively */
 .pic-box-default{
   padding-top:1.813rem;
   padding-bottom:1.813rem;
@@ -531,6 +530,10 @@ body {
   padding-bottom:1.813rem;
   display: flex;
   justify-content: center;
+}
+.pic-box-mid img{
+  width:60%;
+  padding-left:20%
 }
 .pic-box-small{
   padding-top:1.813rem;
@@ -645,7 +648,6 @@ body {
   height: 3.125rem;
   background-color: transparent;
   margin: 1.813rem;
-  color: #51fff1;
   position: relative;
   overflow: hidden;
   font-size: 0.875rem;
@@ -1050,12 +1052,12 @@ body {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)  and (max-width: 1600px)  {
+  /* for project page role & team */
   .roleName{
     font-size: 0.83rem;
   }
-  /* .adobeSoftware-icon img{
-    width:50%
-  } */
+
+  /* for skill section icons */
   .offset-first {
     width: 15.625rem;
     height: 2.375rem;
@@ -1080,9 +1082,22 @@ body {
     border: 0.019rem solid;
     font-size: 0.906rem;
   }
+  /* ends for icons styles */
+
+  /* for nav bar  */
+  .navName button {
+    width: 5.625rem;
+    /* height: 1.875rem; */
+  }
 }
 @media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
+  /* for project page role & team */
   .roleName{
     font-size: 1rem;
+  }
+  /* for nav bar  */
+  .navName button {
+    width: 7.5rem;
+    height: 2.5rem;
   }
 }

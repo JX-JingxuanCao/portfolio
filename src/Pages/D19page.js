@@ -164,7 +164,7 @@ export default class D19 extends React.Component {
 
                   <ProjectContent contentTitle="D19 Team">
                     <div className="pic-box-mid">
-                      <ParallaxEffectImg imgSrc="D19-goup.JPG" imgWidth="670" />
+                      <ParallaxEffectImg imgSrc="D19-goup.JPG" />
                     </div>
                   </ProjectContent>
 
