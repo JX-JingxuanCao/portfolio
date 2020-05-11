@@ -1049,7 +1049,33 @@ body {
   justify-content: center;
   padding-top:23%;
 }
+/* ends for all normal styles */
 
+/* For different screen sizes starts here */
+@media only screen and (min-width: 900px)  and (max-width: 1199px)  {
+  /* for project page role & team */
+  /* .roleName{
+    font-size: 1rem;
+  } */
+  /* for nav bar  */
+  /* #videoContent{
+    width:70%;
+  }
+  .MediaBox img{
+    width:70%;
+  }
+  .infoBox{
+    width:18.75rem;
+  } */
+}
+
+@media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
+  /* for project page role & team */
+  .roleName{
+    font-size: 1rem;
+  }
+  /* for nav bar  */
+}
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px)  and (max-width: 1600px)  {
   /* for project page role & team */
@@ -1086,18 +1112,14 @@ body {
 
   /* for nav bar  */
   .navName button {
-    width: 5.625rem;
-    /* height: 1.875rem; */
+    width: 7.5rem;
   }
 }
+
 @media only screen and (min-width: 1601px)  and (max-width: 1909px)  {
   /* for project page role & team */
   .roleName{
     font-size: 1rem;
   }
   /* for nav bar  */
-  .navName button {
-    width: 7.5rem;
-    height: 2.5rem;
-  }
 }
