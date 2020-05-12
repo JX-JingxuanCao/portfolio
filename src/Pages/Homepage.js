@@ -49,170 +49,177 @@ export default class Homepage extends React.Component {
             <MagicSpinner size="150" color="#ffa45c" />
           </div>
         ) : (
-            <div className="App">
-              <ScrollToTopOnMount />
+            <div>
+              <div className="App">
+                <ScrollToTopOnMount />
 
-              <NavBar type="homepage" />
+                <NavBar type="homepage" />
 
-              <div className="cover-wrapper">
-                <div className="cover-img">
-                  <Card />
-                </div>
-              </div>
-
-              <div className="preview-wrapper">
-                <Element id="Work" name="Work">
-
-                  <ScrollAnimation
-                    animateIn="fadeInUp">
-                    <Preview
-                      previewMedia={lumosMedia}
-                      projectTitle="Lumos"
-                      skillList={[
-                        <Skill
-                          key="Interaction Product Design"
-                          text="Interaction Product Design"
-                        />,
-                        <Skill
-                          key="Electrical Engineering"
-                          text="Electrical Engineering"
-                        />,
-                        <Skill key="Physical Computing" text="Physical Computing" />,
-                      ]}
-                      button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
-                    >
-                      <div className="work-text">
-                        <h1 className="work-title">Recent Work</h1>
-                      </div>
-                    </Preview>
-
-                  </ScrollAnimation>
-
-                  <ScrollAnimation
-                    animateIn="fadeInUp">
-                    <Preview
-                      previewMedia={D19Media}
-                      projectTitle="University of Sydney The Design Graduate Exhibition 2019"
-                      skillList={[
-                        <Skill
-                          key="User Experience Design"
-                          text="User Experience Design"
-                        />,
-                        <Skill key="Exhibition Planning" text="Exhibition Planning" />,
-                        <Skill key="Branding" text="Branding" />,
-                      ]}
-                      button={<ButtonMain buttonText="VIEW PROJECT" linkName="D19" />}
-                    />
-                  </ScrollAnimation>
-
-                  <ScrollAnimation
-                    animateIn="fadeInUp">
-                    <Preview
-                      previewMedia={deadMedia}
-                      projectTitle="Day of the Dead VR"
-                      skillList={[
-                        <Skill key="VR Game Design" text="VR Game Design" />,
-                        <Skill
-                          key="User Interaction Design"
-                          text="User Interaction Design"
-                        />,
-                        <Skill
-                          key="User Experience Design"
-                          text="User Experience Design"
-                        />,
-                      ]}
-                      button={
-                        <ButtonMain
-                          buttonText="VIEW PROJECT"
-                          linkName="Day Of The Dead"
-                        />
-                      }
-                    />
-                  </ScrollAnimation>
-
-                  <ScrollAnimation
-                    animateIn="fadeInUp">
-                    <Preview
-                      previewMedia={icpuMedia}
-                      projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
-                      skillList={[
-                        <Skill
-                          key="User Experience Design"
-                          text="User Experience Design"
-                        />,
-                        <Skill key="Data Analysis" text="Data Analysis" />,
-                      ]}
-                      button={
-                        <ButtonMain
-                          buttonText="VIEW PROJECT"
-                          linkName="University of Sydney & Industry experts - Create Space"
-                        />
-                      }
-                    />
-                  </ScrollAnimation>
-
-                  <ScrollAnimation
-                    animateIn="fadeInUp">
-                    <Preview
-                      previewMedia={WaterbugMedia}
-                      projectTitle="Waterbug"
-                      skillList={[
-                        <Skill
-                          key="User Interface Design"
-                          text="User Interface Design"
-                        />,
-                        <Skill
-                          key="User Experience Design"
-                          text="User Experience Design"
-                        />,
-                      ]}
-                      button={
-                        <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
-                      }
-                    />
-                  </ScrollAnimation>
-                </Element>
-              </div>
-
-
-              <div id="Profile">
-                <Element name="Profile">
-                  <SkillSet />
-                  <div className="skill-intro">
-                    <Video videoWidth="660" videoName="intro.mp4" />
+                <div className="cover-wrapper">
+                  <div className="cover-img">
+                    <Card />
                   </div>
-                  <div className="toggleSkills">
+                </div>
+
+                <div className="preview-wrapper">
+                  <Element id="Work" name="Work">
+
+                    <ScrollAnimation
+                      animateIn="fadeInUp">
+                      <Preview
+                        previewMedia={lumosMedia}
+                        projectTitle="Lumos"
+                        skillList={[
+                          <Skill
+                            key="Interaction Product Design"
+                            text="Interaction Product Design"
+                          />,
+                          <Skill
+                            key="Electrical Engineering"
+                            text="Electrical Engineering"
+                          />,
+                          <Skill key="Physical Computing" text="Physical Computing" />,
+                        ]}
+                        button={<ButtonMain buttonText="VIEW PROJECT" linkName="Lumos" />}
+                      >
+                        <div className="work-text">
+                          <h1 className="work-title">Recent Work</h1>
+                        </div>
+                      </Preview>
+
+                    </ScrollAnimation>
+
+                    <ScrollAnimation
+                      animateIn="fadeInUp">
+                      <Preview
+                        previewMedia={D19Media}
+                        projectTitle="University of Sydney The Design Graduate Exhibition 2019"
+                        skillList={[
+                          <Skill
+                            key="User Experience Design"
+                            text="User Experience Design"
+                          />,
+                          <Skill key="Exhibition Planning" text="Exhibition Planning" />,
+                          <Skill key="Branding" text="Branding" />,
+                        ]}
+                        button={<ButtonMain buttonText="VIEW PROJECT" linkName="D19" />}
+                      />
+                    </ScrollAnimation>
+
+                    <ScrollAnimation
+                      animateIn="fadeInUp">
+                      <Preview
+                        previewMedia={deadMedia}
+                        projectTitle="Day of the Dead VR"
+                        skillList={[
+                          <Skill key="VR Game Design" text="VR Game Design" />,
+                          <Skill
+                            key="User Interaction Design"
+                            text="User Interaction Design"
+                          />,
+                          <Skill
+                            key="User Experience Design"
+                            text="User Experience Design"
+                          />,
+                        ]}
+                        button={
+                          <ButtonMain
+                            buttonText="VIEW PROJECT"
+                            linkName="Day Of The Dead"
+                          />
+                        }
+                      />
+                    </ScrollAnimation>
+
+                    <ScrollAnimation
+                      animateIn="fadeInUp">
+                      <Preview
+                        previewMedia={icpuMedia}
+                        projectTitle="University of Sydney & Industry experts - Creating student centred spaces"
+                        skillList={[
+                          <Skill
+                            key="User Experience Design"
+                            text="User Experience Design"
+                          />,
+                          <Skill key="Data Analysis" text="Data Analysis" />,
+                        ]}
+                        button={
+                          <ButtonMain
+                            buttonText="VIEW PROJECT"
+                            linkName="University of Sydney & Industry experts - Create Space"
+                          />
+                        }
+                      />
+                    </ScrollAnimation>
+
+                    <ScrollAnimation
+                      animateIn="fadeInUp">
+                      <Preview
+                        previewMedia={WaterbugMedia}
+                        projectTitle="Waterbug"
+                        skillList={[
+                          <Skill
+                            key="User Interface Design"
+                            text="User Interface Design"
+                          />,
+                          <Skill
+                            key="User Experience Design"
+                            text="User Experience Design"
+                          />,
+                        ]}
+                        button={
+                          <ButtonMain buttonText="VIEW PROJECT" linkName="Waterbug" />
+                        }
+                      />
+                    </ScrollAnimation>
+                  </Element>
+                </div>
+
+
+                <div id="Profile">
+                  <Element name="Profile">
+                    <SkillSet />
+                    <div className="skill-intro">
+                      <Video videoWidth="660" videoName="intro.mp4" />
+                    </div>
+                    <div className="toggleSkills">
+                      <ScrollAnimation
+                        animateIn="slideInUp">
+                        <div className="skillBox">
+                          <SkillSVG />
+                        </div>
+                      </ScrollAnimation>
+                      <ToggleSkills />
+                    </div>
                     <ScrollAnimation
                       animateIn="slideInUp">
                       <div className="skillBox">
-                        <SkillSVG />
+                        <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
                       </div>
                     </ScrollAnimation>
-                    <ToggleSkills />
-                  </div>
-                  <ScrollAnimation
-                    animateIn="slideInUp">
                     <div className="skillBox">
-                      <Image imgSrc="cover-home-min.png" imgWidth="860" alt="D19 Image" />
+                      <a href="https://www.w3schools.com" target="_blank"><button className="ButtonMain">VIEW RESUME</button></a>
                     </div>
-                  </ScrollAnimation>
-                  <div className="skillBox">
-                    <a href="https://www.w3schools.com" target="_blank"><button className="ButtonMain">VIEW RESUME</button></a>
-                  </div>
-                </Element>
-              </div>
-
-              <ScrollAnimation animateIn='fadeInUp'>
-                <div id="Contact">
-                  <Element name="Contact">
-                    <Contact />
-
-                    <ThanksNote />
-
-                    <FooterWhite />
                   </Element>
                 </div>
-              </ScrollAnimation>
+
+                <ScrollAnimation animateIn='fadeInUp'>
+                  <div id="Contact">
+                    <Element name="Contact">
+                      <Contact />
+
+                      <ThanksNote />
+
+                      <FooterWhite />
+                    </Element>
+                  </div>
+                </ScrollAnimation>
+              </div>
+
+              <div className="mobile-message">
+                <h1 className="ProjectTitle">Hi there, you got a PC?</h1>
+              </div>
+
             </div>
           )}
       </div>

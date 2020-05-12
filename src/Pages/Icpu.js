@@ -23,6 +23,7 @@ export default class Icpu extends React.Component {
   }
 
   componentDidMount() {
+    document.title = "Jingxuan Cao | University of Sydney & Industry experts - Create Space";
     setTimeout(() => {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())

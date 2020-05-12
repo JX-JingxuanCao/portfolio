@@ -27,6 +27,7 @@ export default class Lumos extends React.Component {
   }
 
   componentDidMount() {
+    document.title = "Jingxuan Cao | Lumos";
     setTimeout(() => {
       fetch("https://jsonplaceholder.typicode.com/posts")
         .then(response => response.json())
