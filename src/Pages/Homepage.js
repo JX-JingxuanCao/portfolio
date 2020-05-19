@@ -198,7 +198,7 @@ export default class Homepage extends React.Component {
                       </div>
                     </ScrollAnimation>
                     <div className="skillBox">
-                      <a href="https://www.w3schools.com" target="_blank"><button className="ButtonMain">VIEW RESUME</button></a>
+                      <a href="https://1drv.ms/b/s!AiCtkt9sv10PiVzPNIG-jJH2MAH7" target="_blank"><button className="ButtonMain">VIEW RESUME</button></a>
                     </div>
                   </Element>
                 </div>
@@ -217,7 +217,9 @@ export default class Homepage extends React.Component {
               </div>
 
               <div className="mobile-message">
-                <h1 className="ProjectTitle">Hi there, you got a PC?</h1>
+                <h1 className="ProjectTitle">Awwww, how nice of you to come here check out my website 😊</h1>
+                <h1 className="ProjectTitle">But you got a laptop or desktop? 💻 || 🖥️</h1>
+                <h1 className="ProjectTitle">Otherwise, you gonna miss some cool stuff 😉</h1>
               </div>
 
             </div>

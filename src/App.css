@@ -1059,9 +1059,16 @@ body {
 @media only screen and (min-width: 100px)  and (max-width: 1199px)  {
   .mobile-message{
     display:block;
+    justify-content: center;
+    padding-left:10%;
   }
   .App{
     display:none;
+  }
+  .loading-wrapper{
+    display:flex;
+    justify-content: center;
+    padding-top:50%;
   }
 }
 @media only screen and (min-width: 900px)  and (max-width: 1199px)  {
