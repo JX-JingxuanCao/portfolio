@@ -1142,3 +1142,11 @@ body {
   }
   /* for nav bar  */
 }
+
+@media only screen and (min-width: 1921px)  and (max-width: 2600px)  {
+  /* for project page role & team */
+  .roleName{
+    font-size: 1.2rem;
+  }
+  /* for nav bar  */
+}
