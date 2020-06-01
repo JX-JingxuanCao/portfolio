@@ -10,7 +10,7 @@ class Loader extends React.Component {
             displayMessage: false,
         };
 
-        this.timer = setTimeout(this.enableMessage, 250);
+        this.timer = setTimeout(this.enableMessage, 6000);
     }
 
     componentWillUnmount() {
