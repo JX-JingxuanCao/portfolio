@@ -1,7 +1,7 @@
 import React from 'react';
 import { MagicSpinner } from "react-spinners-kit";
 
-class Loader extends React.Component {
+export default class Loader extends React.Component {
     constructor(props) {
         super(props);
         this.enableMessage = this.enableMessage.bind(this);
@@ -35,5 +35,3 @@ class Loader extends React.Component {
         );
     }
 }
-
-export default Loader;
