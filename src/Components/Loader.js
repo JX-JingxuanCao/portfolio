@@ -28,9 +28,11 @@ class Loader extends React.Component {
             return null;
         }
 
-        return <div className="loading-wrapper">
-            <MagicSpinner size="150" color="#ffa45c" />
-        </div>;
+        return (
+            <div className="loading-wrapper">
+                <MagicSpinner size="150" color="#ffa45c" />
+            </div>
+        );
     }
 }
 
