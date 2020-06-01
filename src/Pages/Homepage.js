@@ -46,7 +46,10 @@ export default class Homepage extends React.Component {
     const { isBusy } = this.props;
 
     if (isBusy) {
-      return <Loader />;
+      return <div><Loader />
+        <div className="loading-wrapper">
+          <MagicSpinner size="150" color="#ffa45c" />
+        </div></div>;
     }
     return (
       // <div>
