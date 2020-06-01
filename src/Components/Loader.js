@@ -1,32 +1,37 @@
-import React from "react";
-import ReactLoading from "react-loading";
+import React from 'react';
+import { MagicSpinner } from "react-spinners-kit";
 
-
-export default class Loader extends React.Component {
+class Loader extends React.Component {
     constructor(props) {
         super(props);
+        this.enableMessage = this.enableMessage.bind(this);
+
         this.state = {
-            done: undefined
+            displayMessage: false,
         };
+
+        this.timer = setTimeout(this.enableMessage, 250);
     }
 
-    componentDidMount() {
-        setTimeout(() => {
-            fetch("https://jsonplaceholder.typicode.com/posts")
-                .then(response => response.json())
-                .then(json => this.setState({ done: true }));
-        }, 1200);
+    componentWillUnmount() {
+        clearTimeout(this.timer);
+    }
+
+    enableMessage() {
+        this.setState({ displayMessage: true });
     }
 
     render() {
-        return (
-            <div>
-                {!this.state.done ? (
-                    <ReactLoading type={"bars"} color={"white"} />
-                ) : (
-                        <h1>hello world</h1>
-                    )}
-            </div>
-        );
+        const { displayMessage } = this.state;
+
+        if (!displayMessage) {
+            return null;
+        }
+
+        return <div className="loading-wrapper">
+            <MagicSpinner size="150" color="#ffa45c" />
+        </div>;
     }
 }
+
+export default Loader;
