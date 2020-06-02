@@ -36,7 +36,7 @@ export default class Homepage extends React.Component {
   componentDidMount() {
     setTimeout(() => {
       this.setState({ done: true });
-    }, 1000);
+    }, 3000);
   }
 
   render() {
@@ -46,9 +46,6 @@ export default class Homepage extends React.Component {
       return (
         <div>
           <Loader />
-          <div className="loading-wrapper">
-            <MagicSpinner size="150" color="#ffa45c" />
-          </div>
         </div>
       );
     }

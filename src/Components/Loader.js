@@ -31,6 +31,7 @@ export default class Loader extends React.Component {
         return (
             <div className="loading-wrapper">
                 <MagicSpinner size="150" color="#ffa45c" />
+                {console.log('If this work, you will see me')}
             </div>
         );
     }
