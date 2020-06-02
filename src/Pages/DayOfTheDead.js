@@ -28,9 +28,7 @@ export default class DayOfTheDead extends React.Component {
   componentDidMount() {
     document.title = "Jingxuan Cao | Day of The Dead VR Game";
     setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/posts")
-        .then(response => response.json())
-        .then(json => this.setState({ done: true }));
+      this.setState({ done: true });
     }, 3000);
   }
   render() {

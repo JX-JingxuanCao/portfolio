@@ -29,9 +29,7 @@ export default class D19 extends React.Component {
   componentDidMount() {
     document.title = "Jingxuan Cao | D19";
     setTimeout(() => {
-      fetch("https://jsonplaceholder.typicode.com/posts")
-        .then((response) => response.json())
-        .then((json) => this.setState({ done: true }));
+      this.setState({ done: true });
     }, 3000);
   }
 
